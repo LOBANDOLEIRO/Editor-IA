@@ -1,0 +1,31 @@
+{
+  "projeto": "Exemplo — rotina de café da manhã",
+  "formato": "9:16",
+  "duracao_padrao_s": 8,
+  "publico": "Instagram Reels, público geral",
+  "tom": "calmo, acolhedor, realista",
+  "estilo": {
+    "resumo": "cinema documental, luz natural quente, tons terrosos",
+    "bloco_prompt": "Shot on a 35mm lens with shallow depth of field, natural soft window light, warm earthy color palette with muted greens and creamy whites, subtle film grain, photorealistic, documentary feel."
+  },
+  "personagens": [
+    {
+      "id": "ana",
+      "bloco_prompt": "a woman in her early 30s with shoulder-length wavy dark brown hair, light olive skin, wearing an oversized cream knit sweater"
+    }
+  ],
+  "takes": [
+    {
+      "id": "T01",
+      "titulo": "Café sendo passado",
+      "trecho_roteiro": "Todo dia começa do mesmo jeito.",
+      "funcao": "abertura / ambientação",
+      "personagens": [],
+      "referencia": null,
+      "prompt": "Macro slow dolly-in on a glass pour-over coffee maker as hot water spirals over freshly ground coffee, steam rising gently. On a light wooden kitchen counter with a ceramic mug beside it. Early morning sunlight streaming from the left. Shot on a 35mm lens with shallow depth of field, natural soft window light, warm earthy color palette with muted greens and creamy whites, subtle film grain, photorealistic, documentary feel. Audio: soft trickle of water and quiet kitchen ambience, no dialogue, no music. No text, no subtitles, no logos, no watermarks.",
+      "status": "pendente",
+      "arquivo": null,
+      "obs": ""
+    }
+  ]
+}
