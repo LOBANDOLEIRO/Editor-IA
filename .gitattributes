@@ -1,0 +1,7 @@
+# Proxies e previews vão pelo Git LFS (o GitHub recusa arquivos > 100 MB no git normal)
+projetos/*/proxy/** filter=lfs diff=lfs merge=lfs -text
+projetos/*/previews/** filter=lfs diff=lfs merge=lfs -text
+projetos/*/assets/**/*.mp4 filter=lfs diff=lfs merge=lfs -text
+projetos/*/assets/**/*.mov filter=lfs diff=lfs merge=lfs -text
+projetos/*/assets/**/*.wav filter=lfs diff=lfs merge=lfs -text
+projetos/*/assets/**/*.mp3 filter=lfs diff=lfs merge=lfs -text

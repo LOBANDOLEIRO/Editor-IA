@@ -1,0 +1,18 @@
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Vídeos pesados nunca vão para o git: originais ficam no PC,
+# media/ é gerado (fonte.mp4 = proxy ou original, cortado.mp4 = cortes aplicados)
+projetos/*/media/
+projetos/*/renders/
+projetos/*/.debug/
+*.mov
+*.MOV
+*.mkv
+*.MP4
+# .mp4 só é aceito nas pastas rastreadas pelo LFS (ver .gitattributes)
+*.mp4
+!projetos/*/proxy/*.mp4
+!projetos/*/previews/*.mp4
+!projetos/*/assets/**/*.mp4
