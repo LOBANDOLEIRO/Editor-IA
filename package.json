@@ -6,7 +6,8 @@
     "studio": "remotion studio",
     "voz": "python3 tools/voz.py",
     "render": "remotion render LadoBIntro out/teste-lado-b.mp4",
-    "render:historia": "remotion render Historia out/racionais-16bit.mp4"
+    "render:historia": "remotion render Historia out/racionais-16bit.mp4",
+    "render:noir": "remotion render Noir out/racionais-noir.mp4"
   },
   "dependencies": {
     "@react-three/fiber": "8.18.0",
