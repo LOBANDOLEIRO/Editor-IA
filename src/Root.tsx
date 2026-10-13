@@ -4,6 +4,7 @@ import {Historia} from './historia/Historia';
 import {Noir} from './noir/Noir';
 import {Desenho} from './desenho/Desenho';
 import {DecoDemo} from './desenho/DecoDemo';
+import {PersonagemGerado} from './desenho/PersonagemGerado';
 import {DURACAO} from './desenho/tempos';
 import {DURACAO_S} from './historia/roteiro';
 
@@ -46,6 +47,14 @@ export const RemotionRoot: React.FC = () => {
 			id="DecoDemo"
 			component={DecoDemo}
 			durationInFrames={150}
+			fps={30}
+			width={1920}
+			height={1080}
+		/>
+		<Composition
+			id="PersonagemGerado"
+			component={PersonagemGerado}
+			durationInFrames={300}
 			fps={30}
 			width={1920}
 			height={1080}
