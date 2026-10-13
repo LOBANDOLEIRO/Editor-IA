@@ -32,6 +32,27 @@ Postar 3 nichos em paralelo e depois concentrar 80% no que der mais cliques e ve
 
 Alternativa a considerar: **beleza/skincare**, que segundo blogs de afiliados paga comissões mais altas. Conferir a tabela real no painel de afiliados antes de decidir.
 
+## Busca automática de produtos: API de Afiliados da Shopee
+
+A Shopee tem uma **API de afiliados** (GraphQL, assinada com HMAC-SHA256) que permite, com a conta do próprio afiliado:
+
+- buscar ofertas de produtos, lojas e marcas por palavra-chave/categoria, com preço, comissão, vendas e imagens (`productOfferV2`, `shopOfferV2`)
+- gerar o link curto de afiliado de qualquer produto (`generateShortLink`)
+- puxar relatórios de conversão (vendas e comissão por link/sub-ID)
+
+Passos:
+1. No painel do Shopee Afiliados, pedir acesso à **Open API** e anotar o **AppID** e a **Secret**.
+2. Guardar as credenciais **só no PC**, em um arquivo `.env` fora do Git (adicionar ao `.gitignore`). Nunca colar no chat nem subir para o GitHub.
+3. Conferir os nomes atuais das consultas e campos na documentação oficial antes de programar. Bibliotecas da comunidade (ex.: `saapi` em Python) servem de referência, não são oficiais.
+
+Script `buscar_produtos.py` (roda antes do lote noturno):
+- para cada nicho, buscar ofertas por palavras-chave (ex.: carro: "suporte celular carro", "aspirador automotivo"; casa: "organizador cozinha"; até R$ 30: filtrar por preço)
+- ranquear por **vendas × taxa de comissão**, com nota mínima da loja
+- baixar imagens para `entrada/midia/<id>/`, gerar o link curto com sub-ID por nicho (ex.: `carro`, `casa`, `ate30`) para medir o que vende
+- escrever o `entrada/produtos.csv`
+
+Sem acesso à API ainda: escolher os produtos manualmente no painel (aba de ofertas / maior comissão) e preencher o CSV. **Não fazer scraping do site da Shopee**: viola os termos e pode bloquear a conta de afiliado.
+
 ## Pipeline noturno (rodar no PC)
 
 ```
