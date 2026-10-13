@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { AiError, aiConfigured, generateComposition } from "@/lib/ai";
 import { extractAssets, restoreAssets } from "@/lib/assets";
-import { addUsage, currentUser, getUsage, remaining } from "@/lib/usage";
+import { addUsage, getAccount, getUsage, remaining } from "@/lib/usage";
 
 export const runtime = "nodejs";
 export const maxDuration = 300;
@@ -33,8 +33,11 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: `Pedido muito longo (máx. ${MAX_PROMPT} caracteres).` }, { status: 400 });
   }
 
-  const user = await currentUser();
-  const usage = await getUsage(user.id);
+  const user = await getAccount();
+  if (!user) {
+    return NextResponse.json({ error: "Entre na sua conta para usar a IA.", login: true }, { status: 401 });
+  }
+  const usage = await getUsage(user);
   if (remaining(user.plan, usage).aiGenerations <= 0) {
     return NextResponse.json(
       { error: `Você usou as ${user.plan.aiGenerationsPerMonth} gerações com IA do plano ${user.plan.name} neste mês.` },
@@ -66,7 +69,7 @@ export async function POST(request: Request) {
         duration: clamp(body.duration, 2, 60, 8),
       });
     }
-    const updated = await addUsage(user.id, "aiGenerations");
+    const updated = await addUsage(user, "aiGenerations");
     return NextResponse.json({ html, remaining: remaining(user.plan, updated) });
   } catch (error) {
     if (error instanceof AiError) return NextResponse.json({ error: error.message }, { status: 422 });

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PLANS } from "@/lib/plans";
+import { authEnabled } from "@/lib/supabase/config";
 import { TEMPLATES } from "@/lib/templates";
 
 const STEPS = [
@@ -15,9 +16,16 @@ export default function Home() {
         <span className="text-lg font-bold">
           Editor<span className="text-cyan-400">IA</span>
         </span>
-        <Link href="/editor" className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-zinc-900">
-          Abrir editor
-        </Link>
+        <nav className="flex items-center gap-4 text-sm">
+          {authEnabled ? (
+            <Link href="/projetos" className="text-zinc-300 hover:text-white">
+              Meus vídeos
+            </Link>
+          ) : null}
+          <Link href="/editor" className="rounded-full bg-white px-4 py-2 font-semibold text-zinc-900">
+            Abrir editor
+          </Link>
+        </nav>
       </header>
 
       <section className="mx-auto max-w-6xl px-4 pb-16 pt-10 text-center sm:pt-20">

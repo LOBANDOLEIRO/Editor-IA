@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { addWatermark, renderToMp4 } from "@/lib/render";
-import { addUsage, currentUser, getUsage, remaining } from "@/lib/usage";
+import { addUsage, getAccount, getUsage, remaining } from "@/lib/usage";
 
 export const runtime = "nodejs";
 export const maxDuration = 300;
@@ -17,8 +17,11 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Vídeo grande demais (use imagens menores)." }, { status: 413 });
   }
 
-  const user = await currentUser();
-  const usage = await getUsage(user.id);
+  const user = await getAccount();
+  if (!user) {
+    return NextResponse.json({ error: "Entre na sua conta para baixar o vídeo.", login: true }, { status: 401 });
+  }
+  const usage = await getUsage(user);
   if (remaining(user.plan, usage).videos <= 0) {
     return NextResponse.json(
       { error: `Você usou os ${user.plan.videosPerMonth} vídeos do plano ${user.plan.name} neste mês.` },
@@ -28,7 +31,7 @@ export async function POST(request: Request) {
 
   try {
     const mp4 = await renderToMp4(user.plan.watermark ? addWatermark(html) : html);
-    await addUsage(user.id, "videos");
+    await addUsage(user, "videos");
     return new Response(new Uint8Array(mp4), {
       headers: {
         "Content-Type": "video/mp4",

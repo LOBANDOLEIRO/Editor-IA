@@ -1,17 +1,23 @@
 import { NextResponse } from "next/server";
 import { aiConfigured } from "@/lib/ai";
-import { currentUser, getUsage, remaining } from "@/lib/usage";
+import { authEnabled } from "@/lib/supabase/config";
+import { getAccount, getUsage, remaining } from "@/lib/usage";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  const user = await currentUser();
-  const usage = await getUsage(user.id);
+  const account = await getAccount();
+  const base = { authEnabled, aiEnabled: aiConfigured() };
+  if (!account) return NextResponse.json({ ...base, loggedIn: false });
+
+  const usage = await getUsage(account);
   return NextResponse.json({
-    plan: user.plan,
+    ...base,
+    loggedIn: true,
+    email: account.email,
+    plan: account.plan,
     usage,
-    remaining: remaining(user.plan, usage),
-    aiEnabled: aiConfigured(),
+    remaining: remaining(account.plan, usage),
   });
 }

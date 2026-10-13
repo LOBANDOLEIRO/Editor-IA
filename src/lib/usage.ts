@@ -4,65 +4,69 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { cookies } from "next/headers";
 import { getPlan, type Plan } from "./plans";
+import { authEnabled } from "./supabase/config";
+import { createClient } from "./supabase/server";
 
-// Controle de uso por mês, guardado num arquivo JSON.
-// Provisório: enquanto não há login/pagamento, o usuário é identificado por
-// um cookie anônimo e o plano vem de DEFAULT_PLAN. Quando entrar o login
-// (ex.: Supabase), troque `currentUser()` e o armazenamento por uma tabela.
+// Conta do usuário e controle de uso por mês.
+// - Com Supabase configurado: login obrigatório para IA e render; plano e uso
+//   ficam no banco (tabelas `profiles` e `usage`).
+// - Sem Supabase (modo local): usuário anônimo por cookie, plano de
+//   DEFAULT_PLAN e uso num arquivo JSON. Serve só para desenvolvimento.
 
 export type Usage = { videos: number; aiGenerations: number };
-type Store = Record<string, Usage>;
+export type Account = { id: string; email: string | null; plan: Plan; mode: "supabase" | "local" };
 
-const USER_COOKIE = "eia_uid";
+const LOCAL_COOKIE = "eia_uid";
 const STORE_FILE = process.env.USAGE_FILE || path.join(process.cwd(), ".data", "usage.json");
 
-let queue: Promise<unknown> = Promise.resolve();
-
-function monthKey(userId: string): string {
-  return `${userId}:${new Date().toISOString().slice(0, 7)}`;
+function currentMonth(): string {
+  return new Date().toISOString().slice(0, 7);
 }
 
-async function loadStore(): Promise<Store> {
-  try {
-    return JSON.parse(await readFile(STORE_FILE, "utf8")) as Store;
-  } catch {
-    return {};
+/** Conta logada, ou `null` quando o login está ligado e ninguém entrou. */
+export async function getAccount(): Promise<Account | null> {
+  if (authEnabled) {
+    const supabase = await createClient();
+    const { data } = await supabase.auth.getUser();
+    if (!data.user) return null;
+    const { data: profile } = await supabase.from("profiles").select("plan").eq("id", data.user.id).maybeSingle();
+    return { id: data.user.id, email: data.user.email ?? null, plan: getPlan(profile?.plan), mode: "supabase" };
   }
-}
 
-async function saveStore(store: Store): Promise<void> {
-  await mkdir(path.dirname(STORE_FILE), { recursive: true });
-  await writeFile(STORE_FILE, JSON.stringify(store));
-}
-
-export async function currentUser(): Promise<{ id: string; plan: Plan }> {
   const jar = await cookies();
-  let id = jar.get(USER_COOKIE)?.value;
+  let id = jar.get(LOCAL_COOKIE)?.value;
   if (!id) {
     id = randomUUID();
-    jar.set(USER_COOKIE, id, { httpOnly: true, sameSite: "lax", maxAge: 60 * 60 * 24 * 365, path: "/" });
+    jar.set(LOCAL_COOKIE, id, { httpOnly: true, sameSite: "lax", maxAge: 60 * 60 * 24 * 365, path: "/" });
   }
-  return { id, plan: getPlan(process.env.DEFAULT_PLAN) };
+  return { id, email: null, plan: getPlan(process.env.DEFAULT_PLAN), mode: "local" };
 }
 
-export async function getUsage(userId: string): Promise<Usage> {
-  const store = await loadStore();
-  return store[monthKey(userId)] ?? { videos: 0, aiGenerations: 0 };
+export async function getUsage(account: Account): Promise<Usage> {
+  if (account.mode === "supabase") {
+    const supabase = await createClient();
+    const { data } = await supabase
+      .from("usage")
+      .select("videos, ai_generations")
+      .eq("user_id", account.id)
+      .eq("month", currentMonth())
+      .maybeSingle();
+    return { videos: data?.videos ?? 0, aiGenerations: data?.ai_generations ?? 0 };
+  }
+  const store = await loadLocalStore();
+  return store[`${account.id}:${currentMonth()}`] ?? { videos: 0, aiGenerations: 0 };
 }
 
-export async function addUsage(userId: string, field: keyof Usage): Promise<Usage> {
-  // Fila simples para duas requisições simultâneas não sobrescreverem o arquivo.
-  const run = queue.then(async () => {
-    const store = await loadStore();
-    const key = monthKey(userId);
-    const usage = store[key] ?? { videos: 0, aiGenerations: 0 };
-    usage[field] += 1;
-    store[key] = usage;
-    await saveStore(store);
-    return usage;
-  });
-  queue = run.catch(() => undefined);
-  return run;
+export async function addUsage(account: Account, field: keyof Usage): Promise<Usage> {
+  if (account.mode === "supabase") {
+    const supabase = await createClient();
+    const { data, error } = await supabase.rpc("increment_usage", {
+      kind: field === "videos" ? "videos" : "ai_generations",
+    });
+    if (error) throw error;
+    return { videos: data?.videos ?? 0, aiGenerations: data?.ai_generations ?? 0 };
+  }
+  return addLocalUsage(account.id, field);
 }
 
 export function remaining(plan: Plan, usage: Usage) {
@@ -70,4 +74,33 @@ export function remaining(plan: Plan, usage: Usage) {
     videos: Math.max(0, plan.videosPerMonth - usage.videos),
     aiGenerations: Math.max(0, plan.aiGenerationsPerMonth - usage.aiGenerations),
   };
+}
+
+// Modo local ---------------------------------------------------------------
+
+type Store = Record<string, Usage>;
+let queue: Promise<unknown> = Promise.resolve();
+
+async function loadLocalStore(): Promise<Store> {
+  try {
+    return JSON.parse(await readFile(STORE_FILE, "utf8")) as Store;
+  } catch {
+    return {};
+  }
+}
+
+function addLocalUsage(userId: string, field: keyof Usage): Promise<Usage> {
+  // Fila simples para duas requisições simultâneas não sobrescreverem o arquivo.
+  const run = queue.then(async () => {
+    const store = await loadLocalStore();
+    const key = `${userId}:${currentMonth()}`;
+    const usage = store[key] ?? { videos: 0, aiGenerations: 0 };
+    usage[field] += 1;
+    store[key] = usage;
+    await mkdir(path.dirname(STORE_FILE), { recursive: true });
+    await writeFile(STORE_FILE, JSON.stringify(store));
+    return usage;
+  });
+  queue = run.catch(() => undefined);
+  return run;
 }
