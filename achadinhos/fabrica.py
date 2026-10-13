@@ -6,6 +6,7 @@ Uso (na pasta achadinhos/):
     python fabrica.py --so 003        # gera só um produto
     python fabrica.py --refazer       # gera de novo mesmo se já existir
     python fabrica.py --voz teste     # sem voz real (silêncio), para testar
+    python fabrica.py --voz pronta    # usa trabalho/<id>/falaNN.mp3 já gerados (ex.: Runway)
 
 Entradas:
     entrada/produtos.csv     uma linha por produto
@@ -140,7 +141,10 @@ def checar(produtos, roteiros):
 # ---------------------------------------------------------------- voz
 
 def gerar_voz(texto, destino, cfg, motor):
-    if motor == "teste":
+    if motor == "pronta":
+        if not destino.exists():
+            raise RuntimeError(f"voz pronta não encontrada: {destino}")
+    elif motor == "teste":
         seg = max(1.2, len(texto.split()) / 2.8)
         rodar(["ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono",
                "-t", f"{seg:.2f}", str(destino)])
@@ -255,7 +259,8 @@ def gerar_video(p, r, cfg, motor, pasta_dia, arq_log):
     trab = RAIZ / "trabalho" / pid
     if trab.exists():
         for velho in trab.iterdir():
-            if velho.name != "roteiro.json":
+            manter = velho.name == "roteiro.json" or (motor == "pronta" and velho.name.startswith("fala"))
+            if not manter:
                 velho.unlink()
     trab.mkdir(parents=True, exist_ok=True)
     fotos = midias(pid)
@@ -310,7 +315,7 @@ def main():
     ap.add_argument("acao", nargs="?", default="gerar", choices=["gerar", "checar"])
     ap.add_argument("--so", help="gerar só este id")
     ap.add_argument("--refazer", action="store_true", help="refazer vídeos que já existem")
-    ap.add_argument("--voz", help="motor de voz: edge, kokoro ou teste (padrão: config.json)")
+    ap.add_argument("--voz", help="motor de voz: edge, kokoro, pronta ou teste (padrão: config.json)")
     args = ap.parse_args()
 
     if not shutil.which("ffmpeg"):
