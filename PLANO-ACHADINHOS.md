@@ -11,6 +11,14 @@ Objetivo: gerar dezenas de vídeos verticais de produto durante a noite e deixá
 - Meta de volume: ~100 vídeos únicos/mês, postados em 3 redes (~300 posts).
 - Orçamento: zero. Tudo local e gratuito.
 
+## Status atual e dados reais
+
+- **API de afiliados: pedido de acesso em análise.** Até liberar, trabalhar no **modo manual**: escolher produtos no painel do Shopee Afiliados e preencher `entrada/produtos.csv` à mão. O resto do pipeline (roteiro, voz, vídeo, montagem) já roda igual.
+- **Resultados da Shopee Vídeo, set/2026 (com quase nenhum vídeo):** 1,3 mil visualizações · 217 cliques (**~17% de cliques por view, excelente**) · 3 pedidos (~1,4% dos cliques) · R$ 1,1 mil vendidos · **R$ 22,40 de comissão (~2%)**. O produto top foi um kit de 2 cadeiras: R$ 935 vendidos, R$ 14 de comissão (1,5%).
+- **Lições:** (1) a Shopee Vídeo é o **canal principal**; o gargalo é volume de views, ou seja, de vídeos. (2) **Escolher produtos com comissão ≥ 7%** (incluindo "comissão extra"): a comissão atual é baixa demais. (3) O tempo médio de visualização caiu de 32 s para 12 s: **gancho forte nos 2 primeiros segundos** e vídeos de 15 a 20 s.
+- **Meta de volume:** começar com ~10 vídeos/dia (300/mês). Escalar só se cliques e pedidos por vídeo se mantiverem. **Uma conta de afiliado só** (várias contas = risco de banimento e de perder comissão); espalhar o mesmo vídeo em várias redes em vez de abrir contas.
+- **Projeção com os dados reais (300 vídeos/mês, ~650 views cada):** ~470 pedidos → R$ 1.900 a R$ 4.700/mês, dependendo da comissão por pedido (R$ 4 a 10). Não é garantia.
+
 ## Onde cada link funciona (importante)
 
 | Canal | Link de produto | Como postar |
