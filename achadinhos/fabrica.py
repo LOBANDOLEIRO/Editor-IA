@@ -201,6 +201,8 @@ def texto_centrado(d, y, linhas, f, preenchimento, contorno=None, caixa=None):
 def criar_overlay(destino, topo, legenda, eh_gancho, cfg):
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
+    # Espaço não separável: "R$ 9,50" nunca quebra entre o "R$" e o valor.
+    topo = (topo or "").replace("R$ ", "R$\u00a0")
     if topo:
         if eh_gancho:  # gancho: grande, amarelo, ocupa o topo
             texto_centrado(d, 90, textwrap.wrap(topo.upper(), 18), fonte(78, cfg),

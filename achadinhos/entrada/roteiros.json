@@ -1,0 +1,50 @@
+[
+  {
+    "id": "101",
+    "gancho": "Para de pagar caro em creatina",
+    "falas": [
+      "Essa é a Dark Lab: cem por cento pura, com laudo da ABENUTRI comprovando a pureza.",
+      "Mais de cem mil vendidas e nota 4,9 com quase setenta mil avaliações.",
+      "De 74 por 39,90, entregue pela Shopee. O link tá aqui no vídeo."
+    ],
+    "textos_tela": ["Laudo de pureza", "100 mil vendidas", "R$ 39,90"],
+    "legenda": "Creatina Dark Lab 300g, 100% pura e com laudo, por R$ 39,90 💪 Link no vídeo! (link de afiliado)",
+    "hashtags": ["#creatina", "#academia", "#achadinhos", "#shopee", "#publi"]
+  },
+  {
+    "id": "102",
+    "gancho": "Dia difícil? Aperta isso aqui.",
+    "falas": [
+      "É uma bolinha de apertar em forma de pãozinho, cheia de glitter, que volta devagar.",
+      "Vem num potinho fofo e tem um monte de cores. Criança ama, e adulto também.",
+      "A partir de 9 e 50 na Shopee. O link tá aqui no vídeo."
+    ],
+    "textos_tela": ["Volta devagar", "Várias cores", "A partir de R$ 9,50"],
+    "legenda": "O pãozinho squishy que viralizou ✨ Impossível apertar só uma vez. Link no vídeo! (link de afiliado)",
+    "hashtags": ["#squishy", "#achadinhos", "#shopee", "#achadinhosshopee", "#publi"]
+  },
+  {
+    "id": "103",
+    "gancho": "Celular morreu na rua de novo?",
+    "falas": [
+      "Esse carregador portátil cabe na palma da mão e pesa só 93 gramas.",
+      "Já vem com o plugue, funciona em iPhone e Android, e carrega dois ao mesmo tempo.",
+      "Tá saindo por 31,99 na Shopee. O link tá aqui no vídeo."
+    ],
+    "textos_tela": ["Só 93 g", "iPhone e Android", "R$ 31,99"],
+    "legenda": "Mini power bank 10.000mAh que cabe no bolso 🔋 Nunca mais fica sem bateria. Link no vídeo! (link de afiliado)",
+    "hashtags": ["#powerbank", "#carregadorportatil", "#achadinhos", "#shopee", "#publi"]
+  },
+  {
+    "id": "104",
+    "gancho": "Homem cheiroso chama atenção. Ponto.",
+    "falas": [
+      "Esse é o Attracione Men: amadeirado, com baunilha, âmbar e um toque picante.",
+      "Mais de setenta mil vendidos, e quem comprou diz que fica no corpo por bastante tempo.",
+      "A partir de 59 reais na Shopee. O link tá aqui no vídeo."
+    ],
+    "textos_tela": ["Baunilha + âmbar", "70 mil vendidos", "A partir de R$ 59"],
+    "legenda": "Attracione Men: o perfume amadeirado com mais de 70 mil vendidos 🔥 Link no vídeo! (link de afiliado)",
+    "hashtags": ["#perfumemasculino", "#perfume", "#achadinhos", "#shopee", "#publi"]
+  }
+]
