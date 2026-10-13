@@ -1,0 +1,10 @@
+{
+  "motor_voz": "edge",
+  "voz_edge": "pt-BR-AntonioNeural",
+  "velocidade_edge": "+12%",
+  "voz_kokoro": "pm_alex",
+  "velocidade_kokoro": 1.1,
+  "volume_musica": 0.12,
+  "pasta_saida": "saida",
+  "fonte": ""
+}

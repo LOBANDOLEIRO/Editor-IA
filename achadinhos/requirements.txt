@@ -1,0 +1,5 @@
+pillow>=10
+edge-tts>=6.1
+# Opcional, voz 100% local (precisa do espeak-ng instalado):
+# kokoro>=0.9
+# soundfile

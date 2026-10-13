@@ -1,0 +1,8 @@
+.env
+entrada/midia/
+trabalho/
+saida/
+logs/*.log
+logs/*.txt
+musica/*.mp3
+__pycache__/
