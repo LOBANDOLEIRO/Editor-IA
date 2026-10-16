@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Layout: bancada em três colunas (ferramentas | palco | ajustes) que vira uma coluna no celular.
+   Tema escuro de propósito: as cores da thumbnail são o que deve chamar atenção. */
+:root {
+  --bg: #121116;
+  --panel: #19181f;
+  --raised: #24222c;
+  --line: #312e3b;
+  --fg: #efecf4;
+  --muted: #9d97ab;
+  --stage: #0b0a0e;
+  --accent: #ffc53d;
+  --accent-ink: #1d1503;
+  --accent-soft: #3a3016;
+  --good: #4cc38a;
+  --warn: #f0a33c;
+  --bad: #f06060;
+  --font-display: "Anton", Impact, "Arial Narrow", sans-serif;
+  --font-ui: "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-ui);
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app {
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 14px;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+input[type="range"] {
+  accent-color: var(--accent);
+  height: 18px;
+}
+
+input[type="range"]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 0.4;
+}
+
+select option {
+  background: var(--panel);
+  color: var(--fg);
+}
+
+.stage {
+  background-color: var(--stage);
+  background-image: radial-gradient(var(--line) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.toast {
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  animation: toast-in 180ms ease-out;
+}
+
+@keyframes toast-in {
+  from {
+    transform: translate(-50%, 8px);
+  }
+  to {
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
