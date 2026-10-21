@@ -1,0 +1,771 @@
+{
+ "2019": {
+  "viagens": 9699,
+  "diarias": 9193113.869999878,
+  "passagens": 10511728.630000029,
+  "outros": 28508.579999999998,
+  "devolucao": 414055.71000000014,
+  "por_orgao": {
+   "Presidência da República": 16277508.189999692,
+   "Gabinete da Vice-Presidência da República": 2723305.0999999996,
+   "Presidência da República - Unidades com vínculo direto": 732537.7899999993
+  },
+  "internacionais": 994,
+  "valor_internacional": 6917463.020000001,
+  "top": [
+   [
+    82117.48000000001,
+    "07/01/2019",
+    "Nova York/Estados Unidos da América, Fort Lauderdale/Estados Unidos da América",
+    "Conforme o previsto no Decreto nº 6.381 de 27 de fevereiro de 2008, que regulamenta a Lei nº 7.474, de 08 de maio de 198",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    80606.78,
+    "07/01/2019",
+    "Nova York/Estados Unidos da América, Sevilha/Espanha, Nova York/Estados Unidos d",
+    "Conforme o previsto no Decreto nº 6.381 de 27 de fevereiro de 2008, que regulamenta a Lei nº 7.474, de 08 de maio de 198",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    44652.56,
+    "12/09/2019",
+    "Paris/França, Bruxelas/Bélgica, Madri/Espanha",
+    "Conforme o previsto no Decreto nº 6.381 de 27 de fevereiro de 2008, que regulamenta a Lei nº 7.474, de 08 de maio de 198",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    43883.75,
+    "12/09/2019",
+    "São Paulo/SP, Paris/França, Bruxelas/Bélgica, Madri/Espanha",
+    "Conforme o previsto no Decreto nº 6.381 de 27 de fevereiro de 2008, que regulamenta a Lei nº 7.474, de 08 de maio de 198",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    43726.32,
+    "12/09/2019",
+    "Paris/França, Bruxelas/Bélgica, Madri/Espanha, São Paulo/SP",
+    "Conforme o previsto no Decreto nº 6.381 de 27 de fevereiro de 2008, que regulamenta a Lei nº 7.474, de 08 de maio de 198",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    41026.020000000004,
+    "11/09/2019",
+    "Cairo/Egito, Riad/Arábia Saudita, Kuaite/Kuaite, Abu Dabi/Emirados Árabes",
+    "O Servidor participará de Road Show do Ministério da Agricultura, Pecuária e Abastecimento (MAPA) de atração de investim",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    33256.6,
+    "08/11/2019",
+    "Buenos Aires/Argentina, Dubai/Emirados Árabes",
+    "Conforme o previsto no Decreto nº 6.381 de 27 de fevereiro de 2008, que regulamenta a Lei nº 7.474, de 08 de maio de 198",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    33216.17,
+    "21/10/2019",
+    "São Paulo/SP, Abu Dabi/Emirados Árabes, Doha/Catar, Riad/Arábia Saudita",
+    "Assessorar e acompanhar a participação do Ministro chefe da Casa Civil, Onyx Lorenzoni em Road Show, Mesas Redondas e Re",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    32936.85,
+    "11/05/2019",
+    "Beirute/Líbano, Florença/Itália",
+    "Equipe de apoio ao Exmo VPR, no Escalão Avançado, no evento realizado nas cidades de Beirute (Libano) e Florença (Itália",
+    "Gabinete da Vice-Presidência da República",
+    "Realizada"
+   ],
+   [
+    32735.41,
+    "11/05/2019",
+    "Beirute/Líbano, Florença/Itália",
+    "Acompanhar viagem do Vice-Presidente as cidades de Beirute (Líbano) e Florença (Itália). Conforme processo SEI 00300.000",
+    "Gabinete da Vice-Presidência da República",
+    "Realizada"
+   ]
+  ]
+ },
+ "2020": {
+  "viagens": 7618,
+  "diarias": 5761709.350000091,
+  "passagens": 4446986.860000004,
+  "outros": 8343.720000000001,
+  "devolucao": 255409.76999999987,
+  "por_orgao": {
+   "Presidência da República": 8394279.029999968,
+   "Gabinete da Vice-Presidência da República": 1304669.7099999988,
+   "Presidência da República - Unidades com vínculo direto": 518091.19000000047
+  },
+  "internacionais": 311,
+  "valor_internacional": 1936093.3000000024,
+  "top": [
+   [
+    63560.46,
+    "21/12/2020",
+    "Havana/Cuba",
+    "Conforme o previsto no Decreto nr 6.381 de 27 de fevereiro de 2008, que regulamenta a lei nr 7.474, de 08 de maio de 198",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    57697.32,
+    "21/12/2020",
+    "Havana/Cuba",
+    "Conforme o previsto no Decreto nr 6.381 de 27 de fevereiro de 2008, que regulamenta a lei nr 7.474, de 08 de maio de 198",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    54273.24,
+    "21/12/2020",
+    "Havana/Cuba",
+    "Conforme o previsto no Decreto nr 6.381 de 27 de fevereiro de 2008, que regulamenta a lei nr 7.474, de 08 de maio de 198",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    33951.57,
+    "01/02/2020",
+    "Viena/Áustria",
+    "Viena, República da Áustria?: Participar, da 57ª Sessão do Subcomitê Científico e Técnico do Comitê das Nações Unidas pa",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    32367.73,
+    "29/02/2020",
+    "Paris/França, Genebra/Suíça, Berlim/Alemanha",
+    "Conforme o previsto no Decreto nr 6.381 de 27 de fevereiro de 2008, que regulamenta a Lei Nr 7.474, de 08 de maio de 198",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    32226.15,
+    "10/03/2020",
+    "Acra/Gana",
+    "Equipe de apoio ao senhor VPR no ESCAV no evento a se realizar na Cidade de Acra/GH, conforme processo SEI Nº 00300.0005",
+    "Gabinete da Vice-Presidência da República",
+    "Realizada"
+   ],
+   [
+    25816.28,
+    "29/02/2020",
+    "Paris/França, Genebra/Suíça, Berlim/Alemanha",
+    "Conforme o previsto no Decreto nr 6.381 de 27 de fevereiro de 2008, que regulamenta a Lei Nr 7.474, de 08 de maio de 198",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    24102.45,
+    "10/03/2020",
+    "Acra/Gana",
+    "Compor o Escalão Avançado que acompanhará o Sr. Vice-Presidente da República em Evento Oficial conforme Processo SEI Nr ",
+    "Gabinete da Vice-Presidência da República",
+    "Realizada"
+   ],
+   [
+    23687.38,
+    "10/03/2020",
+    "Acra/Gana",
+    "O servidor proposto compõe a equipe de apoio Vice-Presidencial, constituindo o Escalão Avançado, em acompanhamento ao Sr",
+    "Gabinete da Vice-Presidência da República",
+    "Realizada"
+   ],
+   [
+    23514.89,
+    "10/03/2020",
+    "Acra/Gana",
+    "Compor equipe de apoio, na Comitiva do Sr. Vice-Presidente da República para a cidade de Acra - República de Gana , conf",
+    "Gabinete da Vice-Presidência da República",
+    "Realizada"
+   ]
+  ]
+ },
+ "2021": {
+  "viagens": 9658,
+  "diarias": 8332612.6899999995,
+  "passagens": 9196128.040000003,
+  "outros": 427394.79000000056,
+  "devolucao": 211782.22000000003,
+  "por_orgao": {
+   "Presidência da República": 14556146.280000022,
+   "Gabinete da Vice-Presidência da República": 2358391.8800000027,
+   "Presidência da República - Unidades com vínculo direto": 1041597.3599999996
+  },
+  "internacionais": 691,
+  "valor_internacional": 5060480.709999998,
+  "top": [
+   [
+    77478.12999999999,
+    "16/10/2021",
+    "Madri/Espanha",
+    "OFÍCIO Nº 1036/2021/CGOSP/DSEG/SCP/GSI/PR, DEPARTAMENTO DE SEGURANÇA PRESIDENCIAL, com a finalidade de capacitação de Ag",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    69418.6,
+    "07/07/2021",
+    "Luanda/Angola",
+    "Equipe de apoio, no Escalão Avançado, na viagem do Sr. VPR à cidade de Luanda - República de Angola.",
+    "Gabinete da Vice-Presidência da República",
+    "Realizada"
+   ],
+   [
+    68595.48000000001,
+    "07/07/2021",
+    "Luanda/Angola",
+    "Equipe de apoio, no Escalão Avançado, na viagem do Sr. VPR à cidade de Luanda - República de Angola.",
+    "Gabinete da Vice-Presidência da República",
+    "Realizada"
+   ],
+   [
+    68485.92,
+    "07/07/2021",
+    "Luanda/Angola",
+    "Equipe de apoio, no Escalão Avançado, na viagem do Sr. VPR à cidade de Luanda - República de Angola. Conforme processo S",
+    "Gabinete da Vice-Presidência da República",
+    "Realizada"
+   ],
+   [
+    64202.74,
+    "07/07/2021",
+    "Luanda/Angola",
+    "Equipe de apoio, no Escalão Avançado, na viagem do Sr. VPR à cidade de Luanda - República de Angola.",
+    "Gabinete da Vice-Presidência da República",
+    "Realizada"
+   ],
+   [
+    59424.01,
+    "04/07/2021",
+    "Columbus - Ohio/Estados Unidos da América, Washington/Estados Unidos da América",
+    "OFÍCIO Nº 601/2021/CGOSP/DSEG/SCP/GSI/PR - DEPARTAMENTO DE SEGURANÇA - Viagem administrativa.",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    55664.64,
+    "02/02/2021",
+    "Helsinki/Finlândia, Frankfurt/Alemanha",
+    "Acompanhar e assessorar o Secretário Especial de Assuntos Estratégicos em viagem internacional a Finlândia, Suécia, Core",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    55062.66,
+    "10/11/2021",
+    "Berlim/Alemanha, Bruxelas/Bélgica, Paris/França, Madri/Espanha",
+    "Conforme o previsto no Decreto nr 6.381 de 27 de fevereiro de 2008, que regulamenta a lei nr 7.474, de 08 de maio de 198",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    52215.52,
+    "10/11/2021",
+    "Berlim/Alemanha, Bruxelas/Bélgica, Paris/França, Madri/Espanha",
+    "Conforme o previsto no Decreto nr 6.381 de 27 de fevereiro de 2008, que regulamenta a lei nr 7.474, de 08 de maio de 198",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    48278.18000000001,
+    "10/11/2021",
+    "Bruxelas/Bélgica, Madri/Espanha, São Paulo/SP",
+    "Conforme o previsto no Decreto nr 6.381 de 27 de fevereiro de 2008, que regulamenta a lei nr 7.474, de 08 de maio de 198",
+    "Presidência da República",
+    "Realizada"
+   ]
+  ]
+ },
+ "2022": {
+  "viagens": 14524,
+  "diarias": 14345208.359999862,
+  "passagens": 22739156.039999884,
+  "outros": 629539.5399999999,
+  "devolucao": 363107.6999999995,
+  "por_orgao": {
+   "Presidência da República": 32593921.729999907,
+   "Gabinete da Vice-Presidência da República": 3717029.9599999916,
+   "Presidência da República - Unidades com vínculo direto": 1402952.2500000012
+  },
+  "internacionais": 1073,
+  "valor_internacional": 9310512.829999983,
+  "top": [
+   [
+    74552.21,
+    "12/05/2022",
+    "Washington/Estados Unidos da América",
+    "Participar de reuniões bilaterais a convite da Embaixada dos Estados Unidos da América, na cidade de Washington, DC, inc",
+    "Presidência da República",
+    "Não realizada"
+   ],
+   [
+    58429.43,
+    "05/05/2022",
+    "Telavive/Israel",
+    "OFÍCIO Nº 543/2022/CGOSP/DSEG/SCP/GSI/PR, Departamento de Segurança Presidencial, integrante da equipe de segurança e ap",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    57793.37,
+    "23/10/2022",
+    "Riad/Arábia Saudita",
+    "a fim de participar da 6ª edição da conferência anual da 'Future Investment Initiative' (FII-6), que é o principal event",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    54122.39,
+    "07/06/2022",
+    "Paris/França, Paris/França",
+    "REUNIÃO DO CONSELHO DA OCDE A NÍVEL MINISTERIAL (MCM) QUE SE REALIZARÁ NOS DIAS 09 A 11 DE JUNHO DE 2022 NA SEDE DA OCDE",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    51018.549999999996,
+    "26/03/2022",
+    "Dubai/Emirados Árabes, Paris/França",
+    "O proposto irá participar da 8ª edição do World Government Summit 2022, na cidade de Dubai/Emirados Árabes Unidos, no pe",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    50999.7,
+    "12/03/2022",
+    "Nova Delhi/Índia, Mumbai/Índia",
+    "O proposto irá participar de visita institucional para fortalecer parcerias estratégicas bilaterais entre os governos do",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    50879.090000000004,
+    "10/09/2022",
+    "Informações protegidas por sigilo",
+    "Informação protegida por sigilo nos termos da legislação vigente",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    47956.33,
+    "10/09/2022",
+    "Informações protegidas por sigilo",
+    "Informação protegida por sigilo nos termos da legislação vigente",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    47950.53,
+    "21/06/2022",
+    "Lisboa/Portugal, Londres/Reino Unido, Paris/França",
+    "Conforme previsto no Decreto nº 6.381 de 27 de fevereiro de 2008, que regulamenta a Lei nº 7.474, de 08 de maio de 1986,",
+    "Presidência da República",
+    "Não realizada"
+   ],
+   [
+    47902.49,
+    "21/06/2022",
+    "Lisboa/Portugal, Londres/Reino Unido, Paris/França",
+    "Conforme previsto no Decreto nº 6.381 de 27 de fevereiro de 2008, que regulamenta a Lei nº 7.474, de 08 de maio de 1986,",
+    "Presidência da República",
+    "Não realizada"
+   ]
+  ]
+ },
+ "2023": {
+  "viagens": 14777,
+  "diarias": 13789749.800000096,
+  "passagens": 33523312.009999923,
+  "outros": 1755179.0400000038,
+  "devolucao": 234353.5999999999,
+  "por_orgao": {
+   "Presidência da República": 43352486.640000306,
+   "Presidência da República - Unidades com vínculo direto": 4926784.6899999995,
+   "Gabinete da Vice-Presidência da República": 788969.5200000013
+  },
+  "internacionais": 2636,
+  "valor_internacional": 10720934.609999953,
+  "top": [
+   [
+    192676.02,
+    "26/03/2023",
+    "Xangai/China, São Paulo/SP",
+    "Conforme o previsto no Decreto nº 6.381 de 27 de fevereiro de 2008, que regulamenta a Lei nº 7.474, de 08 de maio de 198",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    192048.56,
+    "26/03/2023",
+    "Xangai/China, São Paulo/SP",
+    "Conforme o previsto no Decreto nº 6.381 de 27 de fevereiro de 2008, que regulamenta a Lei nº 7.474, de 08 de maio de 198",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    96713.01,
+    "26/11/2023",
+    "Riad/Arábia Saudita, Doha/Catar, Dubai/Emirados Árabes, Berlim/Alemanha",
+    "O Secretário Especial participará de variadas agendas, a realizar-se nas cidades Riade, Doha, Dubai e Berlin - País Aráb",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    85031.59,
+    "05/09/2023",
+    "Xiamen/China, Pequim/China, Xangai/China",
+    "O Servidor irá participar do 'China International Fair for Investment & Trade (CIFIT); visita a sede da Citic Constructi",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    73291.35,
+    "01/01/2023",
+    "Orlando/Estados Unidos da América",
+    "A missão tem por finalidade atender ao Ex-Presidente da República, Jair Messias Bolsonaro, quanto aos serviços de assess",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    68698.19,
+    "01/01/2023",
+    "Orlando/Estados Unidos da América",
+    "A missão tem por finalidade atender ao Ex-Presidente da República, Jair Messias Bolsonaro, quanto aos serviços de assess",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    68621.81,
+    "01/01/2023",
+    "Orlando/Estados Unidos da América",
+    "A missão tem por finalidade atender ao Ex-Presidente da República, Jair Messias Bolsonaro, quanto aos serviços de assess",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    66727.05,
+    "26/03/2023",
+    "Amsterdam/Países Baixos, Beijing/China, Amsterdam/Países Baixos, São Paulo/SP",
+    "Participar de Reunião Bilateral com o Conselho de Desenvolvimento Econômico e Social da China, Fórum Empresarial Brasil-",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    64924.74,
+    "28/11/2023",
+    "Dubai/Emirados Árabes, Rio de Janeiro/RJ",
+    "O proposto irá compor a comitiva presidencial que participará da COP28 de 29 de novembro a 2 de dezembro, em Dubai.",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    63836.649999999994,
+    "15/09/2023",
+    "Nova York/Estados Unidos da América",
+    "O Senhor Ministro desta SECOM/PR irá Participar da Cúpula da Parceria para Informação e Democracia, reunião bilateral so",
+    "Presidência da República",
+    "Realizada"
+   ]
+  ]
+ },
+ "2024": {
+  "viagens": 17259,
+  "diarias": 21276123.590000186,
+  "passagens": 33783772.009999834,
+  "outros": 1482681.8399999975,
+  "devolucao": 320472.92999999947,
+  "por_orgao": {
+   "Presidência da República": 48901864.44999936,
+   "Presidência da República - Unidades com vínculo direto": 6145738.880000005,
+   "Gabinete da Vice-Presidência da República": 1494974.110000003
+  },
+  "internacionais": 2259,
+  "valor_internacional": 11275693.790000012,
+  "top": [
+   [
+    209030.16999999998,
+    "16/07/2024",
+    "Washington/Estados Unidos da América",
+    "Encontro com autoridades dos Estados Unidos da América e participar de debate no Carnegie Endowment for International Pe",
+    "Presidência da República - Unidades com vínculo direto",
+    "Realizada"
+   ],
+   [
+    160564.48,
+    "13/10/2024",
+    "Shenzhen/China, Pequim/China, Abu Dabi/Emirados Árabes",
+    "Em Pequim, República Popular da China, realizar reuniões bilaterais com autoridades do governo chinês, assim como com li",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    112983.87999999999,
+    "13/10/2024",
+    "Pequim/China",
+    "Viagem à cidade de Pequim, República Popular da China, para manter encontros com autoridades daquele país.",
+    "Presidência da República - Unidades com vínculo direto",
+    "Realizada"
+   ],
+   [
+    93920.57,
+    "21/10/2024",
+    "Garden City - New York/Estados Unidos da América",
+    "O servidor representará a Secretaria de Relações Institucionais da Presidência da República em missão nos Estados Unidos",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    89575.84999999999,
+    "01/11/2024",
+    "Baku/Azerbaidjão",
+    "Dada sua precedência em relação à COP30, que ocorrerá em Belém no próximo ano, a COP de Baku representa uma oportunidade",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    83616.44,
+    "24/07/2024",
+    "Paris/França",
+    "Comitiva em visita oficial à cidade de Paris, República Francesa, por ocasião da Cerimônia de Abertura dos XXXIII Jogos ",
+    "Presidência da República - Unidades com vínculo direto",
+    "Realizada"
+   ],
+   [
+    82670.91,
+    "27/04/2024",
+    "Washington/Estados Unidos da América",
+    "Participar de Reunião da Parceria para os Direitos dos Trabalhadores, lançada pelos Presidentes Lula e Biden em setembro",
+    "Presidência da República - Unidades com vínculo direto",
+    "Realizada"
+   ],
+   [
+    79018.19,
+    "10/04/2024",
+    "Washington/Estados Unidos da América, Roma/Itália, Riad/Arábia Saudita",
+    "Conforme o previsto no Decreto nº 6.381 de 27 de fevereiro de 2008, que regulamenta a Lei nº 7.474, de 08 de maio de 198",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    78768.19,
+    "13/10/2024",
+    "Pequim/China",
+    "Acompanhar e assessorar o Assessor-Chefe da Assessoria Especial do Presidente da República na viagem que fará à cidade d",
+    "Presidência da República - Unidades com vínculo direto",
+    "Realizada"
+   ],
+   [
+    74856.46,
+    "02/06/2024",
+    "Pequim/China",
+    "Integrar a comitiva oficial para a República Popular da China, no contexto da VII Sessão Plenária da Comissão Sino-Brasi",
+    "Presidência da República",
+    "Realizada"
+   ]
+  ]
+ },
+ "2025": {
+  "viagens": 11380,
+  "diarias": 16050337.350000106,
+  "passagens": 29589105.590000015,
+  "outros": 165960.0100000001,
+  "devolucao": 280457.0599999999,
+  "por_orgao": {
+   "Presidência da República": 38682370.65000021,
+   "Presidência da República - Unidades com vínculo direto": 6306165.629999947,
+   "Gabinete da Vice-Presidência da República": 816866.670000001
+  },
+  "internacionais": 1003,
+  "valor_internacional": 9739515.559999993,
+  "top": [
+   [
+    202349.27,
+    "30/08/2025",
+    "Nova Delhi/Índia, Adis-Ababa/Etiópia, Beijing/China, Sydney/Austrália",
+    "Afastamento do país da Diretora-Executiva da Presidência da 30ª Conferência das Partes da Convenção-Quadro das Nações Un",
+    "Presidência da República - Unidades com vínculo direto",
+    "Realizada"
+   ],
+   [
+    161725.38,
+    "09/05/2025",
+    "Pequim/China",
+    "Compor comitiva do Presidente da República em viagem à Pequim, China",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    151696.96,
+    "26/04/2025",
+    "Pequim/China, Xangai/China, Pequim/China",
+    "Realizar, em Pequim, entre os dias 27 a 29 de abril, no contexto do projeto das Sinergias Brasil-China e preparação para",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    150870.99,
+    "29/08/2025",
+    "Nova Delhi/Índia, Langkawi/Malásia, Adis-Ababa/Etiópia",
+    "Afastamento do país do Presidente da 30ª Conferência das Partes da Convenção-Quadro das Nações Unidas sobre Mudança do C",
+    "Presidência da República - Unidades com vínculo direto",
+    "Realizada"
+   ],
+   [
+    122197.51000000001,
+    "15/09/2025",
+    "Fortaleza/CE, Genebra/Suíça, Nova York/Estados Unidos da América, Rio de Janeiro",
+    "O Presidente da COP30, Embaixador Corrêa do Lago, realizará missões a Genebra (17/9, no contexto do Fórum Público da OMC",
+    "Presidência da República - Unidades com vínculo direto",
+    "Realizada"
+   ],
+   [
+    120621.06000000001,
+    "08/06/2025",
+    "Nice/França, Oslo/Noruega, Berlim/Alemanha, Bonn/Alemanha, Londres/Reino Unido, ",
+    "Afastamento do País da Diretora-Executiva da Presidência da 30ª Conferência das Partes da Convenção-Quadro das Nações Un",
+    "Presidência da República - Unidades com vínculo direto",
+    "Realizada"
+   ],
+   [
+    118865.02,
+    "14/06/2025",
+    "Cologne/Alemanha",
+    "Participar da 62ª Sessão dos Órgãos Subsidiários da Convenção-Quadro das Nações Unidas sobre Mudança do Clima (SB62).",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    107377.62,
+    "13/06/2025",
+    "Cologne/Alemanha, Londres/Reino Unido, Sevilha/Espanha",
+    "Afastamento do país do Presidente da 30ª Conferência das Partes da Convenção-Quadro das Nações Unidas sobre Mudança do C",
+    "Presidência da República - Unidades com vínculo direto",
+    "Realizada"
+   ],
+   [
+    106069.79,
+    "20/09/2025",
+    "Nova York/Estados Unidos da América",
+    "Participar da Semana do Clima em Nova Iorque e da Assembleia Geral das Nações Unidas.",
+    "Presidência da República - Unidades com vínculo direto",
+    "Realizada"
+   ],
+   [
+    99596.91,
+    "16/05/2025",
+    "Guiyang/China, Beijing/China",
+    "Compor a comitiva composta por representantes do MGI e da Dataprev em agenda do grupo digital, a realizar-se nas cidades",
+    "Presidência da República",
+    "Não realizada"
+   ]
+  ]
+ },
+ "2026": {
+  "viagens": 7986,
+  "diarias": 9581270.790000187,
+  "passagens": 21371383.060000014,
+  "outros": 69892.72999999991,
+  "devolucao": 162271.54000000015,
+  "por_orgao": {
+   "Presidência da República": 25830628.970001116,
+   "Presidência da República - Unidades com vínculo direto": 3890779.399999984,
+   "Empresa Brasil de Comunicação": 697001.1599999996,
+   "Gabinete da Vice-Presidência da República": 604137.0499999997
+  },
+  "internacionais": 503,
+  "valor_internacional": 4931663.79999999,
+  "top": [
+   [
+    144161.47999999998,
+    "24/05/2026",
+    "Moscou/Rússia",
+    "A convite do governo da Federação da Rússia para participar do 'I Fórum Internacional de Segurança', bem como manter con",
+    "Presidência da República - Unidades com vínculo direto",
+    "Realizada"
+   ],
+   [
+    114660.49,
+    "16/03/2026",
+    "São Paulo/SP, Houston/Estados Unidos da América, São Paulo/SP, Rio de Janeiro/RJ",
+    "Participar do evento 'CERAWeek 2026 - Convergence and Competition: Energy, Techonology and Geopolitics', conforme agenda",
+    "Presidência da República - Unidades com vínculo direto",
+    "Realizada"
+   ],
+   [
+    110299.69,
+    "09/02/2026",
+    "Istambul/Turquia, Roma/Itália, Paris/França, Nova Delhi/Índia, Viena/Áustria",
+    "Afastamento do páis do Presidente da 30ª Conferência das Partes da Convenção-Quadro das Nações Unidas sobre Mudança do C",
+    "Presidência da República - Unidades com vínculo direto",
+    "Realizada"
+   ],
+   [
+    100127.59,
+    "07/06/2026",
+    "Bonn/Alemanha, Londres/Reino Unido",
+    "Participar da UN Climate Change Conference e da London Climate Action Week, conforme agenda de organização da 30ª Confer",
+    "Presidência da República - Unidades com vínculo direto",
+    "Realizada"
+   ],
+   [
+    97431.89,
+    "02/06/2026",
+    "Paris/França, Frankfurt/Alemanha, Londres/Reino Unido",
+    "Participar da Amazon Week 2026; da UN Climate Change Conference; do FT Climate e Impact Summit; e do Participation at th",
+    "Presidência da República - Unidades com vínculo direto",
+    "Realizada"
+   ],
+   [
+    89944.49,
+    "12/04/2026",
+    "Washington/Estados Unidos da América, Antalya/Turquia, Berlim/Alemanha",
+    "Participar da 'Scaling Adaptation and Resilience Finance: a Joint Dialogue of MDBs and MCFs '; da 'Fifth edition of the ",
+    "Presidência da República - Unidades com vínculo direto",
+    "Realizada"
+   ],
+   [
+    64887.42,
+    "21/03/2026",
+    "Houston/Estados Unidos da América, Boston/Estados Unidos da América",
+    "Participar da 'CERAWeek 2026' e da 'Brazil Conference at Harvard University & MIT 2026', no período de 21 a 30 de março ",
+    "Presidência da República - Unidades com vínculo direto",
+    "Realizada"
+   ],
+   [
+    60311.8,
+    "23/05/2026",
+    "Moscou/Rússia",
+    "Participar do ' 1º Fórum Internacional de Segurança', a realizar-se na cidade de Moscou, Federação da Rússia, no período",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    59565.08,
+    "23/05/2026",
+    "Moscou/Rússia",
+    "Acompanhar e assessorar o Secretário-Executivo do GSI/PR, por ocasião de sua participação no ' 1º Fórum Internacional de",
+    "Presidência da República",
+    "Realizada"
+   ],
+   [
+    58562.04,
+    "07/03/2026",
+    "Nova York/Estados Unidos da América",
+    "Participação na 70a. Sessão da Comissão sobre a Situação das Mulheres a realizarem-se em Nova Iorque, EUA.",
+    "Presidência da República - Unidades com vínculo direto",
+    "Realizada"
+   ]
+  ]
+ }
+}

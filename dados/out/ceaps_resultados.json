@@ -1,0 +1,5134 @@
+{
+ "por_ano": [
+  {
+   "ano": 2019,
+   "flavio": 179713.9,
+   "flavio_meses": 11,
+   "flavio_notas": 238,
+   "mediana_senado": 331910.26,
+   "p75_senado": 404833.98,
+   "max_senado": 531315.99,
+   "rank": 67,
+   "n_senadores": 127,
+   "total_senado": 25247728.61
+  },
+  {
+   "ano": 2020,
+   "flavio": 86404.79,
+   "flavio_meses": 12,
+   "flavio_notas": 149,
+   "mediana_senado": 260284.18,
+   "p75_senado": 390998.41,
+   "max_senado": 513609.0,
+   "rank": 72,
+   "n_senadores": 84,
+   "total_senado": 20414601.9
+  },
+  {
+   "ano": 2021,
+   "flavio": 135667.55,
+   "flavio_meses": 12,
+   "flavio_notas": 81,
+   "mediana_senado": 366026.77,
+   "p75_senado": 422068.25,
+   "max_senado": 527681.31,
+   "rank": 69,
+   "n_senadores": 86,
+   "total_senado": 25020323.84
+  },
+  {
+   "ano": 2022,
+   "flavio": 250761.68,
+   "flavio_meses": 12,
+   "flavio_notas": 94,
+   "mediana_senado": 343363.1,
+   "p75_senado": 430522.76,
+   "max_senado": 511319.78,
+   "rank": 60,
+   "n_senadores": 97,
+   "total_senado": 27323307.63
+  },
+  {
+   "ano": 2023,
+   "flavio": 122242.2,
+   "flavio_meses": 12,
+   "flavio_notas": 86,
+   "mediana_senado": 394756.65,
+   "p75_senado": 449628.83,
+   "max_senado": 560388.62,
+   "rank": 75,
+   "n_senadores": 101,
+   "total_senado": 29024400.29
+  },
+  {
+   "ano": 2024,
+   "flavio": 180613.62,
+   "flavio_meses": 12,
+   "flavio_notas": 174,
+   "mediana_senado": 438527.47,
+   "p75_senado": 485232.99,
+   "max_senado": 577444.53,
+   "rank": 76,
+   "n_senadores": 88,
+   "total_senado": 32236755.44
+  },
+  {
+   "ano": 2025,
+   "flavio": 189639.85,
+   "flavio_meses": 12,
+   "flavio_notas": 184,
+   "mediana_senado": 508137.14,
+   "p75_senado": 557724.57,
+   "max_senado": 674290.87,
+   "rank": 75,
+   "n_senadores": 83,
+   "total_senado": 37326063.92
+  },
+  {
+   "ano": 2026,
+   "flavio": 86264.27,
+   "flavio_meses": 10,
+   "flavio_notas": 92,
+   "mediana_senado": 357966.33,
+   "p75_senado": 397855.98,
+   "max_senado": 491592.41,
+   "rank": 83,
+   "n_senadores": 89,
+   "total_senado": 25581530.02
+  }
+ ],
+ "acumulado": {
+  "flavio": 1231307.86,
+  "posicao": 47,
+  "n": 49,
+  "mediana": 3010090.7,
+  "top5": [
+   [
+    "ROGÉRIO CARVALHO",
+    4037871.31
+   ],
+   [
+    "OMAR AZIZ",
+    3818845.82
+   ],
+   [
+    "MECIAS DE JESUS",
+    3692987.77
+   ],
+   [
+    "ALESSANDRO VIEIRA",
+    3655199.63
+   ],
+   [
+    "ZEQUINHA MARINHO",
+    3630938.27
+   ]
+  ]
+ },
+ "categorias": [
+  {
+   "categoria": "Passagens",
+   "valor": 521853.14,
+   "pct_flavio": 42.4,
+   "pct_mediana_senado": 18.9
+  },
+  {
+   "categoria": "Aluguel de escritório",
+   "valor": 411927.97,
+   "pct_flavio": 33.5,
+   "pct_mediana_senado": 15.6
+  },
+  {
+   "categoria": "Locomoção, hospedagem e combustível",
+   "valor": 118265.84,
+   "pct_flavio": 9.6,
+   "pct_mediana_senado": 16.4
+  },
+  {
+   "categoria": "Divulgação da atividade",
+   "valor": 113850.0,
+   "pct_flavio": 9.2,
+   "pct_mediana_senado": 2.9
+  },
+  {
+   "categoria": "Consultorias e assessorias",
+   "valor": 54174.62,
+   "pct_flavio": 4.4,
+   "pct_mediana_senado": 15.9
+  },
+  {
+   "categoria": "Material de consumo",
+   "valor": 11236.29,
+   "pct_flavio": 0.9,
+   "pct_mediana_senado": 0.7
+  }
+ ],
+ "cat_ano": [
+  {
+   "ano": 2019,
+   "Aluguel de escritório": 45856.22,
+   "Consultorias e assessorias": 0.0,
+   "Divulgação da atividade": 0.0,
+   "Locomoção, hospedagem e combustível": 71822.76,
+   "Material de consumo": 2474.13,
+   "Passagens": 59560.79
+  },
+  {
+   "ano": 2020,
+   "Aluguel de escritório": 52395.37,
+   "Consultorias e assessorias": 0.0,
+   "Divulgação da atividade": 0.0,
+   "Locomoção, hospedagem e combustível": 663.51,
+   "Material de consumo": 605.16,
+   "Passagens": 32740.75
+  },
+  {
+   "ano": 2021,
+   "Aluguel de escritório": 46474.5,
+   "Consultorias e assessorias": 36000.0,
+   "Divulgação da atividade": 18000.0,
+   "Locomoção, hospedagem e combustível": 0.0,
+   "Material de consumo": 35.1,
+   "Passagens": 35157.95
+  },
+  {
+   "ano": 2022,
+   "Aluguel de escritório": 52039.01,
+   "Consultorias e assessorias": 18000.0,
+   "Divulgação da atividade": 90000.0,
+   "Locomoção, hospedagem e combustível": 1659.26,
+   "Material de consumo": 0.0,
+   "Passagens": 89063.41
+  },
+  {
+   "ano": 2023,
+   "Aluguel de escritório": 62030.28,
+   "Consultorias e assessorias": 0.0,
+   "Divulgação da atividade": 1850.0,
+   "Locomoção, hospedagem e combustível": 1264.92,
+   "Material de consumo": 0.0,
+   "Passagens": 57097.0
+  },
+  {
+   "ano": 2024,
+   "Aluguel de escritório": 53586.86,
+   "Consultorias e assessorias": 0.0,
+   "Divulgação da atividade": 0.0,
+   "Locomoção, hospedagem e combustível": 19877.32,
+   "Material de consumo": 18.2,
+   "Passagens": 107131.24
+  },
+  {
+   "ano": 2025,
+   "Aluguel de escritório": 56958.11,
+   "Consultorias e assessorias": 85.3,
+   "Divulgação da atividade": 4000.0,
+   "Locomoção, hospedagem e combustível": 18345.35,
+   "Material de consumo": 8103.7,
+   "Passagens": 102147.39
+  },
+  {
+   "ano": 2026,
+   "Aluguel de escritório": 42587.62,
+   "Consultorias e assessorias": 89.32,
+   "Divulgação da atividade": 0.0,
+   "Locomoção, hospedagem e combustível": 4632.72,
+   "Material de consumo": 0.0,
+   "Passagens": 38954.61
+  }
+ ],
+ "fornecedores_top": [
+  {
+   "cpfCnpj": "02.012.862/0001-60",
+   "fornecedor": "TAM",
+   "total": 355255.24,
+   "notas": 157,
+   "anos": "2019–2026",
+   "categoria": "Passagens",
+   "pct": 28.9,
+   "outros_senadores": 23
+  },
+  {
+   "cpfCnpj": "32.433.119/0001-44",
+   "fornecedor": "A3 SERVIÇOS DE PUBLICIDADE E COMUNICAÇÃO LTDA",
+   "total": 162000.0,
+   "notas": 9,
+   "anos": "2021–2022",
+   "categoria": "Divulgação da atividade",
+   "pct": 13.2,
+   "outros_senadores": 0
+  },
+  {
+   "cpfCnpj": "07.575.651/0001-59",
+   "fornecedor": "GOL",
+   "total": 87941.72,
+   "notas": 37,
+   "anos": "2019–2026",
+   "categoria": "Passagens",
+   "pct": 7.1,
+   "outros_senadores": 70
+  },
+  {
+   "cpfCnpj": "15.081.898/0001-47",
+   "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+   "total": 79445.41,
+   "notas": 54,
+   "anos": "2020–2022",
+   "categoria": "Aluguel de escritório",
+   "pct": 6.5,
+   "outros_senadores": 0
+  },
+  {
+   "cpfCnpj": "19.191.476/0001-85",
+   "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+   "total": 74798.73,
+   "notas": 37,
+   "anos": "2023–2026",
+   "categoria": "Aluguel de escritório",
+   "pct": 6.1,
+   "outros_senadores": 0
+  },
+  {
+   "cpfCnpj": "09.296.295/0001-60",
+   "fornecedor": "AZUL",
+   "total": 64903.92,
+   "notas": 29,
+   "anos": "2019–2025",
+   "categoria": "Passagens",
+   "pct": 5.3,
+   "outros_senadores": 46
+  },
+  {
+   "cpfCnpj": "18.325.264/0001-80",
+   "fornecedor": "SERVCAR SOLUÇÕES AUTOMATIVAS LTDA.ME",
+   "total": 58000.0,
+   "notas": 9,
+   "anos": "2019–2019",
+   "categoria": "Locomoção, hospedagem e combustível",
+   "pct": 4.7,
+   "outros_senadores": 0
+  },
+  {
+   "cpfCnpj": "42.498.733/0001-48",
+   "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+   "total": 54891.71,
+   "notas": 88,
+   "anos": "2019–2026",
+   "categoria": "Aluguel de escritório",
+   "pct": 4.5,
+   "outros_senadores": 4
+  },
+  {
+   "cpfCnpj": "14.966.211/0001-98",
+   "fornecedor": "Condomínio Barra Prime Offices",
+   "total": 43975.03,
+   "notas": 79,
+   "anos": "2023–2026",
+   "categoria": "Aluguel de escritório",
+   "pct": 3.6,
+   "outros_senadores": 0
+  },
+  {
+   "cpfCnpj": "14.585.068/0001-94",
+   "fornecedor": "PEBF EMPREENDIMENTOS E PARTICIPAÇÕES LTDA",
+   "total": 40394.27,
+   "notas": 35,
+   "anos": "2019–2020",
+   "categoria": "Aluguel de escritório",
+   "pct": 3.3,
+   "outros_senadores": 0
+  },
+  {
+   "cpfCnpj": "44.541.263/0001-83",
+   "fornecedor": "Habitar Administradora de Imóveis LTDA",
+   "total": 38537.99,
+   "notas": 22,
+   "anos": "2022–2023",
+   "categoria": "Aluguel de escritório",
+   "pct": 3.1,
+   "outros_senadores": 0
+  },
+  {
+   "cpfCnpj": "33.910.613/0001-15",
+   "fornecedor": "HOTEL ROYALTY BARRA LTDA",
+   "total": 26848.77,
+   "notas": 17,
+   "anos": "2024–2025",
+   "categoria": "Locomoção, hospedagem e combustível",
+   "pct": 2.2,
+   "outros_senadores": 0
+  },
+  {
+   "cpfCnpj": "21.188.803/0001-91",
+   "fornecedor": "GRUP. EMPRESARIAL UNIVERSE",
+   "total": 17262.62,
+   "notas": 30,
+   "anos": "2019–2020",
+   "categoria": "Aluguel de escritório",
+   "pct": 1.4,
+   "outros_senadores": 0
+  },
+  {
+   "cpfCnpj": "40.432.544/0062-69",
+   "fornecedor": "Claro S.A",
+   "total": 15133.55,
+   "notas": 70,
+   "anos": "2020–2026",
+   "categoria": "Aluguel de escritório",
+   "pct": 1.2,
+   "outros_senadores": 2
+  },
+  {
+   "cpfCnpj": "60.444.437/0001-46",
+   "fornecedor": "Light Serviços de Eletricidade SA",
+   "total": 14059.71,
+   "notas": 102,
+   "anos": "2019–2026",
+   "categoria": "Aluguel de escritório",
+   "pct": 1.1,
+   "outros_senadores": 3
+  },
+  {
+   "cpfCnpj": "16.978.175/0001-08",
+   "fornecedor": "ADRIA VIAGENS E TURISMO LTDA",
+   "total": 13752.26,
+   "notas": 9,
+   "anos": "2019–2019",
+   "categoria": "Passagens",
+   "pct": 1.1,
+   "outros_senadores": 63
+  },
+  {
+   "cpfCnpj": "19.834.090/0001-44",
+   "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+   "total": 12150.37,
+   "notas": 24,
+   "anos": "2024–2025",
+   "categoria": "Aluguel de escritório",
+   "pct": 1.0,
+   "outros_senadores": 0
+  },
+  {
+   "cpfCnpj": "28.338.280/0001-61",
+   "fornecedor": "Vinicius Ferreira Paixão",
+   "total": 10500.0,
+   "notas": 4,
+   "anos": "2020–2023",
+   "categoria": "Aluguel de escritório",
+   "pct": 0.9,
+   "outros_senadores": 0
+  },
+  {
+   "cpfCnpj": "08.332.038/0001-73",
+   "fornecedor": "GOAL VEICULOS E SERVIÇOS EIRELI",
+   "total": 8000.0,
+   "notas": 1,
+   "anos": "2019–2019",
+   "categoria": "Locomoção, hospedagem e combustível",
+   "pct": 0.6,
+   "outros_senadores": 0
+  },
+  {
+   "cpfCnpj": "40.228.033/0001-08",
+   "fornecedor": "Datapaper Informatica LTDA",
+   "total": 7864.95,
+   "notas": 6,
+   "anos": "2020–2025",
+   "categoria": "Material de consumo",
+   "pct": 0.6,
+   "outros_senadores": 0
+  }
+ ],
+ "maiores_notas": [
+  {
+   "data": "2021-11-09",
+   "ano": 2021,
+   "mes": 11,
+   "categoria": "Consultorias e assessorias",
+   "fornecedor": "A3 SERVIÇOS DE PUBLICIDADE E COMUNICAÇÃO LTDA",
+   "cpfCnpj": "32.433.119/0001-44",
+   "documento": "00000513",
+   "valorReembolsado": 18000.0,
+   "mediana_cat": 1744.54,
+   "p99_cat": 30000.0,
+   "detalhamento": NaN,
+   "tipoDocumento": "Nota Fiscal"
+  },
+  {
+   "data": "2022-04-01",
+   "ano": 2022,
+   "mes": 3,
+   "categoria": "Consultorias e assessorias",
+   "fornecedor": "A3 SERVIÇOS DE PUBLICIDADE E COMUNICAÇÃO LTDA",
+   "cpfCnpj": "32.433.119/0001-44",
+   "documento": "00000610",
+   "valorReembolsado": 18000.0,
+   "mediana_cat": 1744.54,
+   "p99_cat": 30000.0,
+   "detalhamento": NaN,
+   "tipoDocumento": "Nota Fiscal Eletrônica"
+  },
+  {
+   "data": "2022-05-02",
+   "ano": 2022,
+   "mes": 4,
+   "categoria": "Divulgação da atividade",
+   "fornecedor": "A3 SERVIÇOS DE PUBLICIDADE E COMUNICAÇÃO LTDA",
+   "cpfCnpj": "32.433.119/0001-44",
+   "documento": "00000627",
+   "valorReembolsado": 18000.0,
+   "mediana_cat": 1500.0,
+   "p99_cat": 25112.98,
+   "detalhamento": NaN,
+   "tipoDocumento": "Nota Fiscal Eletrônica"
+  },
+  {
+   "data": "2022-06-01",
+   "ano": 2022,
+   "mes": 5,
+   "categoria": "Divulgação da atividade",
+   "fornecedor": "A3 SERVIÇOS DE PUBLICIDADE E COMUNICAÇÃO LTDA",
+   "cpfCnpj": "32.433.119/0001-44",
+   "documento": "00000640",
+   "valorReembolsado": 18000.0,
+   "mediana_cat": 1500.0,
+   "p99_cat": 25112.98,
+   "detalhamento": NaN,
+   "tipoDocumento": "Nota Fiscal Eletrônica"
+  },
+  {
+   "data": "2022-02-01",
+   "ano": 2022,
+   "mes": 1,
+   "categoria": "Divulgação da atividade",
+   "fornecedor": "A3 SERVIÇOS DE PUBLICIDADE E COMUNICAÇÃO LTDA",
+   "cpfCnpj": "32.433.119/0001-44",
+   "documento": "00000571",
+   "valorReembolsado": 18000.0,
+   "mediana_cat": 1500.0,
+   "p99_cat": 25112.98,
+   "detalhamento": NaN,
+   "tipoDocumento": "Nota Fiscal Eletrônica"
+  },
+  {
+   "data": "2022-03-03",
+   "ano": 2022,
+   "mes": 2,
+   "categoria": "Divulgação da atividade",
+   "fornecedor": "A3 SERVIÇOS DE PUBLICIDADE E COMUNICAÇÃO LTDA",
+   "cpfCnpj": "32.433.119/0001-44",
+   "documento": "00000591",
+   "valorReembolsado": 18000.0,
+   "mediana_cat": 1500.0,
+   "p99_cat": 25112.98,
+   "detalhamento": NaN,
+   "tipoDocumento": "Nota Fiscal Eletrônica"
+  },
+  {
+   "data": "2022-01-04",
+   "ano": 2021,
+   "mes": 12,
+   "categoria": "Divulgação da atividade",
+   "fornecedor": "A3 SERVIÇOS DE PUBLICIDADE E COMUNICAÇÃO LTDA",
+   "cpfCnpj": "32.433.119/0001-44",
+   "documento": "00000554",
+   "valorReembolsado": 18000.0,
+   "mediana_cat": 1500.0,
+   "p99_cat": 25112.98,
+   "detalhamento": NaN,
+   "tipoDocumento": "Nota Fiscal Eletrônica"
+  },
+  {
+   "data": "2021-12-01",
+   "ano": 2021,
+   "mes": 11,
+   "categoria": "Consultorias e assessorias",
+   "fornecedor": "A3 SERVIÇOS DE PUBLICIDADE E COMUNICAÇÃO LTDA",
+   "cpfCnpj": "32.433.119/0001-44",
+   "documento": "00000529",
+   "valorReembolsado": 18000.0,
+   "mediana_cat": 1744.54,
+   "p99_cat": 30000.0,
+   "detalhamento": NaN,
+   "tipoDocumento": "Nota Fiscal Eletrônica"
+  },
+  {
+   "data": "2022-06-30",
+   "ano": 2022,
+   "mes": 6,
+   "categoria": "Divulgação da atividade",
+   "fornecedor": "A3 SERVIÇOS DE PUBLICIDADE E COMUNICAÇÃO LTDA",
+   "cpfCnpj": "32.433.119/0001-44",
+   "documento": "00000668",
+   "valorReembolsado": 18000.0,
+   "mediana_cat": 1500.0,
+   "p99_cat": 25112.98,
+   "detalhamento": NaN,
+   "tipoDocumento": "Nota Fiscal Eletrônica"
+  },
+  {
+   "data": "2022-06-16",
+   "ano": 2022,
+   "mes": 6,
+   "categoria": "Passagens",
+   "fornecedor": "TAM",
+   "cpfCnpj": "02.012.862/0001-60",
+   "documento": "VBTOJC",
+   "valorReembolsado": 8629.76,
+   "mediana_cat": 1455.01,
+   "p99_cat": 5103.73,
+   "detalhamento": "Companhia Aérea: TAM, Localizador: VBTOJC. Passageiros: FLÁVIO NANTES BOLSONARO (Matrícula 341232, PARLAMENTAR), Voo: 3007 - BSB/CGH - 20/06/22; FERNANDO NASCIMENTO PESSOA (Matrícula 343680, COMISSIONADO), Voo: 3016 - CGH/BSB - 20/06/22; FERNANDO NASCIMENTO PESSOA (Matrícula 343680, COMISSIONADO), Voo: 3007 - BSB/CGH - 20/06/22; FLÁVIO NANTES BOLSONARO (Matrícula 341232, PARLAMENTAR), Voo: 3016 - CGH/BSB - 20/06/22; ",
+   "tipoDocumento": "Passagem / Bilhete / Código Localizador"
+  },
+  {
+   "data": "2019-12-02",
+   "ano": 2019,
+   "mes": 12,
+   "categoria": "Locomoção, hospedagem e combustível",
+   "fornecedor": "SERVCAR SOLUÇÕES AUTOMATIVAS LTDA.ME",
+   "cpfCnpj": "18.325.264/0001-80",
+   "documento": "165/219",
+   "valorReembolsado": 8000.0,
+   "mediana_cat": 212.59,
+   "p99_cat": 10500.0,
+   "detalhamento": NaN,
+   "tipoDocumento": "Fatura"
+  },
+  {
+   "data": "2019-11-04",
+   "ano": 2019,
+   "mes": 11,
+   "categoria": "Locomoção, hospedagem e combustível",
+   "fornecedor": "SERVCAR SOLUÇÕES AUTOMATIVAS LTDA.ME",
+   "cpfCnpj": "18.325.264/0001-80",
+   "documento": "145/2019",
+   "valorReembolsado": 8000.0,
+   "mediana_cat": 212.59,
+   "p99_cat": 10500.0,
+   "detalhamento": NaN,
+   "tipoDocumento": "Fatura"
+  },
+  {
+   "data": "2019-04-24",
+   "ano": 2019,
+   "mes": 3,
+   "categoria": "Locomoção, hospedagem e combustível",
+   "fornecedor": "GOAL VEICULOS E SERVIÇOS EIRELI",
+   "cpfCnpj": "08.332.038/0001-73",
+   "documento": "00000492",
+   "valorReembolsado": 8000.0,
+   "mediana_cat": 212.59,
+   "p99_cat": 10500.0,
+   "detalhamento": NaN,
+   "tipoDocumento": "Nota Fiscal"
+  },
+  {
+   "data": "2019-07-05",
+   "ano": 2019,
+   "mes": 7,
+   "categoria": "Locomoção, hospedagem e combustível",
+   "fornecedor": "SERVCAR SOLUÇÕES AUTOMATIVAS LTDA.ME",
+   "cpfCnpj": "18.325.264/0001-80",
+   "documento": "069",
+   "valorReembolsado": 8000.0,
+   "mediana_cat": 212.59,
+   "p99_cat": 10500.0,
+   "detalhamento": NaN,
+   "tipoDocumento": "Fatura"
+  },
+  {
+   "data": "2020-01-02",
+   "ano": 2019,
+   "mes": 12,
+   "categoria": "Locomoção, hospedagem e combustível",
+   "fornecedor": "SERVCAR SOLUÇÕES AUTOMATIVAS LTDA.ME",
+   "cpfCnpj": "18.325.264/0001-80",
+   "documento": "001/2020",
+   "valorReembolsado": 8000.0,
+   "mediana_cat": 212.59,
+   "p99_cat": 10500.0,
+   "detalhamento": NaN,
+   "tipoDocumento": "Fatura"
+  },
+  {
+   "data": "2019-10-01",
+   "ano": 2019,
+   "mes": 9,
+   "categoria": "Locomoção, hospedagem e combustível",
+   "fornecedor": "SERVCAR SOLUÇÕES AUTOMATIVAS LTDA.ME",
+   "cpfCnpj": "18.325.264/0001-80",
+   "documento": "117",
+   "valorReembolsado": 8000.0,
+   "mediana_cat": 212.59,
+   "p99_cat": 10500.0,
+   "detalhamento": NaN,
+   "tipoDocumento": "Fatura"
+  },
+  {
+   "data": "2022-06-01",
+   "ano": 2022,
+   "mes": 6,
+   "categoria": "Passagens",
+   "fornecedor": "TAM",
+   "cpfCnpj": "02.012.862/0001-60",
+   "documento": "EEPQHB",
+   "valorReembolsado": 7542.26,
+   "mediana_cat": 1455.01,
+   "p99_cat": 5103.73,
+   "detalhamento": "Companhia Aérea: TAM, Localizador: EEPQHB. Passageiros: FLÁVIO NANTES BOLSONARO (Matrícula 341232, PARLAMENTAR), Voo: 3016 - CGH/BSB - 02/06/22; FLÁVIO NANTES BOLSONARO (Matrícula 341232, PARLAMENTAR), Voo: 3007 - BSB/CGH - 02/06/22; ",
+   "tipoDocumento": "Passagem / Bilhete / Código Localizador"
+  },
+  {
+   "data": "2019-04-26",
+   "ano": 2019,
+   "mes": 4,
+   "categoria": "Locomoção, hospedagem e combustível",
+   "fornecedor": "SERVCAR SOLUÇÕES AUTOMATIVAS LTDA.ME",
+   "cpfCnpj": "18.325.264/0001-80",
+   "documento": "035/2019",
+   "valorReembolsado": 7000.0,
+   "mediana_cat": 212.59,
+   "p99_cat": 10500.0,
+   "detalhamento": NaN,
+   "tipoDocumento": "Fatura"
+  },
+  {
+   "data": "2019-06-05",
+   "ano": 2019,
+   "mes": 6,
+   "categoria": "Locomoção, hospedagem e combustível",
+   "fornecedor": "SERVCAR SOLUÇÕES AUTOMATIVAS LTDA.ME",
+   "cpfCnpj": "18.325.264/0001-80",
+   "documento": "055/2019",
+   "valorReembolsado": 6933.36,
+   "mediana_cat": 212.59,
+   "p99_cat": 10500.0,
+   "detalhamento": NaN,
+   "tipoDocumento": "Fatura"
+  },
+  {
+   "data": "2022-06-01",
+   "ano": 2022,
+   "mes": 6,
+   "categoria": "Passagens",
+   "fornecedor": "TAM",
+   "cpfCnpj": "02.012.862/0001-60",
+   "documento": "EOFSBE",
+   "valorReembolsado": 6902.26,
+   "mediana_cat": 1455.01,
+   "p99_cat": 5103.73,
+   "detalhamento": "Companhia Aérea: TAM, Localizador: EOFSBE. Passageiros: FERNANDO NASCIMENTO PESSOA (Matrícula 343680, COMISSIONADO), Voo: 3016 - CGH/BSB - 02/06/22; FERNANDO NASCIMENTO PESSOA (Matrícula 343680, COMISSIONADO), Voo: 3007 - BSB/CGH - 02/06/22; ",
+   "tipoDocumento": "Passagem / Bilhete / Código Localizador"
+  },
+  {
+   "data": "2022-05-05",
+   "ano": 2022,
+   "mes": 5,
+   "categoria": "Passagens",
+   "fornecedor": "TAM",
+   "cpfCnpj": "02.012.862/0001-60",
+   "documento": "QTCMIG",
+   "valorReembolsado": 6706.06,
+   "mediana_cat": 1455.01,
+   "p99_cat": 5103.73,
+   "detalhamento": "Companhia Aérea: TAM, Localizador: QTCMIG. Passageiros: FLÁVIO NANTES BOLSONARO (Matrícula 341232, PARLAMENTAR), Voo: 3011 - BSB/CGH - 09/05/22; FLÁVIO NANTES BOLSONARO (Matrícula 341232, PARLAMENTAR), Voo: 3006 - CGH/BSB - 10/05/22; ",
+   "tipoDocumento": "Passagem / Bilhete / Código Localizador"
+  },
+  {
+   "data": "2024-09-09",
+   "ano": 2024,
+   "mes": 9,
+   "categoria": "Passagens",
+   "fornecedor": "TAM",
+   "cpfCnpj": "02.012.862/0001-60",
+   "documento": "JUGXXL",
+   "valorReembolsado": 6146.02,
+   "mediana_cat": 1455.01,
+   "p99_cat": 5103.73,
+   "detalhamento": "Companhia Aérea: TAM, Localizador: JUGXXL. Passageiros: FERNANDO NASCIMENTO PESSOA (Matrícula 343680, COMISSIONADO), Voo: 3728 - BSB/GIG - 12/09/24; FERNANDO NASCIMENTO PESSOA (Matrícula 343680, COMISSIONADO), Voo: 4649 - SDU/BSB - 15/09/24; ",
+   "tipoDocumento": "Passagem / Bilhete / Código Localizador"
+  },
+  {
+   "data": "2023-05-26",
+   "ano": 2023,
+   "mes": 5,
+   "categoria": "Passagens",
+   "fornecedor": "TAM",
+   "cpfCnpj": "02.012.862/0001-60",
+   "documento": "WQOZXL",
+   "valorReembolsado": 5888.1,
+   "mediana_cat": 1455.01,
+   "p99_cat": 5103.73,
+   "detalhamento": "Companhia Aérea: TAM, Localizador: WQOZXL. Passageiros: FLÁVIO NANTES BOLSONARO (Matrícula 341232, PARLAMENTAR), Voo: 3018 - CGH/BSB - 29/05/23; FLÁVIO NANTES BOLSONARO (Matrícula 341232, PARLAMENTAR), Voo: 3011 - BSB/CGH - 29/05/23; ",
+   "tipoDocumento": "Passagem / Bilhete / Código Localizador"
+  },
+  {
+   "data": "2022-01-12",
+   "ano": 2022,
+   "mes": 3,
+   "categoria": "Passagens",
+   "fornecedor": "TAM",
+   "cpfCnpj": "02.012.862/0001-60",
+   "documento": "AMYKAG",
+   "valorReembolsado": 5828.3,
+   "mediana_cat": 1455.01,
+   "p99_cat": 5103.73,
+   "detalhamento": "Companhia Aérea: TAM, Localizador: AMYKAG. Passageiros: FLÁVIO NANTES BOLSONARO (Matrícula 341232, PARLAMENTAR), Voo: 3147 - BSB/SDU - 17/03/22; FLÁVIO NANTES BOLSONARO (Matrícula 341232, PARLAMENTAR), Voo: 3201 - CGH/BSB - 18/03/22; ",
+   "tipoDocumento": "Passagem / Bilhete / Código Localizador"
+  },
+  {
+   "data": "2025-12-02",
+   "ano": 2025,
+   "mes": 12,
+   "categoria": "Passagens",
+   "fornecedor": "TAM",
+   "cpfCnpj": "02.012.862/0001-60",
+   "documento": "AAPICJ",
+   "valorReembolsado": 5787.29,
+   "mediana_cat": 1455.01,
+   "p99_cat": 5103.73,
+   "detalhamento": "Companhia Aérea: TAM, Localizador: AAPICJ. Passageiros: FLÁVIO NANTES BOLSONARO (Matrícula 341232, PARLAMENTAR), Voo: 3011 - BSB/CGH - 04/12/25; FLÁVIO NANTES BOLSONARO (Matrícula 341232, PARLAMENTAR), Voo: 3012 - CGH/BSB - 05/12/25; ",
+   "tipoDocumento": "Passagem / Bilhete / Código Localizador"
+  }
+ ],
+ "acima_p99": {
+  "n": 11,
+  "valor": 69706.23,
+  "pct_do_total_flavio": 5.7,
+  "pct_mediana_senado": 0.4,
+  "rank": 62,
+  "n_senadores": 192
+ },
+ "checagens": {
+  "duplicadas_mesmo_doc_valor": [
+   {
+    "data": "2019-10-17",
+    "fornecedor": "SINPETAXI",
+    "cpfCnpj": "00.031.708/0001-00",
+    "documento": NaN,
+    "valorReembolsado": 10.0,
+    "categoria": "Locomoção, hospedagem e combustível",
+    "id": 2133199
+   },
+   {
+    "data": "2019-10-17",
+    "fornecedor": "SINPETAXI",
+    "cpfCnpj": "00.031.708/0001-00",
+    "documento": NaN,
+    "valorReembolsado": 10.0,
+    "categoria": "Locomoção, hospedagem e combustível",
+    "id": 2133197
+   },
+   {
+    "data": "2019-12-10",
+    "fornecedor": "SINPETAXI",
+    "cpfCnpj": "00.031.708/0001-00",
+    "documento": NaN,
+    "valorReembolsado": 9.0,
+    "categoria": "Locomoção, hospedagem e combustível",
+    "id": 2137181
+   },
+   {
+    "data": "2019-12-10",
+    "fornecedor": "SINPETAXI",
+    "cpfCnpj": "00.031.708/0001-00",
+    "documento": NaN,
+    "valorReembolsado": 9.0,
+    "categoria": "Locomoção, hospedagem e combustível",
+    "id": 2137180
+   },
+   {
+    "data": "2019-12-16",
+    "fornecedor": "SINPETAXI",
+    "cpfCnpj": "00.031.708/0001-00",
+    "documento": NaN,
+    "valorReembolsado": 9.0,
+    "categoria": "Locomoção, hospedagem e combustível",
+    "id": 2137662
+   },
+   {
+    "data": "2019-05-10",
+    "fornecedor": "SINPETAXI",
+    "cpfCnpj": "00.031.708/0001-00",
+    "documento": NaN,
+    "valorReembolsado": 10.0,
+    "categoria": "Locomoção, hospedagem e combustível",
+    "id": 2123805
+   },
+   {
+    "data": "2020-03-10",
+    "fornecedor": "SINPETAXI",
+    "cpfCnpj": "00.031.708/0001-00",
+    "documento": NaN,
+    "valorReembolsado": 10.0,
+    "categoria": "Locomoção, hospedagem e combustível",
+    "id": 2142609
+   },
+   {
+    "data": "2023-04-25",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "AFXRFW",
+    "valorReembolsado": 1872.23,
+    "categoria": "Passagens",
+    "id": 2199174
+   },
+   {
+    "data": "2023-04-25",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "AFXRFW",
+    "valorReembolsado": 1872.23,
+    "categoria": "Passagens",
+    "id": 2199175
+   },
+   {
+    "data": "2025-06-15",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "DGYTHZ",
+    "valorReembolsado": 1322.18,
+    "categoria": "Passagens",
+    "id": 2261354
+   },
+   {
+    "data": "2025-06-15",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "DGYTHZ",
+    "valorReembolsado": 1322.18,
+    "categoria": "Passagens",
+    "id": 2260541
+   },
+   {
+    "data": "2024-08-22",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "JZHNAY",
+    "valorReembolsado": 1318.51,
+    "categoria": "Passagens",
+    "id": 2235876
+   },
+   {
+    "data": "2024-08-22",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "JZHNAY",
+    "valorReembolsado": 1318.51,
+    "categoria": "Passagens",
+    "id": 2235878
+   },
+   {
+    "data": "2025-11-25",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "QLZYYT",
+    "valorReembolsado": 1459.65,
+    "categoria": "Passagens",
+    "id": 2274530
+   },
+   {
+    "data": "2025-11-25",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "QLZYYT",
+    "valorReembolsado": 1459.65,
+    "categoria": "Passagens",
+    "id": 2275477
+   },
+   {
+    "data": "2020-01-06",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "SYNNFX",
+    "valorReembolsado": 480.96,
+    "categoria": "Passagens",
+    "id": 2139184
+   },
+   {
+    "data": "2020-01-06",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "SYNNFX",
+    "valorReembolsado": 480.96,
+    "categoria": "Passagens",
+    "id": 2139908
+   },
+   {
+    "data": "2019-11-11",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "ZJMRUM",
+    "valorReembolsado": 1531.31,
+    "categoria": "Passagens",
+    "id": 2135305
+   },
+   {
+    "data": "2019-11-11",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "ZJMRUM",
+    "valorReembolsado": 1531.31,
+    "categoria": "Passagens",
+    "id": 2137207
+   },
+   {
+    "data": "2022-03-28",
+    "fornecedor": "AZUL",
+    "cpfCnpj": "09.296.295/0001-60",
+    "documento": "MBW8GL",
+    "valorReembolsado": 1547.6,
+    "categoria": "Passagens",
+    "id": 2178114
+   },
+   {
+    "data": "2022-03-28",
+    "fornecedor": "AZUL",
+    "cpfCnpj": "09.296.295/0001-60",
+    "documento": "MBW8GL",
+    "valorReembolsado": 1547.6,
+    "categoria": "Passagens",
+    "id": 2177720
+   },
+   {
+    "data": "2020-03-14",
+    "fornecedor": "PEBF EMPREENDIMENTOS E PARTICIPAÇÕES LTDA",
+    "cpfCnpj": "14.585.068/0001-94",
+    "documento": "13",
+    "valorReembolsado": 2000.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2141841
+   },
+   {
+    "data": "2020-04-14",
+    "fornecedor": "PEBF EMPREENDIMENTOS E PARTICIPAÇÕES LTDA",
+    "cpfCnpj": "14.585.068/0001-94",
+    "documento": "13",
+    "valorReembolsado": 2000.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2143665
+   },
+   {
+    "data": "2019-03-13",
+    "fornecedor": "PEBF EMPREENDIMENTOS E PARTICIPAÇÕES LTDA",
+    "cpfCnpj": "14.585.068/0001-94",
+    "documento": "s/n",
+    "valorReembolsado": 122.5,
+    "categoria": "Aluguel de escritório",
+    "id": 2117924
+   },
+   {
+    "data": "2019-03-13",
+    "fornecedor": "PEBF EMPREENDIMENTOS E PARTICIPAÇÕES LTDA",
+    "cpfCnpj": "14.585.068/0001-94",
+    "documento": "s/n",
+    "valorReembolsado": 122.5,
+    "categoria": "Aluguel de escritório",
+    "id": 2117929
+   },
+   {
+    "data": "2019-05-08",
+    "fornecedor": "PEBF EMPREENDIMENTOS E PARTICIPAÇÕES LTDA",
+    "cpfCnpj": "14.585.068/0001-94",
+    "documento": NaN,
+    "valorReembolsado": 122.5,
+    "categoria": "Aluguel de escritório",
+    "id": 2121700
+   },
+   {
+    "data": "2019-05-08",
+    "fornecedor": "PEBF EMPREENDIMENTOS E PARTICIPAÇÕES LTDA",
+    "cpfCnpj": "14.585.068/0001-94",
+    "documento": NaN,
+    "valorReembolsado": 122.5,
+    "categoria": "Aluguel de escritório",
+    "id": 2121701
+   },
+   {
+    "data": "2020-05-10",
+    "fornecedor": "PEBF EMPREENDIMENTOS E PARTICIPAÇÕES LTDA",
+    "cpfCnpj": "14.585.068/0001-94",
+    "documento": NaN,
+    "valorReembolsado": 2000.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2146423
+   },
+   {
+    "data": "2020-06-10",
+    "fornecedor": "PEBF EMPREENDIMENTOS E PARTICIPAÇÕES LTDA",
+    "cpfCnpj": "14.585.068/0001-94",
+    "documento": NaN,
+    "valorReembolsado": 2000.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2146421
+   },
+   {
+    "data": "2020-07-10",
+    "fornecedor": "PEBF EMPREENDIMENTOS E PARTICIPAÇÕES LTDA",
+    "cpfCnpj": "14.585.068/0001-94",
+    "documento": NaN,
+    "valorReembolsado": 2000.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2146422
+   },
+   {
+    "data": "2020-07-28",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1500.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2149004
+   },
+   {
+    "data": "2020-09-29",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1500.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2150178
+   },
+   {
+    "data": "2020-10-30",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1500.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2151683
+   },
+   {
+    "data": "2020-12-04",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1500.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2152978
+   },
+   {
+    "data": "2020-12-30",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1500.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2154071
+   },
+   {
+    "data": "2021-01-29",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1500.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2156112
+   },
+   {
+    "data": "2021-03-01",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1500.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2156718
+   },
+   {
+    "data": "2021-03-29",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1500.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2158092
+   },
+   {
+    "data": "2020-05-04",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1500.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2159767
+   },
+   {
+    "data": "2021-06-01",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1500.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2160769
+   },
+   {
+    "data": "2021-06-28",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1500.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2162596
+   },
+   {
+    "data": "2021-06-28",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1500.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2164170
+   },
+   {
+    "data": "2021-06-28",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1432.44,
+    "categoria": "Aluguel de escritório",
+    "id": 2162599
+   },
+   {
+    "data": "2021-06-28",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1432.44,
+    "categoria": "Aluguel de escritório",
+    "id": 2164172
+   },
+   {
+    "data": "2021-08-26",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1777.97,
+    "categoria": "Aluguel de escritório",
+    "id": 2166082
+   },
+   {
+    "data": "2021-10-27",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1777.97,
+    "categoria": "Aluguel de escritório",
+    "id": 2169719
+   },
+   {
+    "data": "2021-11-29",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1777.97,
+    "categoria": "Aluguel de escritório",
+    "id": 2171344
+   },
+   {
+    "data": "2021-12-22",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1777.97,
+    "categoria": "Aluguel de escritório",
+    "id": 2172838
+   },
+   {
+    "data": "2022-02-07",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1777.97,
+    "categoria": "Aluguel de escritório",
+    "id": 2174502
+   },
+   {
+    "data": "2022-02-24",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1777.97,
+    "categoria": "Aluguel de escritório",
+    "id": 2175627
+   },
+   {
+    "data": "2022-03-29",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1777.97,
+    "categoria": "Aluguel de escritório",
+    "id": 2177717
+   },
+   {
+    "data": "2022-04-28",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1777.97,
+    "categoria": "Aluguel de escritório",
+    "id": 2179315
+   },
+   {
+    "data": "2022-05-30",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1777.97,
+    "categoria": "Aluguel de escritório",
+    "id": 2181258
+   },
+   {
+    "data": "2022-06-28",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1777.97,
+    "categoria": "Aluguel de escritório",
+    "id": 2183246
+   },
+   {
+    "data": "2022-06-28",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1590.58,
+    "categoria": "Aluguel de escritório",
+    "id": 2183249
+   },
+   {
+    "data": "2022-07-27",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1777.97,
+    "categoria": "Aluguel de escritório",
+    "id": 2184529
+   },
+   {
+    "data": "2022-07-27",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1590.58,
+    "categoria": "Aluguel de escritório",
+    "id": 2184533
+   },
+   {
+    "data": "2023-07-07",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 39.91,
+    "categoria": "Locomoção, hospedagem e combustível",
+    "id": 2203971
+   },
+   {
+    "data": "2024-03-08",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 44.99,
+    "categoria": "Locomoção, hospedagem e combustível",
+    "id": 2222376
+   },
+   {
+    "data": "2024-03-17",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 44.99,
+    "categoria": "Locomoção, hospedagem e combustível",
+    "id": 2223445
+   },
+   {
+    "data": "2024-04-08",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 39.91,
+    "categoria": "Locomoção, hospedagem e combustível",
+    "id": 2224896
+   },
+   {
+    "data": "2024-07-17",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 39.91,
+    "categoria": "Locomoção, hospedagem e combustível",
+    "id": 2234849
+   },
+   {
+    "data": "2025-03-18",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 65.27,
+    "categoria": "Locomoção, hospedagem e combustível",
+    "id": 2251581
+   },
+   {
+    "data": "2025-09-07",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 65.27,
+    "categoria": "Locomoção, hospedagem e combustível",
+    "id": 2266575
+   },
+   {
+    "data": "2023-08-03",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": "08701122797",
+    "valorReembolsado": 1955.77,
+    "categoria": "Aluguel de escritório",
+    "id": 2205906
+   },
+   {
+    "data": "2023-08-03",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": "08701122797",
+    "valorReembolsado": 1955.77,
+    "categoria": "Aluguel de escritório",
+    "id": 2210609
+   },
+   {
+    "data": "2023-10-04",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": "08701122797",
+    "valorReembolsado": 1955.77,
+    "categoria": "Aluguel de escritório",
+    "id": 2212156
+   },
+   {
+    "data": "2023-11-01",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": "08701122797",
+    "valorReembolsado": 1955.77,
+    "categoria": "Aluguel de escritório",
+    "id": 2213989
+   },
+   {
+    "data": "2023-12-20",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 1955.77,
+    "categoria": "Aluguel de escritório",
+    "id": 2220717
+   },
+   {
+    "data": "2024-01-11",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 1955.77,
+    "categoria": "Aluguel de escritório",
+    "id": 2220718
+   },
+   {
+    "data": "2024-01-30",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 1955.77,
+    "categoria": "Aluguel de escritório",
+    "id": 2220714
+   },
+   {
+    "data": "2024-04-04",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 1955.77,
+    "categoria": "Aluguel de escritório",
+    "id": 2227117
+   },
+   {
+    "data": "2024-05-06",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 1955.77,
+    "categoria": "Aluguel de escritório",
+    "id": 2227355
+   },
+   {
+    "data": "2024-06-17",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 1955.77,
+    "categoria": "Aluguel de escritório",
+    "id": 2231156
+   },
+   {
+    "data": "2024-07-05",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 1955.77,
+    "categoria": "Aluguel de escritório",
+    "id": 2251496
+   },
+   {
+    "data": "2024-08-06",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 1955.77,
+    "categoria": "Aluguel de escritório",
+    "id": 2244180
+   },
+   {
+    "data": "2024-09-02",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2030.48,
+    "categoria": "Aluguel de escritório",
+    "id": 2242091
+   },
+   {
+    "data": "2024-09-29",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2030.48,
+    "categoria": "Aluguel de escritório",
+    "id": 2242090
+   },
+   {
+    "data": "2024-10-30",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2030.48,
+    "categoria": "Aluguel de escritório",
+    "id": 2242289
+   },
+   {
+    "data": "2024-12-02",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2030.48,
+    "categoria": "Aluguel de escritório",
+    "id": 2245684
+   },
+   {
+    "data": "2025-01-05",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2033.48,
+    "categoria": "Aluguel de escritório",
+    "id": 2251494
+   },
+   {
+    "data": "2025-02-05",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2033.48,
+    "categoria": "Aluguel de escritório",
+    "id": 2251488
+   },
+   {
+    "data": "2025-03-05",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2033.48,
+    "categoria": "Aluguel de escritório",
+    "id": 2251487
+   },
+   {
+    "data": "2025-04-05",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2033.48,
+    "categoria": "Aluguel de escritório",
+    "id": 2253933
+   },
+   {
+    "data": "2025-05-05",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2033.48,
+    "categoria": "Aluguel de escritório",
+    "id": 2255631
+   },
+   {
+    "data": "2025-06-05",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2033.48,
+    "categoria": "Aluguel de escritório",
+    "id": 2258572
+   },
+   {
+    "data": "2025-07-05",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2033.48,
+    "categoria": "Aluguel de escritório",
+    "id": 2260535
+   },
+   {
+    "data": "2025-08-05",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2030.48,
+    "categoria": "Aluguel de escritório",
+    "id": 2263364
+   },
+   {
+    "data": "2025-09-05",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2033.48,
+    "categoria": "Aluguel de escritório",
+    "id": 2265961
+   },
+   {
+    "data": "2025-01-05",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2033.48,
+    "categoria": "Aluguel de escritório",
+    "id": 2276627
+   },
+   {
+    "data": "2025-11-05",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2092.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2279851
+   },
+   {
+    "data": "2025-12-05",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2092.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2276626
+   },
+   {
+    "data": "2025-01-05",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2092.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2279188
+   },
+   {
+    "data": "2026-02-05",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2092.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2279820
+   },
+   {
+    "data": "2026-07-01",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2092.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2292307
+   },
+   {
+    "data": "2026-07-01",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2092.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2292310
+   },
+   {
+    "data": "2026-07-01",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2092.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2292312
+   },
+   {
+    "data": "2026-07-01",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2092.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2292316
+   },
+   {
+    "data": "2026-08-17",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2092.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2296487
+   },
+   {
+    "data": "2026-10-01",
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "cpfCnpj": "19.191.476/0001-85",
+    "documento": NaN,
+    "valorReembolsado": 2092.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2301212
+   },
+   {
+    "data": "2024-09-03",
+    "fornecedor": "HOTEL ROYALTY BARRA LTDA",
+    "cpfCnpj": "33.910.613/0001-15",
+    "documento": "00092546",
+    "valorReembolsado": 75.0,
+    "categoria": "Locomoção, hospedagem e combustível",
+    "id": 2238446
+   },
+   {
+    "data": "2024-09-03",
+    "fornecedor": "HOTEL ROYALTY BARRA LTDA",
+    "cpfCnpj": "33.910.613/0001-15",
+    "documento": "00092546",
+    "valorReembolsado": 75.0,
+    "categoria": "Locomoção, hospedagem e combustível",
+    "id": 2236529
+   },
+   {
+    "data": "2020-04-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "03",
+    "valorReembolsado": 127.2,
+    "categoria": "Aluguel de escritório",
+    "id": 2143667
+   },
+   {
+    "data": "2020-04-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "03",
+    "valorReembolsado": 127.2,
+    "categoria": "Aluguel de escritório",
+    "id": 2143666
+   },
+   {
+    "data": "2020-05-08",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "04",
+    "valorReembolsado": 127.2,
+    "categoria": "Aluguel de escritório",
+    "id": 2144555
+   },
+   {
+    "data": "2020-05-08",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "04",
+    "valorReembolsado": 127.2,
+    "categoria": "Aluguel de escritório",
+    "id": 2144292
+   },
+   {
+    "data": "2020-06-05",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "05",
+    "valorReembolsado": 127.2,
+    "categoria": "Aluguel de escritório",
+    "id": 2145283
+   },
+   {
+    "data": "2020-06-05",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "05",
+    "valorReembolsado": 127.2,
+    "categoria": "Aluguel de escritório",
+    "id": 2145284
+   },
+   {
+    "data": "2020-07-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "3.253.090-9",
+    "valorReembolsado": 127.2,
+    "categoria": "Aluguel de escritório",
+    "id": 2146241
+   },
+   {
+    "data": "2020-08-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "3.253.090-9",
+    "valorReembolsado": 127.2,
+    "categoria": "Aluguel de escritório",
+    "id": 2148745
+   },
+   {
+    "data": "2022-10-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "3107",
+    "valorReembolsado": 817.7,
+    "categoria": "Aluguel de escritório",
+    "id": 2187805
+   },
+   {
+    "data": "2022-11-08",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "3107",
+    "valorReembolsado": 817.7,
+    "categoria": "Aluguel de escritório",
+    "id": 2189234
+   },
+   {
+    "data": "2021-09-08",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 586.8,
+    "categoria": "Aluguel de escritório",
+    "id": 2166097
+   },
+   {
+    "data": "2021-10-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 586.8,
+    "categoria": "Aluguel de escritório",
+    "id": 2167994
+   },
+   {
+    "data": "2023-01-30",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 866.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2198382
+   },
+   {
+    "data": "2023-01-30",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 866.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2206462
+   },
+   {
+    "data": "2023-01-31",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 866.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2200973
+   },
+   {
+    "data": "2023-01-30",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 866.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2206458
+   },
+   {
+    "data": "2023-01-30",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 866.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2209397
+   },
+   {
+    "data": "2023-01-30",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 866.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2211874
+   },
+   {
+    "data": "2023-01-30",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 866.0,
+    "categoria": "Aluguel de escritório",
+    "id": 2213985
+   },
+   {
+    "data": "2024-01-30",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 906.8,
+    "categoria": "Aluguel de escritório",
+    "id": 2219878
+   },
+   {
+    "data": "2024-01-30",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 906.8,
+    "categoria": "Aluguel de escritório",
+    "id": 2222214
+   },
+   {
+    "data": "2024-01-30",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 906.8,
+    "categoria": "Aluguel de escritório",
+    "id": 2224420
+   },
+   {
+    "data": "2024-01-30",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 906.8,
+    "categoria": "Aluguel de escritório",
+    "id": 2226620
+   },
+   {
+    "data": "2024-01-30",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 906.8,
+    "categoria": "Aluguel de escritório",
+    "id": 2231019
+   },
+   {
+    "data": "2024-01-30",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 906.8,
+    "categoria": "Aluguel de escritório",
+    "id": 2234033
+   },
+   {
+    "data": "2024-01-30",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 906.8,
+    "categoria": "Aluguel de escritório",
+    "id": 2239919
+   },
+   {
+    "data": "2024-01-30",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 906.8,
+    "categoria": "Aluguel de escritório",
+    "id": 2243494
+   },
+   {
+    "data": "2025-01-31",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 910.4,
+    "categoria": "Aluguel de escritório",
+    "id": 2248210
+   },
+   {
+    "data": "2025-03-17",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 946.81,
+    "categoria": "Aluguel de escritório",
+    "id": 2251353
+   },
+   {
+    "data": "2025-01-31",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 910.4,
+    "categoria": "Aluguel de escritório",
+    "id": 2253538
+   },
+   {
+    "data": "2025-01-31",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 910.4,
+    "categoria": "Aluguel de escritório",
+    "id": 2255641
+   },
+   {
+    "data": "2025-06-06",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 910.4,
+    "categoria": "Aluguel de escritório",
+    "id": 2258574
+   },
+   {
+    "data": "2025-01-31",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 910.4,
+    "categoria": "Aluguel de escritório",
+    "id": 2260543
+   },
+   {
+    "data": "2025-01-31",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 910.4,
+    "categoria": "Aluguel de escritório",
+    "id": 2263423
+   },
+   {
+    "data": "2025-01-31",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 910.4,
+    "categoria": "Aluguel de escritório",
+    "id": 2265977
+   },
+   {
+    "data": "2025-01-31",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 910.4,
+    "categoria": "Aluguel de escritório",
+    "id": 2270332
+   },
+   {
+    "data": "2025-11-11",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 946.81,
+    "categoria": "Aluguel de escritório",
+    "id": 2273113
+   },
+   {
+    "data": "2026-02-02",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 950.5,
+    "categoria": "Aluguel de escritório",
+    "id": 2279835
+   },
+   {
+    "data": "2026-03-05",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 950.5,
+    "categoria": "Aluguel de escritório",
+    "id": 2282236
+   },
+   {
+    "data": "2026-05-05",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 950.5,
+    "categoria": "Aluguel de escritório",
+    "id": 2287581
+   },
+   {
+    "data": "2026-02-02",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 950.5,
+    "categoria": "Aluguel de escritório",
+    "id": 2292560
+   },
+   {
+    "data": "2026-02-02",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 950.5,
+    "categoria": "Aluguel de escritório",
+    "id": 2294683
+   },
+   {
+    "data": "2026-02-02",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 950.5,
+    "categoria": "Aluguel de escritório",
+    "id": 2296500
+   },
+   {
+    "data": "2026-02-02",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 950.5,
+    "categoria": "Aluguel de escritório",
+    "id": 2301218
+   },
+   {
+    "data": "2020-02-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "3253089-1",
+    "valorReembolsado": 127.2,
+    "categoria": "Aluguel de escritório",
+    "id": 2141521
+   },
+   {
+    "data": "2020-03-06",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "3253089-1",
+    "valorReembolsado": 127.2,
+    "categoria": "Aluguel de escritório",
+    "id": 2141695
+   },
+   {
+    "data": "2019-07-03",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "32530891",
+    "valorReembolsado": 122.5,
+    "categoria": "Aluguel de escritório",
+    "id": 2127186
+   },
+   {
+    "data": "2019-08-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "32530891",
+    "valorReembolsado": 122.5,
+    "categoria": "Aluguel de escritório",
+    "id": 2132005
+   },
+   {
+    "data": "2019-08-29",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "32530891",
+    "valorReembolsado": 122.5,
+    "categoria": "Aluguel de escritório",
+    "id": 2129482
+   },
+   {
+    "data": "2019-10-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "32530891",
+    "valorReembolsado": 122.5,
+    "categoria": "Aluguel de escritório",
+    "id": 2131995
+   },
+   {
+    "data": "2020-02-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "3253090-9",
+    "valorReembolsado": 127.2,
+    "categoria": "Aluguel de escritório",
+    "id": 2141532
+   },
+   {
+    "data": "2020-03-06",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "3253090-9",
+    "valorReembolsado": 127.2,
+    "categoria": "Aluguel de escritório",
+    "id": 2141698
+   },
+   {
+    "data": "2019-07-03",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "32530909",
+    "valorReembolsado": 122.5,
+    "categoria": "Aluguel de escritório",
+    "id": 2127191
+   },
+   {
+    "data": "2019-08-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "32530909",
+    "valorReembolsado": 122.5,
+    "categoria": "Aluguel de escritório",
+    "id": 2132014
+   },
+   {
+    "data": "2019-08-29",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "32530909",
+    "valorReembolsado": 122.5,
+    "categoria": "Aluguel de escritório",
+    "id": 2129483
+   },
+   {
+    "data": "2019-10-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "32530909",
+    "valorReembolsado": 122.5,
+    "categoria": "Aluguel de escritório",
+    "id": 2131998
+   },
+   {
+    "data": "2021-02-05",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": NaN,
+    "valorReembolsado": 586.8,
+    "categoria": "Aluguel de escritório",
+    "id": 2157253
+   },
+   {
+    "data": "2021-03-05",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": NaN,
+    "valorReembolsado": 586.8,
+    "categoria": "Aluguel de escritório",
+    "id": 2157254
+   },
+   {
+    "data": "2021-04-08",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": NaN,
+    "valorReembolsado": 586.8,
+    "categoria": "Aluguel de escritório",
+    "id": 2158100
+   },
+   {
+    "data": "2021-05-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": NaN,
+    "valorReembolsado": 586.8,
+    "categoria": "Aluguel de escritório",
+    "id": 2159770
+   },
+   {
+    "data": "2021-06-08",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": NaN,
+    "valorReembolsado": 586.8,
+    "categoria": "Aluguel de escritório",
+    "id": 2160766
+   },
+   {
+    "data": "2021-07-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": NaN,
+    "valorReembolsado": 586.8,
+    "categoria": "Aluguel de escritório",
+    "id": 2162600
+   },
+   {
+    "data": "2021-08-06",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": NaN,
+    "valorReembolsado": 586.8,
+    "categoria": "Aluguel de escritório",
+    "id": 2164185
+   },
+   {
+    "data": "2021-11-08",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": NaN,
+    "valorReembolsado": 586.8,
+    "categoria": "Aluguel de escritório",
+    "id": 2169733
+   },
+   {
+    "data": "2022-02-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": NaN,
+    "valorReembolsado": 408.85,
+    "categoria": "Aluguel de escritório",
+    "id": 2174505
+   },
+   {
+    "data": "2022-03-04",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": NaN,
+    "valorReembolsado": 408.85,
+    "categoria": "Aluguel de escritório",
+    "id": 2175652
+   },
+   {
+    "data": "2022-04-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": NaN,
+    "valorReembolsado": 817.7,
+    "categoria": "Aluguel de escritório",
+    "id": 2178112
+   },
+   {
+    "data": "2022-05-06",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": NaN,
+    "valorReembolsado": 817.7,
+    "categoria": "Aluguel de escritório",
+    "id": 2179483
+   },
+   {
+    "data": "2022-06-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": NaN,
+    "valorReembolsado": 817.7,
+    "categoria": "Aluguel de escritório",
+    "id": 2181263
+   },
+   {
+    "data": "2022-07-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": NaN,
+    "valorReembolsado": 817.7,
+    "categoria": "Aluguel de escritório",
+    "id": 2183250
+   },
+   {
+    "data": "2022-08-05",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": NaN,
+    "valorReembolsado": 817.7,
+    "categoria": "Aluguel de escritório",
+    "id": 2184534
+   },
+   {
+    "data": "2022-09-08",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": NaN,
+    "valorReembolsado": 817.7,
+    "categoria": "Aluguel de escritório",
+    "id": 2186224
+   },
+   {
+    "data": "2022-09-25",
+    "fornecedor": "Habitar Administradora de Imóveis LTDA",
+    "cpfCnpj": "44.541.263/0001-83",
+    "documento": "03081",
+    "valorReembolsado": 1777.97,
+    "categoria": "Aluguel de escritório",
+    "id": 2187802
+   },
+   {
+    "data": "2022-10-31",
+    "fornecedor": "Habitar Administradora de Imóveis LTDA",
+    "cpfCnpj": "44.541.263/0001-83",
+    "documento": "03081",
+    "valorReembolsado": 1777.97,
+    "categoria": "Aluguel de escritório",
+    "id": 2189227
+   },
+   {
+    "data": "2023-02-28",
+    "fornecedor": "Habitar Administradora de Imóveis LTDA",
+    "cpfCnpj": "44.541.263/0001-83",
+    "documento": "10003084",
+    "valorReembolsado": 1955.77,
+    "categoria": "Aluguel de escritório",
+    "id": 2194777
+   },
+   {
+    "data": "2023-03-31",
+    "fornecedor": "Habitar Administradora de Imóveis LTDA",
+    "cpfCnpj": "44.541.263/0001-83",
+    "documento": "10003084",
+    "valorReembolsado": 1955.77,
+    "categoria": "Aluguel de escritório",
+    "id": 2196486
+   },
+   {
+    "data": "2023-06-22",
+    "fornecedor": "Habitar Administradora de Imóveis LTDA",
+    "cpfCnpj": "44.541.263/0001-83",
+    "documento": "10003087",
+    "valorReembolsado": 1592.78,
+    "categoria": "Aluguel de escritório",
+    "id": 2206461
+   },
+   {
+    "data": "2023-06-22",
+    "fornecedor": "Habitar Administradora de Imóveis LTDA",
+    "cpfCnpj": "44.541.263/0001-83",
+    "documento": "10003087",
+    "valorReembolsado": 1592.78,
+    "categoria": "Aluguel de escritório",
+    "id": 2206454
+   }
+  ],
+  "mesmo_doc_valores_diferentes": [
+   {
+    "data": "2019-08-08",
+    "fornecedor": "SINPETAXI",
+    "cpfCnpj": "00.031.708/0001-00",
+    "documento": NaN,
+    "valorReembolsado": 26.0,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2019-08-21",
+    "fornecedor": "SINPETAXI",
+    "cpfCnpj": "00.031.708/0001-00",
+    "documento": NaN,
+    "valorReembolsado": 8.0,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2019-11-05",
+    "fornecedor": "SINPETAXI",
+    "cpfCnpj": "00.031.708/0001-00",
+    "documento": NaN,
+    "valorReembolsado": 32.0,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2019-11-05",
+    "fornecedor": "SINPETAXI",
+    "cpfCnpj": "00.031.708/0001-00",
+    "documento": NaN,
+    "valorReembolsado": 50.0,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2019-11-18",
+    "fornecedor": "SINPETAXI",
+    "cpfCnpj": "00.031.708/0001-00",
+    "documento": NaN,
+    "valorReembolsado": 27.0,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2019-11-20",
+    "fornecedor": "SINPETAXI",
+    "cpfCnpj": "00.031.708/0001-00",
+    "documento": NaN,
+    "valorReembolsado": 33.0,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2019-11-27",
+    "fornecedor": "SINPETAXI",
+    "cpfCnpj": "00.031.708/0001-00",
+    "documento": NaN,
+    "valorReembolsado": 20.0,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2019-12-02",
+    "fornecedor": "SINPETAXI",
+    "cpfCnpj": "00.031.708/0001-00",
+    "documento": NaN,
+    "valorReembolsado": 22.0,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2019-12-04",
+    "fornecedor": "SINPETAXI",
+    "cpfCnpj": "00.031.708/0001-00",
+    "documento": NaN,
+    "valorReembolsado": 51.0,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2022-11-22",
+    "fornecedor": "SINPETAXI",
+    "cpfCnpj": "00.031.708/0001-00",
+    "documento": NaN,
+    "valorReembolsado": 15.0,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2020-06-30",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "FHG22F",
+    "valorReembolsado": 270.16,
+    "categoria": "Passagens"
+   },
+   {
+    "data": "2020-06-30",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "FHG22F",
+    "valorReembolsado": 540.31,
+    "categoria": "Passagens"
+   },
+   {
+    "data": "2020-10-07",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "VLXLSC",
+    "valorReembolsado": 1182.94,
+    "categoria": "Passagens"
+   },
+   {
+    "data": "2020-12-10",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "VLXLSC",
+    "valorReembolsado": 1201.0,
+    "categoria": "Passagens"
+   },
+   {
+    "data": "2022-06-27",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "WDPSCW",
+    "valorReembolsado": 1184.03,
+    "categoria": "Passagens"
+   },
+   {
+    "data": "2022-06-27",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "WDPSCW",
+    "valorReembolsado": 2889.9,
+    "categoria": "Passagens"
+   },
+   {
+    "data": "2021-03-30",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "XKYWCB",
+    "valorReembolsado": 1387.73,
+    "categoria": "Passagens"
+   },
+   {
+    "data": "2021-03-30",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "XKYWCB",
+    "valorReembolsado": 2775.43,
+    "categoria": "Passagens"
+   },
+   {
+    "data": "2020-06-29",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "XNOOAK",
+    "valorReembolsado": 459.52,
+    "categoria": "Passagens"
+   },
+   {
+    "data": "2020-07-22",
+    "fornecedor": "TAM",
+    "cpfCnpj": "02.012.862/0001-60",
+    "documento": "XNOOAK",
+    "valorReembolsado": 1294.62,
+    "categoria": "Passagens"
+   },
+   {
+    "data": "2019-07-02",
+    "fornecedor": "TELEXPERTS TELECOMUNIAÇÕES LTDA RJ",
+    "cpfCnpj": "07.625.852/0001-13",
+    "documento": "78275650",
+    "valorReembolsado": 142.34,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-10-03",
+    "fornecedor": "TELEXPERTS TELECOMUNIAÇÕES LTDA RJ",
+    "cpfCnpj": "07.625.852/0001-13",
+    "documento": "78275650",
+    "valorReembolsado": 188.98,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-06-04",
+    "fornecedor": "TELEXPERTS TELECOMUNIAÇÕES LTDA RJ",
+    "cpfCnpj": "07.625.852/0001-13",
+    "documento": "78275650",
+    "valorReembolsado": 127.53,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-09-03",
+    "fornecedor": "TELEXPERTS TELECOMUNIAÇÕES LTDA RJ",
+    "cpfCnpj": "07.625.852/0001-13",
+    "documento": NaN,
+    "valorReembolsado": 230.32,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-12-03",
+    "fornecedor": "TELEXPERTS TELECOMUNIAÇÕES LTDA RJ",
+    "cpfCnpj": "07.625.852/0001-13",
+    "documento": NaN,
+    "valorReembolsado": 218.42,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-04-03",
+    "fornecedor": "TELEXPERTS TELECOMUNIAÇÕES LTDA RJ",
+    "cpfCnpj": "07.625.852/0001-13",
+    "documento": NaN,
+    "valorReembolsado": 172.91,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-02-04",
+    "fornecedor": "TELEXPERTS TELECOMUNIAÇÕES LTDA RJ",
+    "cpfCnpj": "07.625.852/0001-13",
+    "documento": NaN,
+    "valorReembolsado": 171.4,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-03-03",
+    "fornecedor": "TELEXPERTS TELECOMUNIAÇÕES LTDA RJ",
+    "cpfCnpj": "07.625.852/0001-13",
+    "documento": NaN,
+    "valorReembolsado": 170.78,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-02-28",
+    "fornecedor": "AZUL",
+    "cpfCnpj": "09.296.295/0001-60",
+    "documento": "ZBYH8Y",
+    "valorReembolsado": 1405.21,
+    "categoria": "Passagens"
+   },
+   {
+    "data": "2020-03-02",
+    "fornecedor": "AZUL",
+    "cpfCnpj": "09.296.295/0001-60",
+    "documento": "ZBYH8Y",
+    "valorReembolsado": 1405.22,
+    "categoria": "Passagens"
+   },
+   {
+    "data": "2019-10-31",
+    "fornecedor": "HFX ADMINISTRAÇÃO E PARTICIPAÇÕES LTDA.",
+    "cpfCnpj": "10.224.919/0002-01",
+    "documento": NaN,
+    "valorReembolsado": 654.79,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-10-31",
+    "fornecedor": "HFX ADMINISTRAÇÃO E PARTICIPAÇÕES LTDA.",
+    "cpfCnpj": "10.224.919/0002-01",
+    "documento": NaN,
+    "valorReembolsado": 857.04,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-03-12",
+    "fornecedor": "Uni Taxi DF",
+    "cpfCnpj": "12.623.662/0001-05",
+    "documento": NaN,
+    "valorReembolsado": 16.0,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2022-11-22",
+    "fornecedor": "Uni Taxi DF",
+    "cpfCnpj": "12.623.662/0001-05",
+    "documento": NaN,
+    "valorReembolsado": 17.0,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2019-02-07",
+    "fornecedor": "PEBF EMPREENDIMENTOS E PARTICIPAÇÕES LTDA",
+    "cpfCnpj": "14.585.068/0001-94",
+    "documento": "32530891",
+    "valorReembolsado": 122.5,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-06-13",
+    "fornecedor": "PEBF EMPREENDIMENTOS E PARTICIPAÇÕES LTDA",
+    "cpfCnpj": "14.585.068/0001-94",
+    "documento": "32530891",
+    "valorReembolsado": 127.4,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-02-07",
+    "fornecedor": "PEBF EMPREENDIMENTOS E PARTICIPAÇÕES LTDA",
+    "cpfCnpj": "14.585.068/0001-94",
+    "documento": "32530909",
+    "valorReembolsado": 122.5,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-06-13",
+    "fornecedor": "PEBF EMPREENDIMENTOS E PARTICIPAÇÕES LTDA",
+    "cpfCnpj": "14.585.068/0001-94",
+    "documento": "32530909",
+    "valorReembolsado": 127.4,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-07-30",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02156655",
+    "valorReembolsado": 268.41,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-07-30",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02156655",
+    "valorReembolsado": 64.81,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-07-30",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02156655",
+    "valorReembolsado": 1064.16,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-08-28",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02193681",
+    "valorReembolsado": 17.46,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-08-28",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02193681",
+    "valorReembolsado": 260.2,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-08-28",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02193681",
+    "valorReembolsado": 64.81,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-08-28",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02193681",
+    "valorReembolsado": 1064.16,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-09-26",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02230984",
+    "valorReembolsado": 150.96,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-09-26",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02230984",
+    "valorReembolsado": 260.2,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-09-26",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02230984",
+    "valorReembolsado": 64.81,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-09-26",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02230984",
+    "valorReembolsado": 1064.16,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-03-25",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02438634",
+    "valorReembolsado": 153.59,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-03-25",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02438634",
+    "valorReembolsado": 356.4,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-04-25",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02479400",
+    "valorReembolsado": 128.48,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-04-25",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02479400",
+    "valorReembolsado": 348.88,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-04-25",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02479400",
+    "valorReembolsado": 64.81,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-04-25",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02479400",
+    "valorReembolsado": 1064.16,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-05-29",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02522950",
+    "valorReembolsado": 114.07,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-05-29",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02522950",
+    "valorReembolsado": 364.81,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-05-29",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02522950",
+    "valorReembolsado": 64.81,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-05-29",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02522950",
+    "valorReembolsado": 1115.66,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-06-26",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02560853",
+    "valorReembolsado": 16.33,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-06-26",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02560853",
+    "valorReembolsado": 97.66,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-06-26",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02560853",
+    "valorReembolsado": 319.49,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-06-26",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02560853",
+    "valorReembolsado": 64.81,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-06-26",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02560853",
+    "valorReembolsado": 1115.66,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-08-05",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02605817",
+    "valorReembolsado": 130.75,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-08-05",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02605817",
+    "valorReembolsado": 349.31,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-08-05",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02605817",
+    "valorReembolsado": 64.81,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-08-05",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02605817",
+    "valorReembolsado": 1115.66,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-08-27",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02634484",
+    "valorReembolsado": 119.88,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-08-27",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02634484",
+    "valorReembolsado": 361.25,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-08-27",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02634484",
+    "valorReembolsado": 64.81,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-08-27",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02634484",
+    "valorReembolsado": 1225.12,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-09-29",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02670590",
+    "valorReembolsado": 98.05,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-09-29",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02670590",
+    "valorReembolsado": 358.37,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-09-29",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02670590",
+    "valorReembolsado": 64.81,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-10-05",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "02670590",
+    "valorReembolsado": 1225.12,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-10-30",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0489969",
+    "valorReembolsado": 102.88,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-10-30",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0489969",
+    "valorReembolsado": 342.76,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-10-30",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0489969",
+    "valorReembolsado": 1174.08,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-11-27",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0498849",
+    "valorReembolsado": 107.24,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-11-27",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0498849",
+    "valorReembolsado": 359.17,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-11-27",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0498849",
+    "valorReembolsado": 1174.08,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-12-26",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0508773",
+    "valorReembolsado": 113.52,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-12-26",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0508773",
+    "valorReembolsado": 358.63,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-12-26",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0508773",
+    "valorReembolsado": 1174.08,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-01-28",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0520438",
+    "valorReembolsado": 106.01,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-01-28",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0520438",
+    "valorReembolsado": 360.63,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-01-28",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0520438",
+    "valorReembolsado": 1174.08,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-02-26",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0534372",
+    "valorReembolsado": 371.15,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-02-26",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0534372",
+    "valorReembolsado": 1174.08,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-03-27",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0546073",
+    "valorReembolsado": 101.68,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-03-27",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0546073",
+    "valorReembolsado": 111.44,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-03-27",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0546073",
+    "valorReembolsado": 358.33,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-03-27",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0546073",
+    "valorReembolsado": 1174.08,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-04-28",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0560096",
+    "valorReembolsado": 110.11,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-04-28",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0560096",
+    "valorReembolsado": 363.1,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-04-28",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0560096",
+    "valorReembolsado": 1241.82,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-05-25",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0570410",
+    "valorReembolsado": 117.66,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-05-25",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0570410",
+    "valorReembolsado": 1241.82,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-06-25",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0583926",
+    "valorReembolsado": 187.89,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-06-25",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0583926",
+    "valorReembolsado": 303.39,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-06-25",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0583926",
+    "valorReembolsado": 1034.52,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-07-28",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0595684",
+    "valorReembolsado": 124.06,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-07-28",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0595684",
+    "valorReembolsado": 366.8,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-07-28",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0595684",
+    "valorReembolsado": 1241.82,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-08-26",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0606053",
+    "valorReembolsado": 121.91,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-08-26",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0606053",
+    "valorReembolsado": 373.47,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-08-26",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0606053",
+    "valorReembolsado": 1241.82,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-09-28",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0618106",
+    "valorReembolsado": 21.57,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-09-28",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0618106",
+    "valorReembolsado": 370.36,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-09-28",
+    "fornecedor": "Condomínio Barra Prime Offices",
+    "cpfCnpj": "14.966.211/0001-98",
+    "documento": "0618106",
+    "valorReembolsado": 1241.82,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2021-09-27",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": "08701122797",
+    "valorReembolsado": 1777.97,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2021-09-27",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": "08701122797",
+    "valorReembolsado": 1422.05,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-08-25",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": "s/n",
+    "valorReembolsado": 562.9,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-08-25",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": "s/n",
+    "valorReembolsado": 1004.02,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-08-25",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": "s/n",
+    "valorReembolsado": 1500.0,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-07-03",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1261.45,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-07-03",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1958.0,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-07-28",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 562.9,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-07-28",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 986.78,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-09-29",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1076.49,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-10-30",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1274.42,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-12-04",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1264.76,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-12-30",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1391.72,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2021-01-29",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1102.0,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2021-03-01",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1219.97,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2021-03-29",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1422.03,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2021-05-04",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1233.34,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2021-06-01",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1347.54,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2021-08-26",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1436.1,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2021-10-27",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1406.61,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2021-11-29",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1460.11,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2021-12-22",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1430.06,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2022-02-07",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1435.3,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2022-02-24",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1584.67,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2022-03-29",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1530.18,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2022-04-28",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1605.15,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2022-05-30",
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "cpfCnpj": "15.081.898/0001-47",
+    "documento": NaN,
+    "valorReembolsado": 1585.18,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-03-15",
+    "fornecedor": "ADRIA VIAGENS E TURISMO LTDA",
+    "cpfCnpj": "16.978.175/0001-08",
+    "documento": "00014359",
+    "valorReembolsado": 209.39,
+    "categoria": "Passagens"
+   },
+   {
+    "data": "2019-03-15",
+    "fornecedor": "ADRIA VIAGENS E TURISMO LTDA",
+    "cpfCnpj": "16.978.175/0001-08",
+    "documento": "00014359",
+    "valorReembolsado": 502.85,
+    "categoria": "Passagens"
+   },
+   {
+    "data": "2020-08-06",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 103.47,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2020-08-07",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 36.06,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2020-02-13",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 50.18,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2020-02-17",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 116.52,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2020-02-18",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 20.58,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2020-02-18",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 79.5,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2023-03-23",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 39.94,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2023-03-24",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 39.96,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2023-07-07",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 44.9,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-03-04",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 11.92,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-03-04",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 11.97,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-03-06",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 44.91,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-03-11",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 90.98,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-03-17",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 44.95,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-03-18",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 29.99,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-03-18",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 44.94,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-03-18",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 54.95,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-03-21",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 10.96,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-03-21",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 15.81,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-04-01",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 50.6,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-04-02",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 53.51,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-04-08",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 31.94,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-04-08",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 49.91,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-04-20",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 39.99,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-04-21",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 39.97,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-07-22",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 49.9,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-07-22",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 83.69,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-08-15",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 41.95,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-08-15",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 57.41,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-08-16",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 53.14,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-08-20",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 48.92,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-08-20",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 66.4,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-08-29",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 53.26,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-09-01",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 49.94,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-09-01",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 88.31,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-09-05",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 52.56,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-09-07",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 55.84,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-09-12",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 52.42,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-09-15",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 59.9,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-09-19",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 53.5,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-09-22",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 63.72,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-04-06",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 68.75,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-04-06",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 68.85,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-05-20",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 31.15,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-05-20",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 54.31,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-05-20",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 66.44,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-05-20",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 75.77,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-05-20",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 77.48,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-06-03",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 31.23,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-06-03",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 62.08,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-06-03",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 62.32,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-06-03",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 65.88,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-06-28",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 59.01,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-06-29",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 75.86,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-08-03",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 73.97,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-08-03",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 79.58,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-08-03",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 103.49,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-08-13",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 66.5,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-08-13",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 77.53,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-08-14",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 96.71,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-08-19",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 61.68,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-08-19",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 98.44,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-08-27",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 37.96,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-08-27",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 73.51,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-08-27",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 106.4,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-08-30",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 54.6,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-08-30",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 116.96,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-08-30",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 143.88,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-09-07",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 76.29,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-10-31",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 60.1,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-10-31",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 78.22,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-10-31",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 80.69,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-10-31",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 82.56,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-11-14",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 62.95,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-11-14",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 83.3,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-12-01",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 49.49,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-12-02",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 77.89,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2025-12-12",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 75.05,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2026-05-07",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 81.96,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2026-05-08",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 13.98,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2026-05-08",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 105.97,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2026-05-14",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 70.99,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2026-05-15",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 70.98,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2026-05-31",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 72.97,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2026-06-01",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 92.99,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2026-07-13",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 77.98,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2026-07-14",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA",
+    "cpfCnpj": "17.895.646/0001-87",
+    "documento": NaN,
+    "valorReembolsado": 60.98,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2019-06-05",
+    "fornecedor": "SERVCAR SOLUÇÕES AUTOMATIVAS LTDA.ME",
+    "cpfCnpj": "18.325.264/0001-80",
+    "documento": "055/2019",
+    "valorReembolsado": 1066.64,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2019-06-05",
+    "fornecedor": "SERVCAR SOLUÇÕES AUTOMATIVAS LTDA.ME",
+    "cpfCnpj": "18.325.264/0001-80",
+    "documento": "055/2019",
+    "valorReembolsado": 6933.36,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-06-27",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02115738",
+    "valorReembolsado": 64.81,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-06-27",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02115738",
+    "valorReembolsado": 145.42,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-06-27",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02115738",
+    "valorReembolsado": 258.11,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-06-27",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02115738",
+    "valorReembolsado": 1064.16,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-10-29",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02269121",
+    "valorReembolsado": 178.98,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-10-29",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02269121",
+    "valorReembolsado": 290.42,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-10-29",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02269121",
+    "valorReembolsado": 64.81,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-10-29",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02269121",
+    "valorReembolsado": 1064.16,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-11-27",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02303963",
+    "valorReembolsado": 305.51,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-11-27",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02303963",
+    "valorReembolsado": 64.81,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-11-27",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02303963-5",
+    "valorReembolsado": 108.33,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-11-27",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02303963-5",
+    "valorReembolsado": 1064.16,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-01-28",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02373925",
+    "valorReembolsado": 155.7,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-01-28",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02373925",
+    "valorReembolsado": 329.65,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-01-28",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02373925",
+    "valorReembolsado": 64.81,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-01-28",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02373925",
+    "valorReembolsado": 1064.16,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-02-21",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02402522",
+    "valorReembolsado": 163.92,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-02-21",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02402522",
+    "valorReembolsado": 351.45,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-02-21",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02402522",
+    "valorReembolsado": 64.81,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-02-21",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02402522",
+    "valorReembolsado": 1064.19,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-03-25",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02438634",
+    "valorReembolsado": 64.81,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-03-25",
+    "fornecedor": "CONACLINE ADMINISTRADORA DE IMOVEIS LTDA - CONAC",
+    "cpfCnpj": "19.834.090/0001-44",
+    "documento": "02438634",
+    "valorReembolsado": 1064.16,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-12-12",
+    "fornecedor": "GRUP. EMPRESARIAL UNIVERSE",
+    "cpfCnpj": "21.188.803/0001-91",
+    "documento": "1032175",
+    "valorReembolsado": 13.43,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-12-12",
+    "fornecedor": "GRUP. EMPRESARIAL UNIVERSE",
+    "cpfCnpj": "21.188.803/0001-91",
+    "documento": "1032175",
+    "valorReembolsado": 629.95,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-12-12",
+    "fornecedor": "GRUP. EMPRESARIAL UNIVERSE",
+    "cpfCnpj": "21.188.803/0001-91",
+    "documento": "1032176",
+    "valorReembolsado": 13.69,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-12-12",
+    "fornecedor": "GRUP. EMPRESARIAL UNIVERSE",
+    "cpfCnpj": "21.188.803/0001-91",
+    "documento": "1032176",
+    "valorReembolsado": 642.55,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-09-03",
+    "fornecedor": "HOTEL ROYALTY BARRA LTDA",
+    "cpfCnpj": "33.910.613/0001-15",
+    "documento": "00092545",
+    "valorReembolsado": 836.25,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2024-09-03",
+    "fornecedor": "HOTEL ROYALTY BARRA LTDA",
+    "cpfCnpj": "33.910.613/0001-15",
+    "documento": "00092545",
+    "valorReembolsado": 278.76,
+    "categoria": "Locomoção, hospedagem e combustível"
+   },
+   {
+    "data": "2020-09-23",
+    "fornecedor": "Claro S.A",
+    "cpfCnpj": "40.432.544/0062-69",
+    "documento": NaN,
+    "valorReembolsado": 163.63,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-10-24",
+    "fornecedor": "Claro S.A",
+    "cpfCnpj": "40.432.544/0062-69",
+    "documento": NaN,
+    "valorReembolsado": 184.99,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-11-25",
+    "fornecedor": "Claro S.A",
+    "cpfCnpj": "40.432.544/0062-69",
+    "documento": NaN,
+    "valorReembolsado": 186.29,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-04-05",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "3.253.089-1",
+    "valorReembolsado": 122.5,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-07-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "3.253.089-1",
+    "valorReembolsado": 127.2,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-04-05",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "3.253.090-9",
+    "valorReembolsado": 122.5,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2023-01-30",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "3107",
+    "valorReembolsado": 866.0,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2023-01-30",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 900.64,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-06-17",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 943.07,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-09-30",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 979.34,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-04-15",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "31582992",
+    "valorReembolsado": 988.52,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-11-04",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "32530891",
+    "valorReembolsado": 127.4,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-08-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "32530891",
+    "valorReembolsado": 127.2,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-11-11",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": "32530909",
+    "valorReembolsado": 127.4,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-07-03",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": NaN,
+    "valorReembolsado": 731.76,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-09-29",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": NaN,
+    "valorReembolsado": 562.9,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2021-12-07",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": NaN,
+    "valorReembolsado": 1430.34,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-06-09",
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "cpfCnpj": "42.498.733/0001-48",
+    "documento": NaN,
+    "valorReembolsado": 988.52,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2022-11-30",
+    "fornecedor": "Habitar Administradora de Imóveis LTDA",
+    "cpfCnpj": "44.541.263/0001-83",
+    "documento": "03082",
+    "valorReembolsado": 1777.97,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2022-11-30",
+    "fornecedor": "Habitar Administradora de Imóveis LTDA",
+    "cpfCnpj": "44.541.263/0001-83",
+    "documento": "03082",
+    "valorReembolsado": 1632.81,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2023-01-27",
+    "fornecedor": "Habitar Administradora de Imóveis LTDA",
+    "cpfCnpj": "44.541.263/0001-83",
+    "documento": "10003082",
+    "valorReembolsado": 1955.77,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2023-01-27",
+    "fornecedor": "Habitar Administradora de Imóveis LTDA",
+    "cpfCnpj": "44.541.263/0001-83",
+    "documento": "10003082",
+    "valorReembolsado": 1555.67,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2022-12-29",
+    "fornecedor": "Habitar Administradora de Imóveis LTDA",
+    "cpfCnpj": "44.541.263/0001-83",
+    "documento": "10003083",
+    "valorReembolsado": 2844.75,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2022-12-29",
+    "fornecedor": "Habitar Administradora de Imóveis LTDA",
+    "cpfCnpj": "44.541.263/0001-83",
+    "documento": "10003083",
+    "valorReembolsado": 1574.59,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2023-02-28",
+    "fornecedor": "Habitar Administradora de Imóveis LTDA",
+    "cpfCnpj": "44.541.263/0001-83",
+    "documento": "10003084",
+    "valorReembolsado": 1592.5,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2023-03-31",
+    "fornecedor": "Habitar Administradora de Imóveis LTDA",
+    "cpfCnpj": "44.541.263/0001-83",
+    "documento": "10003084",
+    "valorReembolsado": 1566.25,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2023-04-29",
+    "fornecedor": "Habitar Administradora de Imóveis LTDA",
+    "cpfCnpj": "44.541.263/0001-83",
+    "documento": "10003085",
+    "valorReembolsado": 1955.77,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2023-04-29",
+    "fornecedor": "Habitar Administradora de Imóveis LTDA",
+    "cpfCnpj": "44.541.263/0001-83",
+    "documento": "10003085",
+    "valorReembolsado": 1590.13,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2023-05-29",
+    "fornecedor": "Habitar Administradora de Imóveis LTDA",
+    "cpfCnpj": "44.541.263/0001-83",
+    "documento": "10003086",
+    "valorReembolsado": 1955.77,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2023-05-29",
+    "fornecedor": "Habitar Administradora de Imóveis LTDA",
+    "cpfCnpj": "44.541.263/0001-83",
+    "documento": "10003086",
+    "valorReembolsado": 1569.6,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2022-08-26",
+    "fornecedor": "Habitar Administradora de Imóveis LTDA",
+    "cpfCnpj": "44.541.263/0001-83",
+    "documento": NaN,
+    "valorReembolsado": 1777.97,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2022-08-26",
+    "fornecedor": "Habitar Administradora de Imóveis LTDA",
+    "cpfCnpj": "44.541.263/0001-83",
+    "documento": NaN,
+    "valorReembolsado": 1528.42,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-12-20",
+    "fornecedor": "Light Serviços de Eletricidade SA",
+    "cpfCnpj": "60.444.437/0001-46",
+    "documento": "523306491198",
+    "valorReembolsado": 334.59,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-12-20",
+    "fornecedor": "Light Serviços de Eletricidade SA",
+    "cpfCnpj": "60.444.437/0001-46",
+    "documento": "523306491198",
+    "valorReembolsado": 336.32,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-12-20",
+    "fornecedor": "Light Serviços de Eletricidade SA",
+    "cpfCnpj": "60.444.437/0001-46",
+    "documento": "527106400409",
+    "valorReembolsado": 84.76,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-12-20",
+    "fornecedor": "Light Serviços de Eletricidade SA",
+    "cpfCnpj": "60.444.437/0001-46",
+    "documento": "527106400409",
+    "valorReembolsado": 85.36,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-10-16",
+    "fornecedor": "Light Serviços de Eletricidade SA",
+    "cpfCnpj": "60.444.437/0001-46",
+    "documento": NaN,
+    "valorReembolsado": 86.83,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-10-16",
+    "fornecedor": "Light Serviços de Eletricidade SA",
+    "cpfCnpj": "60.444.437/0001-46",
+    "documento": NaN,
+    "valorReembolsado": 330.9,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-11-18",
+    "fornecedor": "Light Serviços de Eletricidade SA",
+    "cpfCnpj": "60.444.437/0001-46",
+    "documento": NaN,
+    "valorReembolsado": 219.29,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-03-17",
+    "fornecedor": "Light Serviços de Eletricidade SA",
+    "cpfCnpj": "60.444.437/0001-46",
+    "documento": NaN,
+    "valorReembolsado": 103.17,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-03-17",
+    "fornecedor": "Light Serviços de Eletricidade SA",
+    "cpfCnpj": "60.444.437/0001-46",
+    "documento": NaN,
+    "valorReembolsado": 252.63,
+    "categoria": "Aluguel de escritório"
+   }
+  ],
+  "data_distante_do_mes_ref": [
+   {
+    "data": "2019-10-31",
+    "ano": 2019,
+    "mes": 3,
+    "fornecedor": "HFX ADMINISTRAÇÃO E PARTICIPAÇÕES LTDA.",
+    "valorReembolsado": 654.79,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-10-31",
+    "ano": 2019,
+    "mes": 3,
+    "fornecedor": "HFX ADMINISTRAÇÃO E PARTICIPAÇÕES LTDA.",
+    "valorReembolsado": 857.04,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-06-22",
+    "ano": 2020,
+    "mes": 9,
+    "fornecedor": "Void Arquitetura Ltda.",
+    "valorReembolsado": 1250.0,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2020-05-04",
+    "ano": 2021,
+    "mes": 4,
+    "fornecedor": "Miranda & Miranda Imoveis Ltda.",
+    "valorReembolsado": 1500.0,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2023-01-30",
+    "ano": 2023,
+    "mes": 5,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 866.0,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2023-01-30",
+    "ano": 2023,
+    "mes": 6,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 866.0,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2023-01-31",
+    "ano": 2023,
+    "mes": 6,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 866.0,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2023-01-30",
+    "ano": 2023,
+    "mes": 7,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 866.0,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2023-01-30",
+    "ano": 2023,
+    "mes": 9,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 866.0,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2023-01-30",
+    "ano": 2023,
+    "mes": 10,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 866.0,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2023-01-30",
+    "ano": 2023,
+    "mes": 11,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 866.0,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-01-30",
+    "ano": 2024,
+    "mes": 5,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 906.8,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-01-30",
+    "ano": 2024,
+    "mes": 7,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 906.8,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-01-30",
+    "ano": 2024,
+    "mes": 8,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 906.8,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-01-30",
+    "ano": 2024,
+    "mes": 9,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 906.8,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2024-01-30",
+    "ano": 2024,
+    "mes": 10,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 906.8,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-01-31",
+    "ano": 2025,
+    "mes": 5,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 910.4,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-01-31",
+    "ano": 2025,
+    "mes": 7,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 910.4,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-01-31",
+    "ano": 2025,
+    "mes": 8,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 910.4,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-01-05",
+    "ano": 2025,
+    "mes": 9,
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "valorReembolsado": 2033.48,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-01-31",
+    "ano": 2025,
+    "mes": 9,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 910.4,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-01-31",
+    "ano": 2025,
+    "mes": 10,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 910.4,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2025-01-05",
+    "ano": 2025,
+    "mes": 12,
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "valorReembolsado": 2092.0,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-07-01",
+    "ano": 2026,
+    "mes": 2,
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "valorReembolsado": 2092.0,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-07-01",
+    "ano": 2026,
+    "mes": 3,
+    "fornecedor": "BDV CONSULTORIA EMPRESARIAL E PARTICIPACOES IMOBILIARIAS LTDA",
+    "valorReembolsado": 2092.0,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-02-02",
+    "ano": 2026,
+    "mes": 7,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 950.5,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-02-02",
+    "ano": 2026,
+    "mes": 8,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 950.5,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-02-02",
+    "ano": 2026,
+    "mes": 9,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 950.5,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2026-02-02",
+    "ano": 2026,
+    "mes": 10,
+    "fornecedor": "Prefeitura da Cidade do Rio de Janeiro",
+    "valorReembolsado": 950.5,
+    "categoria": "Aluguel de escritório"
+   }
+  ],
+  "antes_da_posse": [
+   {
+    "data": "2019-01-17",
+    "fornecedor": "GRUP. EMPRESARIAL UNIVERSE",
+    "valorReembolsado": 650.91,
+    "categoria": "Aluguel de escritório"
+   },
+   {
+    "data": "2019-01-17",
+    "fornecedor": "GRUP. EMPRESARIAL UNIVERSE",
+    "valorReembolsado": 665.27,
+    "categoria": "Aluguel de escritório"
+   }
+  ],
+  "cpf_cnpj_invalido": [
+   {
+    "data": "2024-04-02",
+    "fornecedor": "ESPIGAO PALACE HOTEL LTDA - EPP",
+    "cpfCnpj": "2762391700010",
+    "valorReembolsado": 199.0
+   },
+   {
+    "data": "2024-04-02",
+    "fornecedor": "ESPIGAO PALACE HOTEL LTDA - EPP",
+    "cpfCnpj": "2762391700010",
+    "valorReembolsado": 199.0
+   }
+  ],
+  "pessoa_fisica": [],
+  "valores_redondos_>=1000": {
+   "n": 50,
+   "valor": 284200.0,
+   "pct_notas": 4.6
+  },
+  "valores_redondos_mediana_senado_pct": 12.2,
+  "fim_de_semana": {
+   "n": 90,
+   "valor": 65362.87,
+   "por_categoria": {
+    "Aluguel de escritório": 30226.76,
+    "Locomoção, hospedagem e combustível": 3460.79,
+    "Material de consumo": 375.0,
+    "Passagens": 31300.32
+   }
+  },
+  "sem_numero_documento": {
+   "n": 247,
+   "valor": 175479.89
+  },
+  "tipos_documento": [
+   {
+    "tipoDocumento": "Boleto",
+    "sum": 243075.5,
+    "count": 349
+   },
+   {
+    "tipoDocumento": "Cupom Fiscal",
+    "sum": 2320.12,
+    "count": 23
+   },
+   {
+    "tipoDocumento": "Fatura",
+    "sum": 104669.84,
+    "count": 191
+   },
+   {
+    "tipoDocumento": "Nota Fiscal",
+    "sum": 37738.82,
+    "count": 10
+   },
+   {
+    "tipoDocumento": "Nota Fiscal Eletrônica",
+    "sum": 204952.66,
+    "count": 114
+   },
+   {
+    "tipoDocumento": "Passagem / Bilhete / Código Localizador",
+    "sum": 521853.14,
+    "count": 232
+   },
+   {
+    "tipoDocumento": "Recibo",
+    "sum": 116697.78,
+    "count": 179
+   }
+  ]
+ },
+ "n_notas_flavio": 1098,
+ "total_flavio": 1231307.86
+}

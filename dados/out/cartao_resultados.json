@@ -1,0 +1,1340 @@
+{
+ "ipca_ate": "2026-09-01",
+ "hist_linhas": 114961,
+ "hist_cnpj_corrompido_pct": 98.1,
+ "hist_por_ano": [
+  {
+   "ano": 2003,
+   "nominal": 5327599.63,
+   "real": 18826406.27,
+   "saques": 2195674.23
+  },
+  {
+   "ano": 2004,
+   "nominal": 6541238.37,
+   "real": 21728725.09,
+   "saques": 2564914.18
+  },
+  {
+   "ano": 2005,
+   "nominal": 5204035.8,
+   "real": 16121793.01,
+   "saques": 815802.07
+  },
+  {
+   "ano": 2006,
+   "nominal": 4977941.73,
+   "real": 14839882.47,
+   "saques": 578097.8
+  },
+  {
+   "ano": 2007,
+   "nominal": 3857905.4,
+   "real": 11100861.11,
+   "saques": 363830.79
+  },
+  {
+   "ano": 2008,
+   "nominal": 6084616.5,
+   "real": 16469494.77,
+   "saques": 293531.6
+  },
+  {
+   "ano": 2009,
+   "nominal": 5438863.41,
+   "real": 14118761.12,
+   "saques": 413405.33
+  },
+  {
+   "ano": 2010,
+   "nominal": 6556309.21,
+   "real": 16157832.38,
+   "saques": 363283.27
+  },
+  {
+   "ano": 2011,
+   "nominal": 4584576.0,
+   "real": 10608551.7,
+   "saques": 236727.41
+  },
+  {
+   "ano": 2012,
+   "nominal": 4598744.3,
+   "real": 10104318.39,
+   "saques": 306977.23
+  },
+  {
+   "ano": 2013,
+   "nominal": 6022000.19,
+   "real": 12457374.61,
+   "saques": 341203.41
+  },
+  {
+   "ano": 2014,
+   "nominal": 9261297.81,
+   "real": 18010405.33,
+   "saques": 408087.94
+  },
+  {
+   "ano": 2015,
+   "nominal": 5706943.28,
+   "real": 10179424.19,
+   "saques": 218380.14
+  },
+  {
+   "ano": 2016,
+   "nominal": 4192262.08,
+   "real": 6878602.77,
+   "saques": 185221.77
+  },
+  {
+   "ano": 2017,
+   "nominal": 4301549.71,
+   "real": 6824706.23,
+   "saques": 133000.77
+  },
+  {
+   "ano": 2018,
+   "nominal": 5284660.23,
+   "real": 8096474.18,
+   "saques": 244086.61
+  },
+  {
+   "ano": 2019,
+   "nominal": 7367884.09,
+   "real": 10868048.76,
+   "saques": 241254.76
+  },
+  {
+   "ano": 2020,
+   "nominal": 9127557.35,
+   "real": 13000738.52,
+   "saques": 503452.57
+  },
+  {
+   "ano": 2021,
+   "nominal": 11189149.76,
+   "real": 14669769.89,
+   "saques": 656419.93
+  },
+  {
+   "ano": 2022,
+   "nominal": 13498337.48,
+   "real": 16328603.77,
+   "saques": 734039.38
+  }
+ ],
+ "hist_por_mandato": [
+  {
+   "mandato": "Bolsonaro (2019-2022)",
+   "nominal": 41182928.68,
+   "real": 54867160.93,
+   "saque_pct": 5.18,
+   "meses": 48,
+   "real_por_mes": 1143065.85
+  },
+  {
+   "mandato": "Dilma (2011-mai/2016)",
+   "nominal": 31578854.19,
+   "real": 63705116.0,
+   "saque_pct": 5.02,
+   "meses": 65,
+   "real_por_mes": 980078.71
+  },
+  {
+   "mandato": "Lula 1-2 (2003-2010)",
+   "nominal": 43988510.05,
+   "real": 129363756.21,
+   "saque_pct": 17.25,
+   "meses": 96,
+   "real_por_mes": 1347539.13
+  },
+  {
+   "mandato": "Temer (mai/2016-2018)",
+   "nominal": 12373179.41,
+   "real": 19454741.38,
+   "saque_pct": 3.94,
+   "meses": 32,
+   "real_por_mes": 607960.67
+  }
+ ],
+ "lula12_categorias": [
+  {
+   "subelemento": "HOSPEDAGENS",
+   "nominal": 20498557.45,
+   "real": 58074720.23,
+   "n": 37648,
+   "pct": 44.89
+  },
+  {
+   "subelemento": "LOCACAO DE MEIOS DE TRANSPORTE",
+   "nominal": 11123253.42,
+   "real": 36249164.61,
+   "n": 1986,
+   "pct": 28.02
+  },
+  {
+   "subelemento": "GENEROS DE ALIMENTACAO",
+   "nominal": 4412528.89,
+   "real": 12265808.26,
+   "n": 4460,
+   "pct": 9.48
+  },
+  {
+   "subelemento": "FORNECIMENTO DE ALIMENTACAO",
+   "nominal": 3684080.17,
+   "real": 10331033.31,
+   "n": 3660,
+   "pct": 7.99
+  },
+  {
+   "subelemento": "SERV.DE APOIO ADMIN.,TECNICO E OPERACIONAL",
+   "nominal": 1051486.54,
+   "real": 2895091.66,
+   "n": 1631,
+   "pct": 2.24
+  },
+  {
+   "subelemento": "SERVICOS DE TELECOMUNICACOES",
+   "nominal": 731477.72,
+   "real": 2100808.72,
+   "n": 4007,
+   "pct": 1.62
+  },
+  {
+   "subelemento": "MATERIAL DE LIMPEZA E PROD. DE HIGIENIZACAO",
+   "nominal": 363917.05,
+   "real": 1040667.96,
+   "n": 1131,
+   "pct": 0.8
+  },
+  {
+   "subelemento": "COMBUSTIVEIS E LUBRIF. AUTOMOTIVOS",
+   "nominal": 288408.21,
+   "real": 918078.3,
+   "n": 1380,
+   "pct": 0.71
+  },
+  {
+   "subelemento": "LOCACAO BENS MOV. OUTR. NATUREZA E INTANGIVEIS",
+   "nominal": 256369.15,
+   "real": 686132.88,
+   "n": 58,
+   "pct": 0.53
+  },
+  {
+   "subelemento": "MATERIAL P/MANUTENCAO DE BENS IMOVEIS",
+   "nominal": 157112.51,
+   "real": 477524.79,
+   "n": 620,
+   "pct": 0.37
+  },
+  {
+   "subelemento": "MATERIAL DE COPA E COZINHA",
+   "nominal": 157745.85,
+   "real": 450699.08,
+   "n": 505,
+   "pct": 0.35
+  },
+  {
+   "subelemento": "OUTROS SERVICOS DE TERCEIROS-PESSOA JURIDICA",
+   "nominal": 99648.11,
+   "real": 337066.72,
+   "n": 844,
+   "pct": 0.26
+  }
+ ],
+ "lula12_fornecedores": [
+  {
+   "fornecedor": "FULL TIME LOCACAO E SERVICOS S/C LTDA",
+   "nominal": 1933750.16,
+   "real": 6761844.66,
+   "n": 377,
+   "cat": "LOCACAO DE MEIOS DE TRANSPORTE"
+  },
+  {
+   "fornecedor": "P.J.P. LOCACOES E SERVICOS LTDA - BRASILIA RENT A",
+   "nominal": 1237404.23,
+   "real": 3871905.16,
+   "n": 276,
+   "cat": "LOCACAO DE MEIOS DE TRANSPORTE"
+  },
+  {
+   "fornecedor": "LOCALIZA RENT A CAR S/A",
+   "nominal": 1123647.07,
+   "real": 3399877.8,
+   "n": 146,
+   "cat": "LOCACAO DE MEIOS DE TRANSPORTE"
+  },
+  {
+   "fornecedor": "MERCADINHO LA PALMA LTDA",
+   "nominal": 1175706.69,
+   "real": 3242881.05,
+   "n": 392,
+   "cat": "GENEROS DE ALIMENTACAO"
+  },
+  {
+   "fornecedor": "CIA. INDUSTRIAL DE GRANDES HOTEIS - HOTEL GLORIA",
+   "nominal": 944378.19,
+   "real": 2812053.75,
+   "n": 1376,
+   "cat": "HOSPEDAGENS"
+  },
+  {
+   "fornecedor": "ANNA RENT A CAR - MAIA LOCADORA DE VEICULOS LTDA",
+   "nominal": 789858.79,
+   "real": 2708713.3,
+   "n": 208,
+   "cat": "LOCACAO DE MEIOS DE TRANSPORTE"
+  },
+  {
+   "fornecedor": "ABACO SCP SAINT MORITZ",
+   "nominal": 1014531.21,
+   "real": 2695372.64,
+   "n": 2781,
+   "cat": "HOSPEDAGENS"
+  },
+  {
+   "fornecedor": "ESTANPLAZA ADMINISTRADORA HOTELARIA E COMERCIAL LT",
+   "nominal": 945649.49,
+   "real": 2556474.2,
+   "n": 1064,
+   "cat": "HOSPEDAGENS"
+  },
+  {
+   "fornecedor": "COMPANHIA BRASILEIRA DE DISTRIBUICAO",
+   "nominal": 829981.02,
+   "real": 2282235.9,
+   "n": 1720,
+   "cat": "GENEROS DE ALIMENTACAO"
+  },
+  {
+   "fornecedor": "BOURBON IBIRAPUERA HOTEL  CONVENTION",
+   "nominal": 850167.19,
+   "real": 2193897.58,
+   "n": 1889,
+   "cat": "HOSPEDAGENS"
+  },
+  {
+   "fornecedor": "BRASILIA RENT A CAR - LOCACOES E SERVICOS LTDA",
+   "nominal": 616964.43,
+   "real": 2013733.54,
+   "n": 105,
+   "cat": "LOCACAO DE MEIOS DE TRANSPORTE"
+  },
+  {
+   "fornecedor": "VICTORY ALUGUEL DE VEICULOS E SERVICOS LTDA",
+   "nominal": 574540.69,
+   "real": 1889476.69,
+   "n": 55,
+   "cat": "LOCACAO DE MEIOS DE TRANSPORTE"
+  },
+  {
+   "fornecedor": "SAINT MORITZ HOT. ACCOR BRASIL S.A.",
+   "nominal": 480228.53,
+   "real": 1582839.76,
+   "n": 962,
+   "cat": "HOSPEDAGENS"
+  },
+  {
+   "fornecedor": "SAUIPE S.A - SAUIPE PARK",
+   "nominal": 588675.55,
+   "real": 1566053.08,
+   "n": 86,
+   "cat": "HOSPEDAGENS"
+  },
+  {
+   "fornecedor": "ASA BRANCA LOCADORA DE VEICULOS LTDA",
+   "nominal": 482228.61,
+   "real": 1565034.38,
+   "n": 78,
+   "cat": "LOCACAO DE MEIOS DE TRANSPORTE"
+  },
+  {
+   "fornecedor": "LOCALIZA CAR RENTAL S/A",
+   "nominal": 558322.57,
+   "real": 1532119.43,
+   "n": 70,
+   "cat": "LOCACAO DE MEIOS DE TRANSPORTE"
+  },
+  {
+   "fornecedor": "RENARO LOCACAO DE VEICULOS E SERVICOS LTDA",
+   "nominal": 456948.12,
+   "real": 1513280.11,
+   "n": 92,
+   "cat": "LOCACAO DE MEIOS DE TRANSPORTE"
+  },
+  {
+   "fornecedor": "EVEREST RIO HOTEL S/A",
+   "nominal": 477708.73,
+   "real": 1374741.54,
+   "n": 518,
+   "cat": "HOSPEDAGENS"
+  },
+  {
+   "fornecedor": "RA CATERING LTDA - THE COLLECTION-CUMBICA SP",
+   "nominal": 494619.9,
+   "real": 1304926.47,
+   "n": 781,
+   "cat": "FORNECIMENTO DE ALIMENTACAO"
+  },
+  {
+   "fornecedor": "NOVA RIOTEL EMPREENDIMENTOS HOTELEIROS LTDA",
+   "nominal": 480668.69,
+   "real": 1257291.19,
+   "n": 393,
+   "cat": "HOSPEDAGENS"
+  }
+ ],
+ "lula12_maiores": [
+  {
+   "data": "2008-12-17",
+   "fornecedor": "SAUIPE S.A - SAUIPE PARK",
+   "subelemento": "HOSPEDAGENS",
+   "tipo": "C",
+   "valor": 290176.0,
+   "valor_real": 771954.98
+  },
+  {
+   "data": "2003-12-14",
+   "fornecedor": "FULL TIME LOCACAO E SERVICOS S/C LTDA",
+   "subelemento": "LOCACAO DE MEIOS DE TRANSPORTE",
+   "tipo": "C",
+   "valor": 103728.4,
+   "valor_real": 358059.17
+  },
+  {
+   "data": "2008-12-16",
+   "fornecedor": "SHOW S ESTRUTURAS E EVENTOS LTDA - ME",
+   "subelemento": "LOCACAO BENS MOV. OUTR. NATUREZA E INTANGIVEIS",
+   "tipo": "C",
+   "valor": 124012.5,
+   "valor_real": 329910.35
+  },
+  {
+   "data": "2003-06-05",
+   "fornecedor": "FULL TIME LOCACAO E SERVICOS S/C LTDA",
+   "subelemento": "LOCACAO DE MEIOS DE TRANSPORTE",
+   "tipo": "C",
+   "valor": 88754.92,
+   "valor_real": 314014.67
+  },
+  {
+   "data": "2003-10-09",
+   "fornecedor": "FULL TIME LOCACAO E SERVICOS S/C LTDA",
+   "subelemento": "LOCACAO DE MEIOS DE TRANSPORTE",
+   "tipo": "C",
+   "valor": 71163.79,
+   "valor_real": 247766.61
+  },
+  {
+   "data": "2004-04-12",
+   "fornecedor": "VICTORY ALUGUEL DE VEICULOS E SERVICOS LTDA",
+   "subelemento": "LOCACAO DE MEIOS DE TRANSPORTE",
+   "tipo": "C",
+   "valor": 69273.42,
+   "valor_real": 233912.87
+  },
+  {
+   "data": "2004-03-15",
+   "fornecedor": "FULL TIME LOCACAO E SERVICOS S/C LTDA",
+   "subelemento": "LOCACAO DE MEIOS DE TRANSPORTE",
+   "tipo": "C",
+   "valor": 67102.76,
+   "valor_real": 227421.65
+  },
+  {
+   "data": "2003-01-25",
+   "fornecedor": "PATEO MOINHOS ADM. E PARTICIPACOES LTDA",
+   "subelemento": "HOSPEDAGENS",
+   "tipo": "C",
+   "valor": 57227.2,
+   "valor_real": 211162.24
+  },
+  {
+   "data": "2005-12-20",
+   "fornecedor": "LOCALIZA RENT A CAR S/A",
+   "subelemento": "LOCACAO DE MEIOS DE TRANSPORTE",
+   "tipo": "C",
+   "valor": 69448.55,
+   "valor_real": 210800.98
+  },
+  {
+   "data": "2006-02-07",
+   "fornecedor": "UIAKIRI AGENCIA DE VIAGEM E TURISMO LTDA",
+   "subelemento": "LOCACAO DE MEIOS DE TRANSPORTE",
+   "tipo": "C",
+   "valor": 70000.0,
+   "valor_real": 210366.08
+  },
+  {
+   "data": "2006-04-03",
+   "fornecedor": "CURUMIM TRANSPORTES DE LOCACAO LTDA",
+   "subelemento": "LOCACAO DE MEIOS DE TRANSPORTE",
+   "tipo": "C",
+   "valor": 68580.8,
+   "valor_real": 204788.56
+  },
+  {
+   "data": "2010-12-21",
+   "fornecedor": "HOTEIS OTHON S/A",
+   "subelemento": "HOSPEDAGENS",
+   "tipo": "C",
+   "valor": 83680.9,
+   "valor_real": 201506.6
+  },
+  {
+   "data": "2006-08-04",
+   "fornecedor": "LOCALIZA CAR RENTAL S/A",
+   "subelemento": "LOCACAO DE MEIOS DE TRANSPORTE",
+   "tipo": "C",
+   "valor": 65824.27,
+   "valor_real": 196302.86
+  },
+  {
+   "data": "2003-03-10",
+   "fornecedor": "FULL TIME LOCACAO E SERVICOS S/C LTDA",
+   "subelemento": "LOCACAO DE MEIOS DE TRANSPORTE",
+   "tipo": "C",
+   "valor": 54570.0,
+   "valor_real": 195836.23
+  },
+  {
+   "data": "2005-12-08",
+   "fornecedor": "LOCALIZA RENT A CAR S/A",
+   "subelemento": "LOCACAO DE MEIOS DE TRANSPORTE",
+   "tipo": "C",
+   "valor": 61180.58,
+   "valor_real": 185704.76
+  },
+  {
+   "data": "2004-07-02",
+   "fornecedor": "RENARO LOCACAO DE VEICULOS E SERVICOS LTDA",
+   "subelemento": "LOCACAO DE MEIOS DE TRANSPORTE",
+   "tipo": "C",
+   "valor": 54082.79,
+   "valor_real": 178784.76
+  },
+  {
+   "data": "2004-05-03",
+   "fornecedor": "VICTORY ALUGUEL DE VEICULOS E SERVICOS LTDA",
+   "subelemento": "LOCACAO DE MEIOS DE TRANSPORTE",
+   "tipo": "C",
+   "valor": 51338.8,
+   "valor_real": 172474.12
+  },
+  {
+   "data": "2008-12-11",
+   "fornecedor": "LOCALIZA CAR RENTAL S/A",
+   "subelemento": "LOCACAO DE MEIOS DE TRANSPORTE",
+   "tipo": "C",
+   "valor": 62825.68,
+   "valor_real": 167135.11
+  },
+  {
+   "data": "2003-08-14",
+   "fornecedor": "MULTI-CAR LOCADORA DE VEICULOS LTDA",
+   "subelemento": "LOCACAO DE MEIOS DE TRANSPORTE",
+   "tipo": "C",
+   "valor": 47038.03,
+   "valor_real": 165525.46
+  },
+  {
+   "data": "2005-08-22",
+   "fornecedor": "D  A PARTICIPACOES LTDA.",
+   "subelemento": "LOCACAO DE MEIOS DE TRANSPORTE",
+   "tipo": "C",
+   "valor": 53293.47,
+   "valor_real": 165039.77
+  }
+ ],
+ "lula12_saques": {
+  "n": 15676,
+  "nominal": 7588539.27,
+  "real": 24331487.04,
+  "por_ano": {
+   "2003": 2195674.23,
+   "2004": 2564914.18,
+   "2005": 815802.07,
+   "2006": 578097.8,
+   "2007": 363830.79,
+   "2008": 293531.6,
+   "2009": 413405.33,
+   "2010": 363283.27
+  },
+  "top_cat": {
+   "LOCACAO DE MEIOS DE TRANSPORTE": 10440160.11,
+   "HOSPEDAGENS": 5323011.66,
+   "FORNECIMENTO DE ALIMENTACAO": 3097611.21,
+   "SERVICOS DE TELECOMUNICACOES": 2072792.41,
+   "GENEROS DE ALIMENTACAO": 777868.64,
+   "SERV.DE APOIO ADMIN.,TECNICO E OPERACIONAL": 541859.47,
+   "COMBUSTIVEIS E LUBRIF. AUTOMOTIVOS": 292972.46,
+   "OUTROS SERVICOS DE TERCEIROS-PESSOA JURIDICA": 258008.55
+  }
+ },
+ "share_categorias_mandato": [
+  {
+   "subelemento": "HOSPEDAGENS",
+   "Bolsonaro (2019-2022)": 41.9,
+   "Dilma (2011-mai/2016)": 53.2,
+   "Lula 1-2 (2003-2010)": 44.9,
+   "Temer (mai/2016-2018)": 36.0
+  },
+  {
+   "subelemento": "LOCACAO DE MEIOS DE TRANSPORTE",
+   "Bolsonaro (2019-2022)": 0.1,
+   "Dilma (2011-mai/2016)": 0.4,
+   "Lula 1-2 (2003-2010)": 28.0,
+   "Temer (mai/2016-2018)": 0.0
+  },
+  {
+   "subelemento": "SERV.DE APOIO ADMIN.,TECNICO E OPERACIONAL",
+   "Bolsonaro (2019-2022)": 20.2,
+   "Dilma (2011-mai/2016)": 10.3,
+   "Lula 1-2 (2003-2010)": 2.2,
+   "Temer (mai/2016-2018)": 24.3
+  },
+  {
+   "subelemento": "GENEROS DE ALIMENTACAO",
+   "Bolsonaro (2019-2022)": 12.0,
+   "Dilma (2011-mai/2016)": 16.8,
+   "Lula 1-2 (2003-2010)": 9.5,
+   "Temer (mai/2016-2018)": 21.5
+  },
+  {
+   "subelemento": "FORNECIMENTO DE ALIMENTACAO",
+   "Bolsonaro (2019-2022)": 19.5,
+   "Dilma (2011-mai/2016)": 12.0,
+   "Lula 1-2 (2003-2010)": 8.0,
+   "Temer (mai/2016-2018)": 13.7
+  },
+  {
+   "subelemento": "COMBUSTIVEIS E LUBRIF. AUTOMOTIVOS",
+   "Bolsonaro (2019-2022)": 1.7,
+   "Dilma (2011-mai/2016)": 0.6,
+   "Lula 1-2 (2003-2010)": 0.7,
+   "Temer (mai/2016-2018)": 0.7
+  },
+  {
+   "subelemento": "SERVICOS DE TELECOMUNICACOES",
+   "Bolsonaro (2019-2022)": 0.0,
+   "Dilma (2011-mai/2016)": 1.1,
+   "Lula 1-2 (2003-2010)": 1.6,
+   "Temer (mai/2016-2018)": 0.2
+  },
+  {
+   "subelemento": "LOCACAO BENS MOV. OUTR. NATUREZA E INTANGIVEIS",
+   "Bolsonaro (2019-2022)": 1.3,
+   "Dilma (2011-mai/2016)": 0.5,
+   "Lula 1-2 (2003-2010)": 0.5,
+   "Temer (mai/2016-2018)": 0.0
+  },
+  {
+   "subelemento": "MATERIAL DE LIMPEZA E PROD. DE HIGIENIZACAO",
+   "Bolsonaro (2019-2022)": 0.5,
+   "Dilma (2011-mai/2016)": 1.2,
+   "Lula 1-2 (2003-2010)": 0.8,
+   "Temer (mai/2016-2018)": 0.7
+  },
+  {
+   "subelemento": "LOCAAO BENS MOV. OUTR. NATUREZA E INTANGVEIS",
+   "Bolsonaro (2019-2022)": 1.2,
+   "Dilma (2011-mai/2016)": 0.0,
+   "Lula 1-2 (2003-2010)": 0.0,
+   "Temer (mai/2016-2018)": 0.0
+  }
+ ],
+ "lula12_dup_mesmo_dia_valor": {
+  "n": 36282,
+  "valor": 15464696.15
+ },
+ "dup_por_mandato_pct": {
+  "Bolsonaro (2019-2022)": 3.3,
+  "Dilma (2011-mai/2016)": 9.2,
+  "Lula 1-2 (2003-2010)": 35.2,
+  "Temer (mai/2016-2018)": 1.5
+ },
+ "lula12_fim_semana": {
+  "n": 8297,
+  "nominal": 4206475.91
+ },
+ "lula12_portadores": 57,
+ "hist_valores_negativos": {
+  "n": 15,
+  "valor": -4399.73
+ },
+ "hist_sem_fornecedor": 0,
+ "portal_ug_ano": [
+  {
+   "ano": 2019,
+   "nominal": 7336610.01,
+   "real": 10812432.01,
+   "n": 3426
+  },
+  {
+   "ano": 2020,
+   "nominal": 8543188.12,
+   "real": 12179009.13,
+   "n": 4070
+  },
+  {
+   "ano": 2021,
+   "nominal": 11368960.11,
+   "real": 14954287.39,
+   "n": 4720
+  },
+  {
+   "ano": 2022,
+   "nominal": 14802689.95,
+   "real": 17889323.53,
+   "n": 5171
+  },
+  {
+   "ano": 2023,
+   "nominal": 11765979.21,
+   "real": 13573470.49,
+   "n": 2870
+  },
+  {
+   "ano": 2024,
+   "nominal": 19505574.61,
+   "real": 21509771.39,
+   "n": 4844
+  },
+  {
+   "ano": 2025,
+   "nominal": 16724248.33,
+   "real": 17592431.82,
+   "n": 5632
+  },
+  {
+   "ano": 2026,
+   "nominal": 6391393.75,
+   "real": 6476170.22,
+   "n": 4377
+  }
+ ],
+ "portal_orgao_pr_ano": [
+  {
+   "ano": 2019,
+   "AGENCIA BRASILEIRA DE INTELIGENCIA": 6347816.81,
+   "EMPRESA BRASIL DE COMUNICACAO S.A": 80719.35,
+   "FUNDO DE IMPRENSA NACIONAL/EXEC.ORC.FINANC.": 21735.51,
+   "GABINETE DA VICE-PRESIDENCIA DA REPUBLICA": 640909.7,
+   "GABINETE DE SEGURANCA INSTITUCIONAL/PR": 1339610.36,
+   "INTERVENCAO FEDERAL RIO DE JANEIRO": 1886.36,
+   "SECRETARIA DE ADMINISTRACAO - PECULIARIDADES": 0.0,
+   "SECRETARIA DE ADMINISTRACAO/PR": 7336610.01,
+   "VICE-PRESIDENCIA DA REPUBLICA": 0.0
+  },
+  {
+   "ano": 2020,
+   "AGENCIA BRASILEIRA DE INTELIGENCIA": 9608232.86,
+   "EMPRESA BRASIL DE COMUNICACAO S.A": 105066.79,
+   "FUNDO DE IMPRENSA NACIONAL/EXEC.ORC.FINANC.": 33150.81,
+   "GABINETE DA VICE-PRESIDENCIA DA REPUBLICA": 707232.32,
+   "GABINETE DE SEGURANCA INSTITUCIONAL/PR": 1134514.92,
+   "INTERVENCAO FEDERAL RIO DE JANEIRO": 60.0,
+   "SECRETARIA DE ADMINISTRACAO - PECULIARIDADES": 0.0,
+   "SECRETARIA DE ADMINISTRACAO/PR": 8543188.12,
+   "VICE-PRESIDENCIA DA REPUBLICA": 0.0
+  },
+  {
+   "ano": 2021,
+   "AGENCIA BRASILEIRA DE INTELIGENCIA": 6462592.89,
+   "EMPRESA BRASIL DE COMUNICACAO S.A": 58594.38,
+   "FUNDO DE IMPRENSA NACIONAL/EXEC.ORC.FINANC.": 8808.42,
+   "GABINETE DA VICE-PRESIDENCIA DA REPUBLICA": 1007696.62,
+   "GABINETE DE SEGURANCA INSTITUCIONAL/PR": 1170127.95,
+   "INTERVENCAO FEDERAL RIO DE JANEIRO": 0.0,
+   "SECRETARIA DE ADMINISTRACAO - PECULIARIDADES": 0.0,
+   "SECRETARIA DE ADMINISTRACAO/PR": 11368960.11,
+   "VICE-PRESIDENCIA DA REPUBLICA": 0.0
+  },
+  {
+   "ano": 2022,
+   "AGENCIA BRASILEIRA DE INTELIGENCIA": 6881024.72,
+   "EMPRESA BRASIL DE COMUNICACAO S.A": 86875.95,
+   "FUNDO DE IMPRENSA NACIONAL/EXEC.ORC.FINANC.": 14200.98,
+   "GABINETE DA VICE-PRESIDENCIA DA REPUBLICA": 1661637.64,
+   "GABINETE DE SEGURANCA INSTITUCIONAL/PR": 3055661.82,
+   "INTERVENCAO FEDERAL RIO DE JANEIRO": 0.0,
+   "SECRETARIA DE ADMINISTRACAO - PECULIARIDADES": 0.0,
+   "SECRETARIA DE ADMINISTRACAO/PR": 14802689.95,
+   "VICE-PRESIDENCIA DA REPUBLICA": 0.0
+  },
+  {
+   "ano": 2023,
+   "AGENCIA BRASILEIRA DE INTELIGENCIA": 7924647.49,
+   "EMPRESA BRASIL DE COMUNICACAO S.A": 112207.24,
+   "FUNDO DE IMPRENSA NACIONAL/EXEC.ORC.FINANC.": 26476.95,
+   "GABINETE DA VICE-PRESIDENCIA DA REPUBLICA": 409688.53,
+   "GABINETE DE SEGURANCA INSTITUCIONAL/PR": 3990821.75,
+   "INTERVENCAO FEDERAL RIO DE JANEIRO": 0.0,
+   "SECRETARIA DE ADMINISTRACAO - PECULIARIDADES": 0.0,
+   "SECRETARIA DE ADMINISTRACAO/PR": 11765979.21,
+   "VICE-PRESIDENCIA DA REPUBLICA": 84938.39
+  },
+  {
+   "ano": 2024,
+   "AGENCIA BRASILEIRA DE INTELIGENCIA": 3294985.81,
+   "EMPRESA BRASIL DE COMUNICACAO S.A": 124706.6,
+   "FUNDO DE IMPRENSA NACIONAL/EXEC.ORC.FINANC.": 48178.76,
+   "GABINETE DA VICE-PRESIDENCIA DA REPUBLICA": 18264.95,
+   "GABINETE DE SEGURANCA INSTITUCIONAL/PR": 3237947.91,
+   "INTERVENCAO FEDERAL RIO DE JANEIRO": 0.0,
+   "SECRETARIA DE ADMINISTRACAO - PECULIARIDADES": 10928624.44,
+   "SECRETARIA DE ADMINISTRACAO/PR": 8576950.17,
+   "VICE-PRESIDENCIA DA REPUBLICA": 397385.36
+  },
+  {
+   "ano": 2025,
+   "AGENCIA BRASILEIRA DE INTELIGENCIA": 3232585.6,
+   "EMPRESA BRASIL DE COMUNICACAO S.A": 158705.51,
+   "FUNDO DE IMPRENSA NACIONAL/EXEC.ORC.FINANC.": 98312.27,
+   "GABINETE DA VICE-PRESIDENCIA DA REPUBLICA": 3376.38,
+   "GABINETE DE SEGURANCA INSTITUCIONAL/PR": 2617939.83,
+   "INTERVENCAO FEDERAL RIO DE JANEIRO": 0.0,
+   "SECRETARIA DE ADMINISTRACAO - PECULIARIDADES": 16587093.6,
+   "SECRETARIA DE ADMINISTRACAO/PR": 137154.73,
+   "VICE-PRESIDENCIA DA REPUBLICA": 294362.84
+  },
+  {
+   "ano": 2026,
+   "AGENCIA BRASILEIRA DE INTELIGENCIA": 1906149.32,
+   "EMPRESA BRASIL DE COMUNICACAO S.A": 102353.94,
+   "FUNDO DE IMPRENSA NACIONAL/EXEC.ORC.FINANC.": 38808.08,
+   "GABINETE DA VICE-PRESIDENCIA DA REPUBLICA": 2675.41,
+   "GABINETE DE SEGURANCA INSTITUCIONAL/PR": 1911188.03,
+   "INTERVENCAO FEDERAL RIO DE JANEIRO": 0.0,
+   "SECRETARIA DE ADMINISTRACAO - PECULIARIDADES": 6311619.52,
+   "SECRETARIA DE ADMINISTRACAO/PR": 79774.23,
+   "VICE-PRESIDENCIA DA REPUBLICA": 122406.3
+  }
+ ],
+ "portal_transacoes": [
+  {
+   "ano": 2019,
+   "COMP A/V-SOL DISP C/CLI-R$ ANT VENC": 0.0,
+   "COMPRA A/V - INT$ - APRES": 16022.34,
+   "COMPRA A/V - R$ - APRES": 93831.47,
+   "Informações protegidas por sigilo": 7201590.73,
+   "SAQUE - INT$ - APRES": 215.47,
+   "SAQUE CASH/ATM BB": 24950.0
+  },
+  {
+   "ano": 2020,
+   "COMP A/V-SOL DISP C/CLI-R$ ANT VENC": 0.0,
+   "COMPRA A/V - INT$ - APRES": 3599.65,
+   "COMPRA A/V - R$ - APRES": 85009.34,
+   "Informações protegidas por sigilo": 8446109.13,
+   "SAQUE - INT$ - APRES": 0.0,
+   "SAQUE CASH/ATM BB": 8470.0
+  },
+  {
+   "ano": 2021,
+   "COMP A/V-SOL DISP C/CLI-R$ ANT VENC": 6019.0,
+   "COMPRA A/V - INT$ - APRES": 8679.9,
+   "COMPRA A/V - R$ - APRES": 88446.37,
+   "Informações protegidas por sigilo": 11261394.84,
+   "SAQUE - INT$ - APRES": 0.0,
+   "SAQUE CASH/ATM BB": 4420.0
+  },
+  {
+   "ano": 2022,
+   "COMP A/V-SOL DISP C/CLI-R$ ANT VENC": 0.0,
+   "COMPRA A/V - INT$ - APRES": 4230.23,
+   "COMPRA A/V - R$ - APRES": 105925.06,
+   "Informações protegidas por sigilo": 14690684.66,
+   "SAQUE - INT$ - APRES": 0.0,
+   "SAQUE CASH/ATM BB": 1850.0
+  },
+  {
+   "ano": 2023,
+   "COMP A/V-SOL DISP C/CLI-R$ ANT VENC": 0.0,
+   "COMPRA A/V - INT$ - APRES": 15739.29,
+   "COMPRA A/V - R$ - APRES": 81730.46,
+   "Informações protegidas por sigilo": 11666509.46,
+   "SAQUE - INT$ - APRES": 0.0,
+   "SAQUE CASH/ATM BB": 2000.0
+  },
+  {
+   "ano": 2024,
+   "COMP A/V-SOL DISP C/CLI-R$ ANT VENC": 0.0,
+   "COMPRA A/V - INT$ - APRES": 11005.26,
+   "COMPRA A/V - R$ - APRES": 86400.94,
+   "Informações protegidas por sigilo": 19397148.41,
+   "SAQUE - INT$ - APRES": 0.0,
+   "SAQUE CASH/ATM BB": 11020.0
+  },
+  {
+   "ano": 2025,
+   "COMP A/V-SOL DISP C/CLI-R$ ANT VENC": 0.0,
+   "COMPRA A/V - INT$ - APRES": 24498.03,
+   "COMPRA A/V - R$ - APRES": 94856.7,
+   "Informações protegidas por sigilo": 16587093.6,
+   "SAQUE - INT$ - APRES": 0.0,
+   "SAQUE CASH/ATM BB": 17800.0
+  },
+  {
+   "ano": 2026,
+   "COMP A/V-SOL DISP C/CLI-R$ ANT VENC": 0.0,
+   "COMPRA A/V - INT$ - APRES": 14881.53,
+   "COMPRA A/V - R$ - APRES": 56892.7,
+   "Informações protegidas por sigilo": 6311619.52,
+   "SAQUE - INT$ - APRES": 0.0,
+   "SAQUE CASH/ATM BB": 8000.0
+  }
+ ],
+ "portal_sigiloso_ano": {
+  "2019": 7201590.73,
+  "2020": 8446109.13,
+  "2021": 11261394.84,
+  "2022": 14690684.66,
+  "2023": 11666509.46,
+  "2024": 19397148.41,
+  "2025": 16587093.6,
+  "2026": 6311619.52
+ },
+ "portal_sigiloso_exemplo": [
+  {
+   "NOME PORTADOR": "Sigiloso",
+   "NOME FAVORECIDO": "Sigiloso",
+   "TRANSAÇÃO": "Informações protegidas por sigilo",
+   "valor": 98.62
+  },
+  {
+   "NOME PORTADOR": "Sigiloso",
+   "NOME FAVORECIDO": "Sigiloso",
+   "TRANSAÇÃO": "Informações protegidas por sigilo",
+   "valor": 983.88
+  },
+  {
+   "NOME PORTADOR": "Sigiloso",
+   "NOME FAVORECIDO": "Sigiloso",
+   "TRANSAÇÃO": "Informações protegidas por sigilo",
+   "valor": 316.0
+  }
+ ],
+ "lula3_fornecedores": [
+  {
+   "favorecido": "AUTO POSTO PARQUE VILLA LOBOS LTDA.",
+   "valor": 80955.69,
+   "n": 381
+  },
+  {
+   "favorecido": "SEM INFORMACAO",
+   "valor": 78832.17,
+   "n": 139
+  },
+  {
+   "favorecido": "AUTO POSTO HYGIENOPOLIS LTDA",
+   "valor": 53470.64,
+   "n": 224
+  },
+  {
+   "favorecido": "NAO SE APLICA",
+   "valor": 38820.0,
+   "n": 42
+  },
+  {
+   "favorecido": "AUTO POSTO GRANA LTDA",
+   "valor": 36167.85,
+   "n": 134
+  },
+  {
+   "favorecido": "AUTO POSTO BANDEIRA PAULISTA LTDA",
+   "valor": 13265.12,
+   "n": 59
+  },
+  {
+   "favorecido": "REDE DE POSTOS AUTO POSTO CENTER LTDA",
+   "valor": 9597.03,
+   "n": 46
+  },
+  {
+   "favorecido": "POSTO DE SERVICOS PORTAL DE CAMPOS LTDA",
+   "valor": 7339.45,
+   "n": 25
+  },
+  {
+   "favorecido": "POSTO DE GASOLINA E INCORPORACOES ARPOADOR LTDA",
+   "valor": 5976.35,
+   "n": 28
+  },
+  {
+   "favorecido": "DIPLOMATA MOLDURAS E VIDROS LTDA",
+   "valor": 4500.0,
+   "n": 1
+  },
+  {
+   "favorecido": "PLAZA BRASILIA HOTEIS E TURISMO LTDA.",
+   "valor": 4376.55,
+   "n": 4
+  },
+  {
+   "favorecido": "POSTO 13 CRUZ DE MALTA LTDA",
+   "valor": 3158.34,
+   "n": 13
+  },
+  {
+   "favorecido": "BG LESTE PETROLEO LTDA",
+   "valor": 2770.03,
+   "n": 11
+  },
+  {
+   "favorecido": "SERVICO SOCIAL DA INDUSTRIA DEPARTAMENTO REGIONAL DO DISTRITO FEDERAL",
+   "valor": 2767.9,
+   "n": 1
+  },
+  {
+   "favorecido": "WENCESLAU - ABASTECEDORA DE COMBUSTIVEIS LTDA.",
+   "valor": 2709.71,
+   "n": 12
+  },
+  {
+   "favorecido": "CAMPOS DO JORDAO AUTO POSTO LTDA",
+   "valor": 2479.88,
+   "n": 10
+  },
+  {
+   "favorecido": "LIDER COMERCIO MATERIAIS ESPORTIVOS LTDA",
+   "valor": 2340.0,
+   "n": 2
+  },
+  {
+   "favorecido": "REDE FARROUPILHA GESTAO, VAREJO E INOVACAO LTDA",
+   "valor": 2153.07,
+   "n": 11
+  },
+  {
+   "favorecido": "GDO PARTICIPACOES S/A",
+   "valor": 2097.89,
+   "n": 7
+  },
+  {
+   "favorecido": "EH BRASIL INDUSTRIA E COMERCIO LTDA.",
+   "valor": 1926.77,
+   "n": 2
+  },
+  {
+   "favorecido": "CDG COMBUSTIVEIS LTDA",
+   "valor": 1696.37,
+   "n": 8
+  },
+  {
+   "favorecido": "TECHNIK - COMERCIO E SERVICOS DE INFORMATICA MEDICA LTDA",
+   "valor": 1470.71,
+   "n": 1
+  },
+  {
+   "favorecido": "CHRYSTIANO FRANCA TEIXEIRA",
+   "valor": 1469.85,
+   "n": 1
+  },
+  {
+   "favorecido": "TUTOIA COMERCIO VAREJISTA DE COMBUSTIVEIS LTDA",
+   "valor": 1316.11,
+   "n": 7
+  },
+  {
+   "favorecido": "AUTO POSTO CENTER LTDA",
+   "valor": 1311.7,
+   "n": 6
+  }
+ ],
+ "lula3_maiores": [
+  {
+   "ano": 2025,
+   "mes": 11,
+   "data": "2025-10-09",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "ADRIANO FRANCO BEZERRA",
+   "favorecido": "SEM INFORMACAO",
+   "transacao": "COMPRA A/V - INT$ - APRES",
+   "valor": 4936.36
+  },
+  {
+   "ano": 2024,
+   "mes": 5,
+   "data": "2024-04-01",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "ARILSON CAVALCANTE PEREIRA",
+   "favorecido": "DIPLOMATA MOLDURAS E VIDROS LTDA",
+   "transacao": "COMPRA A/V - R$ - APRES",
+   "valor": 4500.0
+  },
+  {
+   "ano": 2024,
+   "mes": 3,
+   "data": "2024-02-11",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "ALEXANDRE MARINS DA SILVA CARRASCOSE",
+   "favorecido": "SEM INFORMACAO",
+   "transacao": "COMPRA A/V - INT$ - APRES",
+   "valor": 4335.55
+  },
+  {
+   "ano": 2025,
+   "mes": 10,
+   "data": "2025-09-18",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "ANTONIO JOSE DE SENA BOMFIM",
+   "favorecido": "SEM INFORMACAO",
+   "transacao": "COMPRA A/V - INT$ - APRES",
+   "valor": 4242.33
+  },
+  {
+   "ano": 2025,
+   "mes": 4,
+   "data": "2025-03-19",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "ALEXANDRE MARINS DA SILVA CARRASCOSE",
+   "favorecido": "SEM INFORMACAO",
+   "transacao": "COMPRA A/V - INT$ - APRES",
+   "valor": 3426.9
+  },
+  {
+   "ano": 2025,
+   "mes": 12,
+   "data": "2025-11-13",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "ARILSON CAVALCANTE PEREIRA",
+   "favorecido": "SERVICO SOCIAL DA INDUSTRIA DEPARTAMENTO REGIONAL DO DISTRITO FEDERAL",
+   "transacao": "COMPRA A/V - R$ - APRES",
+   "valor": 2767.9
+  },
+  {
+   "ano": 2023,
+   "mes": 12,
+   "data": "2023-11-26",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "CARLOS AIRES BOY DE ARAUJO FEITOSA",
+   "favorecido": "SEM INFORMACAO",
+   "transacao": "COMPRA A/V - INT$ - APRES",
+   "valor": 2548.88
+  },
+  {
+   "ano": 2023,
+   "mes": 3,
+   "data": "2023-02-08",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "MILTON ALEXANDRE DA SILVA",
+   "favorecido": "SEM INFORMACAO",
+   "transacao": "COMPRA A/V - INT$ - APRES",
+   "valor": 2162.89
+  },
+  {
+   "ano": 2026,
+   "mes": 3,
+   "data": "2026-02-19",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "CAIRO RANGEL DA SILVA",
+   "favorecido": "SEM INFORMACAO",
+   "transacao": "COMPRA A/V - INT$ - APRES",
+   "valor": 2054.9
+  },
+  {
+   "ano": 2025,
+   "mes": 7,
+   "data": "2025-06-05",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "ALEXANDRE VAZ DE SOUZA",
+   "favorecido": "SEM INFORMACAO",
+   "transacao": "COMPRA A/V - INT$ - APRES",
+   "valor": 2027.45
+  },
+  {
+   "ano": 2023,
+   "mes": 6,
+   "data": "2023-05-04",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "MILTON ALEXANDRE DA SILVA",
+   "favorecido": "SEM INFORMACAO",
+   "transacao": "COMPRA A/V - INT$ - APRES",
+   "valor": 1805.12
+  },
+  {
+   "ano": 2024,
+   "mes": 5,
+   "data": "2024-04-14",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "CARLOS AIRES BOY DE ARAUJO FEITOSA",
+   "favorecido": "SEM INFORMACAO",
+   "transacao": "COMPRA A/V - R$ - APRES",
+   "valor": 1762.74
+  },
+  {
+   "ano": 2025,
+   "mes": 1,
+   "data": "2024-12-04",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "ARILSON CAVALCANTE PEREIRA",
+   "favorecido": "PLAZA BRASILIA HOTEIS E TURISMO LTDA.",
+   "transacao": "COMPRA A/V - R$ - APRES",
+   "valor": 1694.0
+  },
+  {
+   "ano": 2023,
+   "mes": 6,
+   "data": "2023-05-16",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "MILTON ALEXANDRE DA SILVA",
+   "favorecido": "SEM INFORMACAO",
+   "transacao": "COMPRA A/V - INT$ - APRES",
+   "valor": 1639.61
+  },
+  {
+   "ano": 2024,
+   "mes": 3,
+   "data": "2024-02-11",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "ALEXANDRE MARINS DA SILVA CARRASCOSE",
+   "favorecido": "SEM INFORMACAO",
+   "transacao": "COMPRA A/V - INT$ - APRES",
+   "valor": 1625.84
+  },
+  {
+   "ano": 2026,
+   "mes": 4,
+   "data": "2026-03-24",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "ARILSON CAVALCANTE PEREIRA",
+   "favorecido": "EH BRASIL INDUSTRIA E COMERCIO LTDA.",
+   "transacao": "COMPRA A/V - R$ - APRES",
+   "valor": 1619.77
+  },
+  {
+   "ano": 2026,
+   "mes": 5,
+   "data": "2026-04-14",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "CAIO DE MEDEIROS OLIVEIRA",
+   "favorecido": "SEM INFORMACAO",
+   "transacao": "COMPRA A/V - INT$ - APRES",
+   "valor": 1616.48
+  },
+  {
+   "ano": 2023,
+   "mes": 3,
+   "data": "2023-02-08",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "MILTON ALEXANDRE DA SILVA",
+   "favorecido": "SEM INFORMACAO",
+   "transacao": "COMPRA A/V - INT$ - APRES",
+   "valor": 1614.5
+  },
+  {
+   "ano": 2026,
+   "mes": 7,
+   "data": "2026-06-12",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "FRANCISCO DAS CHAGAS NUNES",
+   "favorecido": "SEM INFORMACAO",
+   "transacao": "COMPRA A/V - INT$ - APRES",
+   "valor": 1569.87
+  },
+  {
+   "ano": 2026,
+   "mes": 7,
+   "data": "2026-06-12",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "FRANCISCO DAS CHAGAS NUNES",
+   "favorecido": "SEM INFORMACAO",
+   "transacao": "COMPRA A/V - INT$ - APRES",
+   "valor": 1568.74
+  },
+  {
+   "ano": 2026,
+   "mes": 4,
+   "data": "2026-03-24",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "ARILSON CAVALCANTE PEREIRA",
+   "favorecido": "TECHNIK - COMERCIO E SERVICOS DE INFORMATICA MEDICA LTDA",
+   "transacao": "COMPRA A/V - R$ - APRES",
+   "valor": 1470.71
+  },
+  {
+   "ano": 2025,
+   "mes": 8,
+   "data": "2025-07-28",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "ARILSON CAVALCANTE PEREIRA",
+   "favorecido": "CHRYSTIANO FRANCA TEIXEIRA",
+   "transacao": "COMPRA A/V - R$ - APRES",
+   "valor": 1469.85
+  },
+  {
+   "ano": 2025,
+   "mes": 7,
+   "data": "2025-06-14",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "ALEXANDRE VAZ DE SOUZA",
+   "favorecido": "SEM INFORMACAO",
+   "transacao": "COMPRA A/V - INT$ - APRES",
+   "valor": 1439.02
+  },
+  {
+   "ano": 2025,
+   "mes": 10,
+   "data": "2025-09-22",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "ANTONIO JOSE DE SENA BOMFIM",
+   "favorecido": "SEM INFORMACAO",
+   "transacao": "COMPRA A/V - INT$ - APRES",
+   "valor": 1421.19
+  },
+  {
+   "ano": 2023,
+   "mes": 3,
+   "data": "2023-02-08",
+   "ug_nome": "SECRETARIA DE ADMINISTRACAO/PR",
+   "NOME PORTADOR": "MILTON ALEXANDRE DA SILVA",
+   "favorecido": "SEM INFORMACAO",
+   "transacao": "COMPRA A/V - INT$ - APRES",
+   "valor": 1393.0
+  }
+ ],
+ "lula3_saques": {
+  "n": 42,
+  "valor": 38820.0,
+  "por_ano": {
+   "2023": 2000.0,
+   "2024": 11020.0,
+   "2025": 17800.0,
+   "2026": 8000.0
+  }
+ },
+ "lula3_portadores": 27,
+ "lula3_dup": {
+  "n": 81,
+  "valor": 45283.54,
+  "top": {
+   "NAO SE APLICA": 35000.0,
+   "SEM INFORMACAO": 10283.54
+  }
+ },
+ "calibracao": [
+  {
+   "ano": 2019,
+   "suprim": 7367884.09,
+   "portal_ugs_pr": 7336610.01
+  },
+  {
+   "ano": 2020,
+   "suprim": 9127557.35,
+   "portal_ugs_pr": 8543188.12
+  },
+  {
+   "ano": 2021,
+   "suprim": 11189149.76,
+   "portal_ugs_pr": 11368960.11
+  },
+  {
+   "ano": 2022,
+   "suprim": 13498337.48,
+   "portal_ugs_pr": 14802689.95
+  }
+ ]
+}
