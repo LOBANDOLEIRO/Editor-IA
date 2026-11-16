@@ -72,3 +72,11 @@ export async function applyNotes(key: string, buf: AudioBuffer, notes: NoteEdit[
   res.channels.forEach((c, i) => out.copyToChannel(c, i));
   return out;
 }
+
+export async function denoiseBuffer(buf: AudioBuffer, amount: number, ctx: BaseAudioContext) {
+  const channels = copyChannels(buf);
+  const res = await call<{ channels: Float32Array[] }>({ type: "denoise", channels, amount }, channels.map((c) => c.buffer));
+  const out = ctx.createBuffer(buf.numberOfChannels, buf.length, buf.sampleRate);
+  res.channels.forEach((c, i) => out.copyToChannel(c, i));
+  return out;
+}

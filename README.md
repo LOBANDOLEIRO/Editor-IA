@@ -78,19 +78,26 @@ e abra no celular `https://NOME-DO-PC.SEU-TAILNET.ts.net:8443` (o comando mostra
 
 ## Efeitos, presets e mixer
 
-- Cada faixa tem: corta-graves/corta-agudos, EQ de 3 bandas, compressor, saturação, delay sincronizado ao BPM e reverb.
-- Presets prontos: *Voz limpa, Voz trap, Voz rap, Voz R&B, Ad-libs, Rádio/telefone, Lo-fi, Catedral, Bateria punch, 808, Melodia ao fundo*. Você pode salvar os seus (ficam no navegador).
+Nada vem ligado por padrão: cada efeito tem a sua chave de liga/desliga, e mexer num controle liga o efeito. *Desligar tudo* zera a faixa.
+
+- **Simular microfone:** correção para microfone de headset/celular e "caráter" de tipos clássicos (condensador de estúdio, valvulado brilhante, dinâmico de rádio, fita, palco). É equalização: aproxima o timbre, não transforma um microfone em outro.
+- **Noise gate:** abaixa o som entre as frases (sala sem isolamento).
+- **De-esser:** segura os "S" e "X" chiados.
+- **Filtros, equalizador, compressor, saturação.**
+- **Realce (um botão):** compressão + grave + brilho de uma vez.
+- **Dobra estéreo:** abre a voz para os lados.
+- **Delay sincronizado ao BPM e reverb.**
+- **Presets por gênero:** Rap, Trap, Drill e Soul/R&B (voz principal, dobras, ad-libs, coro), além de gerais, de beat e criativos. Você pode salvar os seus (ficam no navegador).
+- **No clip (aba Clip):** *Limpar ruído de fundo* (reduz chiado/ventilador; você escolhe a força), *Half-time* e *Inverter*. Só rodam quando você aperta, e Ctrl+Z desfaz.
 - Aba **Mixer**: canais com fader, medidor de nível, pan, mudo/solo/gravar e master com limitador.
 - Ao armar uma faixa (●) aparece o nível do microfone; 🎧 liga o retorno da voz **já com os efeitos**.
 - Gravar por cima de um trecho substitui o take antigo naquele trecho (dá para desfazer).
 
-## Fluxo para a voz
+### Dicas para microfone simples e sala sem isolamento
 
-1. Gere o beat (aba **Beat IA**) e abra as stems.
-2. Escreva ou gere a letra (aba **Letra**); ela aparece na tela enquanto você grava.
-3. Arme uma faixa (●) e grave (**R**). Use fone de ouvido para o beat não vazar no microfone.
-4. Se a voz ficar adiantada ou atrasada em relação ao beat, ajuste **Latência (ms)** no topo.
-5. Selecione o take → **Corretor de afinação** → *Analisar voz* → escolha o tom/preset → *Aplicar correção*. *Restaurar original* desfaz.
+1. Se o headset for Bluetooth, prefira usar com fio (ou o microfone do próprio celular): em Bluetooth o microfone grava com qualidade de telefone e com atraso.
+2. Grave perto do microfone (um palmo), fora da direção do sopro, e longe de ventilador e janela. Roupas, cama e cortina por perto reduzem o eco.
+3. Depois de gravar: *Limpar ruído* no clip → preset do gênero (ou *Headset → estúdio*) → afinação.
 
 ## Corretor de afinação: dois modos
 

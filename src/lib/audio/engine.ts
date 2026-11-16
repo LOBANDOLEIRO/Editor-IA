@@ -2,6 +2,7 @@
 import type { Clip, Track } from "../types";
 import { getBuffer } from "./buffers";
 import { applyTrack, audibleMap, createMaster, createTrackChain, scheduleClip, type TrackChain } from "./graph";
+import { loadVoiceWorklet } from "./voiceWorklet";
 
 /** AudioWorklet que captura o microfone em blocos com o instante (currentTime) do primeiro sample. */
 const RECORDER_WORKLET = `
@@ -83,6 +84,8 @@ class Engine {
   private workletReady = false;
   private capture: Capture | null = null;
   private silent!: GainNode;
+  private voiceLoading: Promise<void> | null = null;
+  private lastTracks: Track[] = [];
 
   ensure() {
     if (this.ctx) return this.ctx;
@@ -99,6 +102,23 @@ class Engine {
     this.silent = ctx.createGain();
     this.silent.gain.value = 0;
     this.silent.connect(ctx.destination);
+    // gate/de-esser: quando o worklet carregar, recria as cadeias para incluí-lo
+    this.voiceLoading = loadVoiceWorklet(ctx).then((ok) => {
+      if (!ok || !this.chains.size) return;
+      for (const ch of this.chains.values()) {
+        ch.input.disconnect();
+        ch.pan.disconnect();
+        ch.fader.disconnect();
+      }
+      this.chains.clear();
+      if (this.monitorGain) {
+        this.micSource?.disconnect(this.monitorGain);
+        this.monitorGain.disconnect();
+        this.monitorGain = null;
+      }
+      this.monitorTrack = null;
+      this.syncTracks(this.lastTracks);
+    });
     return ctx;
   }
 
@@ -110,11 +130,13 @@ class Engine {
   /** Cria/remove cadeias e aplica parâmetros conforme as faixas. */
   syncTracks(tracks: Track[]) {
     const ctx = this.ensure();
+    this.lastTracks = tracks;
     const ids = new Set(tracks.map((t) => t.id));
     for (const [id, ch] of this.chains) {
       if (!ids.has(id)) {
         ch.input.disconnect();
         ch.pan.disconnect();
+        ch.fader.disconnect();
         this.chains.delete(id);
       }
     }
@@ -163,6 +185,7 @@ class Engine {
   async play(clips: Clip[], tracks: Track[], from: number, loop: { start: number; end: number } | null = null) {
     const ctx = this.ensure();
     if (ctx.state !== "running") await ctx.resume();
+    await this.voiceLoading;
     this.stopSources();
     this.syncTracks(tracks);
     this.clips = clips;
@@ -367,6 +390,7 @@ export async function renderMix(tracks: Track[], clips: Clip[], bpm: number, mas
   if (end <= 0) return null;
   const length = Math.ceil((end + 2.5) * sampleRate);
   const ctx = new OfflineAudioContext(2, length, sampleRate);
+  await loadVoiceWorklet(ctx);
   const m = createMaster(ctx, masterVolume);
   const audible = audibleMap(tracks);
   const chains = new Map<string, TrackChain>();

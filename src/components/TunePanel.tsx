@@ -75,10 +75,10 @@ export default function TunePanel() {
     const load = (an: Analysis) => {
       if (cancelled) return;
       setAnalysis(an);
-      let ns = noteEdits.get(clipId);
+      let ns = noteEdits.get(`${clipId}:${srcKey}`);
       if (!ns) {
         ns = segmentNotes(an.detected);
-        noteEdits.set(clipId, ns);
+        noteEdits.set(`${clipId}:${srcKey}`, ns);
       }
       setNotes(ns);
     };
@@ -126,7 +126,7 @@ export default function TunePanel() {
   function editNotes(fn: (n: NoteEdit) => NoteEdit, onlyId?: number | null, commit = true) {
     setNotes((prev) => {
       const next = prev.map((n) => (onlyId == null || n.id === onlyId ? fn(n) : n));
-      if (clipId) noteEdits.set(clipId, next);
+      if (clipId) noteEdits.set(`${clipId}:${srcKey}`, next);
       return next;
     });
     if (commit) setDirty(true);

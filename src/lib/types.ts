@@ -1,8 +1,22 @@
 export type DelayDiv = "1/4" | "1/8" | "1/8d" | "1/16" | "1/4t";
 
+export type MicModel = "none" | "condenser" | "tube" | "dynamic" | "ribbon" | "stage";
+
+/** Todo efeito tem a sua chave liga/desliga (…On). Nada vem ligado por padrão. */
 export type FxSettings = {
-  hpFreq: number; // Hz, 20 = desligado
-  lpFreq: number; // Hz, 20000 = desligado
+  // microfone & ambiente
+  gateOn: boolean;
+  gateThreshold: number; // dB
+  deessOn: boolean;
+  deess: number; // 0..1
+  micOn: boolean;
+  micFix: boolean; // correção de mic de headset
+  micModel: MicModel;
+  // tom
+  filtersOn: boolean;
+  hpFreq: number; // Hz
+  lpFreq: number; // Hz
+  eqOn: boolean;
   eqLow: number; // dB
   eqMid: number;
   eqHigh: number;
@@ -10,10 +24,18 @@ export type FxSettings = {
   compThreshold: number; // dB
   compRatio: number;
   compMakeup: number; // dB
+  driveOn: boolean;
   drive: number; // saturação 0..1
+  enhanceOn: boolean;
+  enhance: number; // "realce" de um botão 0..1
+  // espaço
+  doublerOn: boolean;
+  doubler: number; // dobra estéreo 0..1
+  delayOn: boolean;
   delayMix: number; // 0..1
   delayDiv: DelayDiv;
   delayFeedback: number; // 0..0.9
+  reverbOn: boolean;
   reverb: number; // envio 0..1
 };
 

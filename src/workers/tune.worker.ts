@@ -13,12 +13,14 @@ import {
   type PitchAnalysis,
   type TuneParams,
 } from "../lib/dsp/pitch";
+import { denoise } from "../lib/dsp/denoise";
 
 type Msg =
   | { type: "analyze"; reqId: number; key: string; channels: Float32Array[]; sampleRate: number; params: TuneParams }
   | { type: "curve"; reqId: number; key: string; params: TuneParams }
   | { type: "apply"; reqId: number; key: string; channels: Float32Array[]; params: TuneParams }
-  | { type: "applyNotes"; reqId: number; key: string; channels: Float32Array[]; notes: NoteEdit[] };
+  | { type: "applyNotes"; reqId: number; key: string; channels: Float32Array[]; notes: NoteEdit[] }
+  | { type: "denoise"; reqId: number; channels: Float32Array[]; amount: number };
 
 const cache = new Map<string, PitchAnalysis>();
 const ctx = self as unknown as DedicatedWorkerGlobalScope;
@@ -53,6 +55,9 @@ ctx.onmessage = (e: MessageEvent<Msg>) => {
       const an = need(msg.key);
       const corr = computeCorrection(an, msg.params);
       const out = psolaShift(msg.channels, an, corr.semis, msg.params.mix);
+      ctx.postMessage({ reqId: msg.reqId, ok: true, channels: out }, out.map((c) => c.buffer));
+    } else if (msg.type === "denoise") {
+      const out = denoise(msg.channels, msg.amount);
       ctx.postMessage({ reqId: msg.reqId, ok: true, channels: out }, out.map((c) => c.buffer));
     } else if (msg.type === "applyNotes") {
       const an = need(msg.key);

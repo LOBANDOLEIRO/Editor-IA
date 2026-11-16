@@ -2,6 +2,7 @@
 import { addBuffer, getBuffer } from "./audio/buffers";
 import { engine, renderMix } from "./audio/engine";
 import { downloadBlob, encodeWav } from "./audio/wav";
+import { denoiseBuffer } from "./dsp/tuner";
 import { useStudio } from "./store";
 
 const st = () => useStudio.getState();
@@ -137,4 +138,68 @@ export function addBufferToNewTrack(buf: AudioBuffer, name: string, color?: stri
   const trackId = st().addTrack({ name, ...(color ? { color } : {}) });
   st().addClip({ trackId, bufferId, name, start, offset: 0, duration: buf.duration });
   return trackId;
+}
+
+/** Recorta o trecho usado pelo clip num buffer próprio (para processar só ele). */
+function clipSlice(id: string) {
+  const c = st().clips.find((x) => x.id === id);
+  const buf = c && getBuffer(c.bufferId);
+  if (!c || !buf) return null;
+  const ctx = engine.ensure();
+  const a = Math.max(0, Math.floor(c.offset * buf.sampleRate));
+  const b = Math.min(buf.length, Math.ceil((c.offset + c.duration) * buf.sampleRate));
+  if (b - a < 64) return null;
+  const out = ctx.createBuffer(buf.numberOfChannels, b - a, buf.sampleRate);
+  for (let ch = 0; ch < buf.numberOfChannels; ch++) out.copyToChannel(buf.getChannelData(ch).subarray(a, b), ch);
+  return { clip: c, slice: out, ctx };
+}
+
+/** Troca o áudio do clip por um novo buffer (dá para desfazer com Ctrl+Z). */
+function bake(id: string, buf: AudioBuffer, name?: string) {
+  st().checkpoint();
+  st().updateClip(id, {
+    bufferId: addBuffer(buf),
+    originalBufferId: undefined,
+    tuned: false,
+    offset: 0,
+    duration: buf.duration,
+    ...(name ? { name } : {}),
+  });
+}
+
+/** Redução de ruído de fundo no clip. amount 0..1 */
+export async function denoiseClip(id: string, amount: number) {
+  const s = clipSlice(id);
+  if (!s) return;
+  st().notify("Limpando ruído…");
+  try {
+    bake(id, await denoiseBuffer(s.slice, amount, s.ctx));
+    st().notify("Ruído reduzido. Ctrl+Z desfaz.");
+  } catch (e) {
+    st().notify(`Erro ao limpar ruído: ${(e as Error).message}`);
+  }
+}
+
+/** Metade da velocidade, uma oitava abaixo (o efeito "half-time"). */
+export function halfTimeClip(id: string) {
+  const s = clipSlice(id);
+  if (!s) return;
+  const { slice, ctx } = s;
+  const out = ctx.createBuffer(slice.numberOfChannels, slice.length * 2, slice.sampleRate);
+  for (let ch = 0; ch < slice.numberOfChannels; ch++) {
+    const src = slice.getChannelData(ch);
+    const dst = out.getChannelData(ch);
+    for (let i = 0; i < src.length; i++) {
+      dst[i * 2] = src[i];
+      dst[i * 2 + 1] = (src[i] + (i + 1 < src.length ? src[i + 1] : src[i])) / 2;
+    }
+  }
+  bake(id, out);
+}
+
+export function reverseClip(id: string) {
+  const s = clipSlice(id);
+  if (!s) return;
+  for (let ch = 0; ch < s.slice.numberOfChannels; ch++) s.slice.getChannelData(ch).reverse();
+  bake(id, s.slice);
 }

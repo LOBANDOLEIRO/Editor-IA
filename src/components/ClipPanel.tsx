@@ -1,19 +1,22 @@
 "use client";
+import { useState } from "react";
 import { engine } from "@/lib/audio/engine";
 import { formatTime } from "@/lib/music";
 import { useStudio } from "@/lib/store";
-import { normalizeClip } from "@/lib/transport";
+import { denoiseClip, halfTimeClip, normalizeClip, reverseClip } from "@/lib/transport";
 import { FxBox, Slider } from "./ui";
 
 export default function ClipPanel() {
   const { clips, selectedClipId, updateClip, splitClip, duplicateClip, removeClip, checkpoint, set } = useStudio();
   const clip = clips.find((c) => c.id === selectedClipId);
+  const [nr, setNr] = useState(0.6);
+  const [busy, setBusy] = useState(false);
   if (!clip) return <p className="text-xs text-studio-dim">Clique num clip da timeline para editar volume, fades e cortes.</p>;
   const db = 20 * Math.log10(Math.max(clip.gain, 1e-4));
   const maxFade = Math.max(0.01, Math.min(10, clip.duration));
 
   return (
-    <div className="grid gap-3 lg:grid-cols-3">
+    <div className="grid gap-3 lg:grid-cols-4">
       <FxBox title="Clip">
         <label className="block w-full">
           <span className="label">Nome</span>
@@ -47,6 +50,30 @@ export default function ClipPanel() {
             🗑 Apagar clip (Del)
           </button>
         </div>
+      </FxBox>
+      <FxBox title="Limpeza e efeitos de clip">
+        <Slider label="Força da limpeza de ruído" min={0.1} max={1} step={0.01} value={nr} format={(v) => `${Math.round(v * 100)}%`} reset={0.6} onChange={setNr} />
+        <div className="grid w-full grid-cols-2 gap-1.5">
+          <button
+            className="btn-accent col-span-2"
+            disabled={busy}
+            title="Reduz chiado, ventilador e ruído do microfone neste clip"
+            onClick={async () => {
+              setBusy(true);
+              await denoiseClip(clip.id, nr);
+              setBusy(false);
+            }}
+          >
+            {busy ? "Limpando…" : "🧹 Limpar ruído de fundo"}
+          </button>
+          <button className="btn" title="Metade da velocidade, uma oitava abaixo" onClick={() => halfTimeClip(clip.id)}>
+            ½ Half-time
+          </button>
+          <button className="btn" title="Toca o clip de trás para frente" onClick={() => reverseClip(clip.id)}>
+            ◀ Inverter
+          </button>
+        </div>
+        <p className="w-full text-[10px] text-studio-dim">Nada disso é automático. Ctrl+Z desfaz. Limpe o ruído antes de corrigir a afinação.</p>
       </FxBox>
     </div>
   );

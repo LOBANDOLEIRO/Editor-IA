@@ -67,7 +67,7 @@ export function FxBox({
           </button>
         )}
       </div>
-      <div className={`flex flex-wrap gap-3 ${active === false ? "opacity-40" : ""}`}>{children}</div>
+      <div className={`flex flex-wrap gap-3 ${active === false ? "opacity-45" : ""}`}>{children}</div>
     </div>
   );
 }
