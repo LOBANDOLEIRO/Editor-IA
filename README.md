@@ -12,19 +12,42 @@ Estúdio multitrack no navegador (estilo DAW) que:
 
 > ⚠️ O useapi.net **não é oficial nem afiliado ao Google**. Ele automatiza a sua conta Flow Music; pode parar de funcionar se o Google mudar algo, e esse uso pode ir contra os termos do Google. Para uso pessoal/protótipo funciona bem; para um produto com usuários, considere a Gemini API oficial (`lyria-3.5`), que entrega só a música mixada (sem stems).
 
-## Como rodar
+## Instalar no seu PC
+
+Precisa do [Node.js](https://nodejs.org) 18 ou mais novo e do Git.
 
 ```bash
-npm install
-cp .env.example .env.local   # coloque o USEAPI_TOKEN
-npm run dev                   # http://localhost:3000
+git clone https://github.com/lobandoleiro/editor-ia.git
+cd editor-ia
+git checkout claude/elegant-faraday-14tby6
 ```
+
+Depois é só iniciar:
+
+- **Windows:** dois cliques em `iniciar.bat`.
+- **Mac/Linux:** `./iniciar.sh`.
+
+O script instala as dependências, prepara o estúdio e o abre em **http://localhost:3210**. Para usar outra porta: `iniciar.bat 4000` ou `./iniciar.sh 4000`. Para atualizar depois: `git pull` e inicie de novo.
+
+### Ligar o Flow Music (beats com Lyria)
+
+Na primeira vez o script cria o arquivo `.env.local`. Abra-o e preencha:
 
 1. Crie uma conta em [useapi.net](https://useapi.net/docs/start-here/setup-useapi) e copie o token (`user:1234-...`).
 2. Conecte a sua conta Flow Music no useapi ([guia](https://useapi.net/docs/start-here/setup-flowmusic)).
-3. Coloque o token em `USEAPI_TOKEN` no `.env.local` (fica só no servidor, nunca vai para o navegador).
+3. Cole o token em `USEAPI_TOKEN` e inicie o estúdio de novo.
 
-Sem token, o botão **Beat demo** sintetiza um beat localmente para você testar o estúdio, a gravação e o corretor.
+O token fica só no seu PC. Sem ele, o botão **Beat demo** sintetiza um beat para testar o estúdio, a gravação e o corretor.
+
+### Usar no celular pelo Tailscale
+
+O navegador do celular só libera o microfone em HTTPS. Com o Tailscale no PC e no celular, rode no PC (com o estúdio ligado):
+
+```bash
+tailscale serve --bg --https=8443 3210
+```
+
+e abra no celular `https://NOME-DO-PC.SEU-TAILNET.ts.net:8443` (o comando mostra o endereço exato; `tailscale serve status` lista o que está publicado). A porta 8443 evita conflito com outro app que já use `tailscale serve` no endereço padrão. Só os seus aparelhos do Tailscale conseguem abrir.
 
 ## Atalhos
 
