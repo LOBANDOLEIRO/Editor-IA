@@ -85,8 +85,8 @@ function Strip({ t }: { t: Track }) {
 export default function Mixer() {
   const { tracks, masterVolume, set, latencyMs } = useStudio();
   return (
-    <div className="flex h-full gap-2">
-      <div className="flex min-w-0 flex-1 gap-2 overflow-x-auto pb-1">
+    <div className="flex h-full gap-2 overflow-x-auto lg:overflow-visible">
+      <div className="flex shrink-0 gap-2 pb-1 lg:min-w-0 lg:flex-1 lg:shrink lg:overflow-x-auto">
         {tracks.length === 0 && <p className="self-center text-xs text-studio-dim">As faixas aparecem aqui como canais de mixer.</p>}
         {tracks.map((t) => (
           <Strip key={t.id} t={t} />

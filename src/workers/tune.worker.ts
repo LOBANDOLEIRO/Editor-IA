@@ -3,9 +3,13 @@ import {
   analyzePitch,
   computeCorrection,
   detectKey,
+  detectedMidi,
   frameDuration,
+  frameOffset,
+  noteCorrection,
   psolaShift,
   toMono,
+  type NoteEdit,
   type PitchAnalysis,
   type TuneParams,
 } from "../lib/dsp/pitch";
@@ -13,10 +17,17 @@ import {
 type Msg =
   | { type: "analyze"; reqId: number; key: string; channels: Float32Array[]; sampleRate: number; params: TuneParams }
   | { type: "curve"; reqId: number; key: string; params: TuneParams }
-  | { type: "apply"; reqId: number; key: string; channels: Float32Array[]; params: TuneParams };
+  | { type: "apply"; reqId: number; key: string; channels: Float32Array[]; params: TuneParams }
+  | { type: "applyNotes"; reqId: number; key: string; channels: Float32Array[]; notes: NoteEdit[] };
 
 const cache = new Map<string, PitchAnalysis>();
 const ctx = self as unknown as DedicatedWorkerGlobalScope;
+
+function need(key: string) {
+  const an = cache.get(key);
+  if (!an) throw new Error("Analise a voz primeiro");
+  return an;
+}
 
 ctx.onmessage = (e: MessageEvent<Msg>) => {
   const msg = e.data;
@@ -29,20 +40,24 @@ ctx.onmessage = (e: MessageEvent<Msg>) => {
         reqId: msg.reqId,
         ok: true,
         frameDur: frameDuration(an),
+        frameOffset: frameOffset(an),
         detected: corr.detected,
         corrected: corr.corrected,
         key: detectKey(an),
       });
     } else if (msg.type === "curve") {
-      const an = cache.get(msg.key);
-      if (!an) throw new Error("Analise a voz primeiro");
+      const an = need(msg.key);
       const corr = computeCorrection(an, msg.params);
-      ctx.postMessage({ reqId: msg.reqId, ok: true, frameDur: frameDuration(an), detected: corr.detected, corrected: corr.corrected });
+      ctx.postMessage({ reqId: msg.reqId, ok: true, frameDur: frameDuration(an), frameOffset: frameOffset(an), detected: corr.detected, corrected: corr.corrected });
     } else if (msg.type === "apply") {
-      const an = cache.get(msg.key);
-      if (!an) throw new Error("Analise a voz primeiro");
+      const an = need(msg.key);
       const corr = computeCorrection(an, msg.params);
       const out = psolaShift(msg.channels, an, corr.semis, msg.params.mix);
+      ctx.postMessage({ reqId: msg.reqId, ok: true, channels: out }, out.map((c) => c.buffer));
+    } else if (msg.type === "applyNotes") {
+      const an = need(msg.key);
+      const corr = noteCorrection(detectedMidi(an), msg.notes, frameDuration(an));
+      const out = psolaShift(msg.channels, an, corr.semis, 1);
       ctx.postMessage({ reqId: msg.reqId, ok: true, channels: out }, out.map((c) => c.buffer));
     }
   } catch (err) {

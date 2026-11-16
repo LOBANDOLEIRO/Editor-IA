@@ -12,7 +12,7 @@ import ClipMenu from "./ClipMenu";
 
 export default function Studio() {
   const [tab, setTab] = useState<"beat" | "letra">("beat");
-  const [sidebar, setSidebar] = useState(true);
+  const [sidebar, setSidebar] = useState(() => window.innerWidth >= 1024);
   const toast = useStudio((s) => s.toast);
 
   // mantém o motor de áudio sincronizado com o estado
@@ -87,10 +87,13 @@ export default function Studio() {
   }, []);
 
   return (
-    <div className="flex h-screen flex-col overflow-hidden bg-studio-bg" onClick={() => useStudio.getState().menu && useStudio.getState().set({ menu: null })}>
+    <div className="flex h-[100dvh] flex-col overflow-hidden bg-studio-bg" onClick={() => useStudio.getState().menu && useStudio.getState().set({ menu: null })}>
       <TopBar sidebar={sidebar} onToggleSidebar={() => setSidebar(!sidebar)} />
       <div className="flex min-h-0 flex-1">
-        <aside className={`${sidebar ? "flex" : "hidden"} w-80 shrink-0 flex-col border-r border-studio-line bg-studio-panel`}>
+        {sidebar && <div className="fixed inset-0 z-30 bg-black/60 lg:hidden" onClick={() => setSidebar(false)} />}
+        <aside
+          className={`${sidebar ? "flex" : "hidden"} fixed inset-y-0 left-0 z-40 w-80 max-w-[88vw] shrink-0 flex-col border-r border-studio-line bg-studio-panel lg:static lg:z-auto`}
+        >
           <div className="flex border-b border-studio-line">
             {(
               [

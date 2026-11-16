@@ -63,13 +63,16 @@ export default function ClipView({ clip, color, laneH }: { clip: Clip; color: st
       return;
     }
 
+    const touch = e.pointerType === "touch";
+    const tol = touch ? 16 : 7;
+    const edge = touch ? Math.min(16, w / 4) : EDGE;
     const fadeInX = clip.fadeIn * s.pps;
     const fadeOutX = w - clip.fadeOut * s.pps;
     let mode: Mode = "move";
-    if (localY < HEAD && Math.abs(localX - Math.max(6, fadeInX)) < 7) mode = "fadeIn";
-    else if (localY < HEAD && Math.abs(localX - Math.min(w - 6, fadeOutX)) < 7) mode = "fadeOut";
-    else if (localX < EDGE) mode = "trimL";
-    else if (localX > w - EDGE) mode = "trimR";
+    if (localY < HEAD + (touch ? 6 : 0) && Math.abs(localX - Math.max(6, fadeInX)) < tol) mode = "fadeIn";
+    else if (localY < HEAD + (touch ? 6 : 0) && Math.abs(localX - Math.min(w - 6, fadeOutX)) < tol) mode = "fadeOut";
+    else if (localX < edge) mode = "trimL";
+    else if (localX > w - edge) mode = "trimR";
 
     const startX = e.clientX;
     const startY = e.clientY;
@@ -137,7 +140,7 @@ export default function ClipView({ clip, color, laneH }: { clip: Clip; color: st
 
   return (
     <div
-      className={`absolute top-[4px] select-none overflow-hidden rounded-md border ${selected ? "border-white shadow-[0_0_0_1px_white]" : "border-black/50"}`}
+      className={`absolute top-[4px] touch-none select-none overflow-hidden rounded-md border ${selected ? "border-white shadow-[0_0_0_1px_white]" : "border-black/50"}`}
       style={{ left: clip.start * pps, width: w, height: h, background: `${color}22` }}
       onPointerDown={onPointerDown}
       onMouseMove={onMouseMove}

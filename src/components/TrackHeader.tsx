@@ -26,7 +26,7 @@ export function useMeter(ref: React.RefObject<HTMLDivElement>, read: () => numbe
   }, []);
 }
 
-export default function TrackHeader({ track: t }: { track: Track }) {
+export default function TrackHeader({ track: t, compact }: { track: Track; compact?: boolean }) {
   const { updateTrack, removeTrack, select, selectedTrackId, checkpoint, set } = useStudio();
   const selected = selectedTrackId === t.id;
   const meterRef = useRef<HTMLDivElement>(null);
@@ -41,6 +41,7 @@ export default function TrackHeader({ track: t }: { track: Track }) {
     >
       <div className="flex items-center gap-1.5">
         <input
+          hidden={compact}
           type="color"
           value={t.color}
           title="Cor da faixa"
@@ -98,6 +99,7 @@ export default function TrackHeader({ track: t }: { track: Track }) {
           🎧
         </button>
         <input
+          hidden={compact}
           type="range"
           min={0}
           max={1.5}
@@ -111,8 +113,9 @@ export default function TrackHeader({ track: t }: { track: Track }) {
         />
       </div>
       <div className="flex items-center gap-1 text-[10px] text-studio-dim">
-        <span className="w-6">Pan</span>
+        <span className="w-6" hidden={compact}>Pan</span>
         <input
+          hidden={compact}
           type="range"
           min={-1}
           max={1}
@@ -123,8 +126,8 @@ export default function TrackHeader({ track: t }: { track: Track }) {
           onDoubleClick={() => updateTrack(t.id, { pan: 0 })}
           onChange={(e) => updateTrack(t.id, { pan: Number(e.target.value) })}
         />
-        <span className="w-7 text-right font-mono">{t.pan === 0 ? "C" : t.pan < 0 ? `L${Math.round(-t.pan * 100)}` : `R${Math.round(t.pan * 100)}`}</span>
-        <div className="ml-1 h-1.5 flex-1 overflow-hidden rounded bg-studio-bg" title={t.armed ? "Nível do microfone" : "Nível da faixa"}>
+        <span className="w-7 text-right font-mono" hidden={compact}>{t.pan === 0 ? "C" : t.pan < 0 ? `L${Math.round(-t.pan * 100)}` : `R${Math.round(t.pan * 100)}`}</span>
+        <div className={`h-1.5 flex-1 overflow-hidden rounded bg-studio-bg ${compact ? "" : "ml-1"}`} title={t.armed ? "Nível do microfone" : "Nível da faixa"}>
           <div ref={meterRef} className="h-full" style={{ width: 0 }} />
         </div>
       </div>

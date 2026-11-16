@@ -69,6 +69,21 @@ Sem token, o botão **Beat demo** sintetiza um beat localmente para você testar
 4. Se a voz ficar adiantada ou atrasada em relação ao beat, ajuste **Latência (ms)** no topo.
 5. Selecione o take → **Corretor de afinação** → *Analisar voz* → escolha o tom/preset → *Aplicar correção*. *Restaurar original* desfaz.
 
+## Corretor de afinação: dois modos
+
+- **Autotune:** automático, para o clip inteiro. Você escolhe tom, escala, velocidade (robótico ↔ natural), intensidade e mix.
+- **Nota por nota:** a voz é dividida em blocos de nota num piano roll.
+  - Arraste um bloco para cima/baixo para escolher a nota (qualquer nota, mesmo fora da escala). *Ajuste fino* (ou Alt) move em cents.
+  - Por nota: ▲/▼ semitom, *Escala* (nota da escala mais próxima), *Original*, *Achatar oscilação/vibrato* e *Entrada da nota* (seca ↔ deslizando).
+  - *Tudo na escala* faz a primeira passada; depois você ajusta só o que ficou ruim.
+  - Tocar numa nota leva o cursor até ela; com *Aplicar ao editar* ligado, é só dar play para ouvir.
+  - Zoom com a roda do mouse, botões +/− ou gesto de pinça; arraste o fundo para andar.
+- A correção nunca destrói o original: *Restaurar original* volta ao que foi gravado.
+
+## Celular
+
+A interface se adapta a telas pequenas: o painel da IA vira uma gaveta (botão ☰), os cabeçalhos das faixas ficam compactos (volume e pan ficam no Mixer), o painel de baixo pode ser recolhido ou ampliado (▾ ▴) e clips, régua e notas respondem ao toque. Para gravar no celular o site precisa estar em **HTTPS** (exigência dos navegadores para liberar o microfone).
+
 ## Estrutura
 
 ```

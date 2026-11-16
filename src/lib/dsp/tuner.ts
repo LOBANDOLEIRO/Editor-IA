@@ -1,8 +1,9 @@
 "use client";
-import type { TuneParams } from "./pitch";
+import type { NoteEdit, TuneParams } from "./pitch";
 
 export type CurveResult = {
   frameDur: number;
+  frameOffset: number;
   detected: Float32Array;
   corrected: Float32Array;
   key?: { root: number; minor: boolean } | null;
@@ -54,6 +55,17 @@ export async function applyTune(key: string, buf: AudioBuffer, params: TuneParam
   const channels = copyChannels(buf);
   const res = await call<{ channels: Float32Array[] }>(
     { type: "apply", key, channels, params },
+    channels.map((c) => c.buffer),
+  );
+  const out = ctx.createBuffer(buf.numberOfChannels, buf.length, buf.sampleRate);
+  res.channels.forEach((c, i) => out.copyToChannel(c, i));
+  return out;
+}
+
+export async function applyNotes(key: string, buf: AudioBuffer, notes: NoteEdit[], ctx: BaseAudioContext) {
+  const channels = copyChannels(buf);
+  const res = await call<{ channels: Float32Array[] }>(
+    { type: "applyNotes", key, channels, notes },
     channels.map((c) => c.buffer),
   );
   const out = ctx.createBuffer(buf.numberOfChannels, buf.length, buf.sampleRate);

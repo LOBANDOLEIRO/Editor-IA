@@ -3,15 +3,19 @@ import { useEffect, useRef } from "react";
 import { engine } from "@/lib/audio/engine";
 import { snapTime, useStudio } from "@/lib/store";
 import { addBufferToNewTrack, seek } from "@/lib/transport";
+import { useIsMobile } from "@/lib/useIsMobile";
 import ClipView from "./ClipView";
 import TrackHeader from "./TrackHeader";
 
 export const LANE_H = 84;
-const HEADER_W = 240;
 const RULER_H = 30;
 
 export default function Timeline() {
   const { tracks, clips, pps, bpm, recording, lyrics, addTrack, select, selectedTrackId, notify, loop, loopOn, tool, snapBeats } = useStudio();
+  const mobile = useIsMobile();
+  const HEADER_W = mobile ? 118 : 240;
+  const headerW = useRef(HEADER_W);
+  headerW.current = HEADER_W;
   const scrollRef = useRef<HTMLDivElement>(null);
   const headRef = useRef<HTMLDivElement>(null);
   const fileRef = useRef<HTMLInputElement>(null);
@@ -31,10 +35,10 @@ export default function Timeline() {
     const loop = () => {
       const pos = Math.max(0, engine.getPosition());
       const x = pos * useStudio.getState().pps;
-      if (headRef.current) headRef.current.style.transform = `translateX(${HEADER_W + x}px)`;
+      if (headRef.current) headRef.current.style.transform = `translateX(${headerW.current + x}px)`;
       const sc = scrollRef.current;
       if (sc && engine.playing) {
-        const viewW = sc.clientWidth - HEADER_W;
+        const viewW = sc.clientWidth - headerW.current;
         if (x > sc.scrollLeft + viewW - 40 || x < sc.scrollLeft) sc.scrollLeft = Math.max(0, x - 80);
       }
       raf = requestAnimationFrame(loop);
@@ -52,12 +56,12 @@ export default function Timeline() {
       e.preventDefault();
       const s = useStudio.getState();
       const rect = sc.getBoundingClientRect();
-      const mouseX = e.clientX - rect.left - HEADER_W + sc.scrollLeft;
+      const mouseX = e.clientX - rect.left - headerW.current + sc.scrollLeft;
       const t = mouseX / s.pps;
       const next = Math.min(400, Math.max(6, s.pps * (e.deltaY < 0 ? 1.15 : 1 / 1.15)));
       s.set({ pps: next });
       requestAnimationFrame(() => {
-        sc.scrollLeft = Math.max(0, t * next - (e.clientX - rect.left - HEADER_W));
+        sc.scrollLeft = Math.max(0, t * next - (e.clientX - rect.left - headerW.current));
       });
     };
     sc.addEventListener("wheel", onWheel, { passive: false });
@@ -120,9 +124,9 @@ export default function Timeline() {
               className="sticky left-0 z-30 flex shrink-0 items-center justify-between border-b border-r border-studio-line bg-studio-panel px-3 text-[10px] uppercase tracking-wider text-studio-dim"
               style={{ width: HEADER_W }}
             >
-              <span>Playlist · {tracks.length} faixas</span>
+              <span className="truncate">{mobile ? `${tracks.length} faixas` : `Playlist · ${tracks.length} faixas`}</span>
             </div>
-            <div className="relative cursor-pointer select-none border-b border-studio-line bg-studio-panel" style={{ width }} onPointerDown={onRulerDown}>
+            <div className="relative cursor-pointer touch-none select-none border-b border-studio-line bg-studio-panel" style={{ width }} onPointerDown={onRulerDown}>
               {loop && (
                 <div
                   className={`absolute bottom-0 top-0 border-x ${loopOn ? "border-studio-accent bg-studio-accent/25" : "border-studio-dim bg-white/5"}`}
@@ -146,7 +150,7 @@ export default function Timeline() {
           {tracks.map((t) => (
             <div key={t.id} className="flex" style={{ height: LANE_H }}>
               <div className="sticky left-0 z-10 shrink-0" style={{ width: HEADER_W }}>
-                <TrackHeader track={t} />
+                <TrackHeader track={t} compact={mobile} />
               </div>
               <div
                 className={`relative border-b border-studio-line ${selectedTrackId === t.id ? "bg-white/[0.035]" : ""} ${tool === "cut" ? "cursor-crosshair" : ""}`}
@@ -168,14 +172,14 @@ export default function Timeline() {
           ))}
 
           {/* adicionar faixas */}
-          <div className="sticky left-0 flex flex-wrap gap-2 p-3" style={{ width: HEADER_W + 480 }}>
+          <div className="sticky left-0 flex max-w-[100vw] flex-wrap gap-2 p-3" style={{ width: HEADER_W + 480 }}>
             <button className="btn" onClick={() => addTrack({ name: "Voz", armed: true, color: "#f43f5e" })}>
               🎤 + Faixa de voz
             </button>
             <button className="btn" onClick={() => fileRef.current?.click()}>
               ♫ + Importar áudio
             </button>
-            <span className="self-center text-[10px] text-studio-dim">ou arraste um arquivo de áudio para cá</span>
+            <span className="hidden self-center text-[10px] text-studio-dim md:inline">ou arraste um arquivo de áudio para cá</span>
             <input
               ref={fileRef}
               type="file"

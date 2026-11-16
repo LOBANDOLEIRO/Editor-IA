@@ -38,3 +38,8 @@ function computePeaks(buf: AudioBuffer) {
   }
   return out;
 }
+
+export function removeBuffer(id: string) {
+  buffers.delete(id);
+  peaks.delete(id);
+}

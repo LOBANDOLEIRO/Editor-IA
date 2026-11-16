@@ -349,3 +349,102 @@ export function detectKey(an: PitchAnalysis): { root: number; minor: boolean } |
   }
   return { root: best.root, minor: best.minor };
 }
+
+// ---------------------------------------------------------------------------
+// Correção nota por nota
+// ---------------------------------------------------------------------------
+
+export type NoteEdit = {
+  id: number;
+  start: number; // frame inicial (inclusivo)
+  end: number; // frame final (exclusivo)
+  center: number; // nota cantada (MIDI, mediana)
+  target: number; // nota desejada (MIDI, pode ser fracionária)
+  flatten: number; // 0 = mantém oscilação/vibrato, 1 = reta
+  transitionMs: number; // suavidade da entrada da nota
+};
+
+/** Instante (s) do centro do frame 0. */
+export function frameOffset(an: PitchAnalysis) {
+  return (an.winHalf * an.factor) / an.sampleRate;
+}
+
+export function detectedMidi(an: PitchAnalysis) {
+  const out = new Float32Array(an.f0.length).fill(NaN);
+  for (let i = 0; i < out.length; i++) if (an.f0[i] > 0) out[i] = hzToMidi(an.f0[i]);
+  return out;
+}
+
+export function nearestScaleNote(m: number, root: number, steps: number[]) {
+  return nearestInScale(m, root, steps);
+}
+
+/** Divide a curva de afinação em notas (trechos vozeados com altura estável). */
+export function segmentNotes(det: Float32Array): NoteEdit[] {
+  const notes: NoteEdit[] = [];
+  const n = det.length;
+  const MIN = 5;
+  const HOLD = 4;
+  let id = 1;
+  let i = 0;
+  while (i < n) {
+    if (Number.isNaN(det[i])) {
+      i++;
+      continue;
+    }
+    const start = i;
+    const vals: number[] = [det[i]];
+    let sum = det[i];
+    let j = i + 1;
+    while (j < n && !Number.isNaN(det[j])) {
+      const mean = sum / vals.length;
+      const dev = det[j] - mean;
+      if (Math.abs(dev) > 0.7 && j - start >= MIN) {
+        let sustained = true;
+        for (let k = 0; k < HOLD; k++) {
+          const v = det[j + k];
+          if (j + k >= n || Number.isNaN(v) || Math.sign(v - mean) !== Math.sign(dev) || Math.abs(v - mean) < 0.5) {
+            sustained = false;
+            break;
+          }
+        }
+        if (sustained) break;
+      }
+      vals.push(det[j]);
+      sum += det[j];
+      j++;
+    }
+    vals.sort((a, b) => a - b);
+    const center = vals[vals.length >> 1];
+    notes.push({ id: id++, start, end: j, center, target: center, flatten: 0, transitionMs: 30 });
+    i = j;
+  }
+  return notes;
+}
+
+/** Curva de correção a partir das notas editadas. */
+export function noteCorrection(det: Float32Array, notes: NoteEdit[], frameDur: number): Correction {
+  const n = det.length;
+  const corrected = new Float32Array(n).fill(NaN);
+  const semis = new Float32Array(n);
+  const sorted = [...notes].sort((a, b) => a.start - b.start);
+  let c = 0;
+  let prevEnd = -100;
+  for (const note of sorted) {
+    const alpha = note.transitionMs <= 0 ? 1 : 1 - Math.exp(-(frameDur * 1000) / note.transitionMs);
+    let carry = note.start - prevEnd <= 2; // nota colada na anterior: desliza até ela
+    for (let i = Math.max(0, note.start); i < Math.min(n, note.end); i++) {
+      const m = det[i];
+      if (Number.isNaN(m)) continue;
+      const want = Math.max(-12, Math.min(12, note.target - note.center - (m - note.center) * note.flatten));
+      c = carry ? c + (want - c) * alpha : want;
+      carry = true;
+      semis[i] = c;
+      corrected[i] = m + c;
+    }
+    prevEnd = note.end;
+  }
+  // frames com voz fora de qualquer nota ficam como foram cantados
+  for (let i = 0; i < n; i++) if (Number.isNaN(corrected[i]) && !Number.isNaN(det[i])) corrected[i] = det[i];
+  return { detected: det, corrected, semis };
+}
