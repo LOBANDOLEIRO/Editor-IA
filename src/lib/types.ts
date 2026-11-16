@@ -1,4 +1,8 @@
+export type DelayDiv = "1/4" | "1/8" | "1/8d" | "1/16" | "1/4t";
+
 export type FxSettings = {
+  hpFreq: number; // Hz, 20 = desligado
+  lpFreq: number; // Hz, 20000 = desligado
   eqLow: number; // dB
   eqMid: number;
   eqHigh: number;
@@ -6,7 +10,11 @@ export type FxSettings = {
   compThreshold: number; // dB
   compRatio: number;
   compMakeup: number; // dB
-  reverb: number; // 0..1 (envio)
+  drive: number; // saturação 0..1
+  delayMix: number; // 0..1
+  delayDiv: DelayDiv;
+  delayFeedback: number; // 0..0.9
+  reverb: number; // envio 0..1
 };
 
 export type Track = {
@@ -18,6 +26,8 @@ export type Track = {
   mute: boolean;
   solo: boolean;
   armed: boolean;
+  monitor: boolean; // ouvir o microfone (com efeitos) enquanto armada
+  preset?: string;
   fx: FxSettings;
 };
 
@@ -31,6 +41,9 @@ export type Clip = {
   start: number; // s na timeline
   offset: number; // s dentro do buffer
   duration: number; // s
+  gain: number; // linear
+  fadeIn: number; // s
+  fadeOut: number; // s
   tuned?: boolean;
 };
 
@@ -44,6 +57,8 @@ export type ScaleName =
   | "pentatonicMinor"
   | "blues"
   | "chromatic";
+
+export type Tool = "select" | "cut";
 
 /** Clip retornado pela Flow Music (via useapi.net) */
 export type FlowClip = {

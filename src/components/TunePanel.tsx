@@ -150,6 +150,7 @@ export default function TunePanel() {
     try {
       const out = await applyTune(srcKey, buf, params, engine.ensure());
       const id = addBuffer(out);
+      useStudio.getState().checkpoint();
       updateClip(clip.id, { bufferId: id, originalBufferId: srcKey, tuned: true });
       notify("Afinação aplicada. Dê play para ouvir.");
     } catch (e) {
@@ -160,7 +161,9 @@ export default function TunePanel() {
   }
 
   function restore() {
-    if (clip?.originalBufferId) updateClip(clip.id, { bufferId: clip.originalBufferId, originalBufferId: undefined, tuned: false });
+    if (!clip?.originalBufferId) return;
+    useStudio.getState().checkpoint();
+    updateClip(clip.id, { bufferId: clip.originalBufferId, originalBufferId: undefined, tuned: false });
   }
 
   return (

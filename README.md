@@ -33,10 +33,33 @@ Sem token, o botão **Beat demo** sintetiza um beat localmente para você testar
 | Espaço | Play / pausa |
 | R | Gravar na faixa armada (cria uma faixa “Voz” se não houver) |
 | Enter | Voltar ao início |
-| M | Metrônomo liga/desliga |
-| S | Dividir o clip selecionado no cursor |
+| V / C | Ferramenta selecionar / tesoura |
+| S | Cortar o clip selecionado no cursor |
+| Ctrl+Z / Ctrl+Shift+Z | Desfazer / refazer |
+| Ctrl+C / Ctrl+V / Ctrl+D | Copiar / colar no cursor / duplicar clip |
 | Delete | Apagar o clip selecionado |
-| Alt + arrastar | Mover clip sem grudar na grade |
+| L | Liga/desliga o loop (arraste na régua para criar a região) |
+| M | Metrônomo |
+| + / − ou Ctrl+roda | Zoom |
+| Alt + arrastar | Mover/aparar sem grudar na grade |
+
+## Edição na timeline
+
+- **Mover:** arraste o clip (inclusive para outra faixa).
+- **Aparar:** arraste as bordas esquerda/direita do clip.
+- **Fades:** arraste os quadradinhos brancos no topo do clip selecionado.
+- **Cortar:** tesoura (C) e clique, ou S no cursor, ou botão direito → *Cortar aqui*.
+- **Botão direito no clip:** cortar, duplicar, copiar, normalizar, fades rápidos, apagar.
+- **Loop:** arraste na régua; ótimo para repetir um trecho enquanto ensaia.
+- Arraste um arquivo de áudio para a timeline para importar.
+
+## Efeitos, presets e mixer
+
+- Cada faixa tem: corta-graves/corta-agudos, EQ de 3 bandas, compressor, saturação, delay sincronizado ao BPM e reverb.
+- Presets prontos: *Voz limpa, Voz trap, Voz rap, Voz R&B, Ad-libs, Rádio/telefone, Lo-fi, Catedral, Bateria punch, 808, Melodia ao fundo*. Você pode salvar os seus (ficam no navegador).
+- Aba **Mixer**: canais com fader, medidor de nível, pan, mudo/solo/gravar e master com limitador.
+- Ao armar uma faixa (●) aparece o nível do microfone; 🎧 liga o retorno da voz **já com os efeitos**.
+- Gravar por cima de um trecho substitui o take antigo naquele trecho (dá para desfazer).
 
 ## Fluxo para a voz
 
@@ -62,5 +85,5 @@ src/
 
 - Conversão para a **sua voz** (modelo RVC treinado com a sua voz) a partir do vocal da IA.
 - Afinação em tempo real ao gravar (monitoramento com autotune).
-- Quantização de tempo da voz, salvar/abrir projetos, desfazer/refazer.
+- Salvar/abrir projetos, seleção de vários clips, automação de volume, escolha do microfone.
 - Ferramentas de edição do Flow Music: estender, substituir trecho e cover/remix.

@@ -34,33 +34,52 @@ registerProcessor('rec-proc', RecProc);
 
 type Capture = {
   node: AudioWorkletNode;
-  source: MediaStreamAudioSourceNode;
   chunks: Float32Array[];
   firstT: number | null;
   recordFrom: number;
   done: Promise<void>;
 };
 
+/** Trecho contínuo de reprodução: `from` (timeline) toca em `t0` (contexto), até `end`. */
+type Segment = { t0: number; from: number; end: number; nextBeat: number };
+
+const meterBuf = new Float32Array(1024);
+function peakOf(an?: AnalyserNode) {
+  if (!an) return 0;
+  an.getFloatTimeDomainData(meterBuf);
+  let p = 0;
+  for (let i = 0; i < meterBuf.length; i++) {
+    const v = Math.abs(meterBuf[i]);
+    if (v > p) p = v;
+  }
+  return p;
+}
+
 class Engine {
   ctx: AudioContext | null = null;
   private bus!: GainNode;
+  private master!: GainNode;
+  private masterMeter?: AnalyserNode;
   private reverbIn!: GainNode;
   private chains = new Map<string, TrackChain>();
-  private sources: AudioBufferSourceNode[] = [];
-  private t0 = 0;
-  private from = 0;
+  private sources = new Set<AudioBufferSourceNode>();
+  private segments: Segment[] = [];
+  private clips: Clip[] = [];
+  private loop: { start: number; end: number } | null = null;
   private stoppedAt = 0;
+  private timer: ReturnType<typeof setInterval> | null = null;
   playing = false;
 
-  // metrônomo
   metronomeOn = true;
   bpm = 90;
-  private metroTimer: ReturnType<typeof setInterval> | null = null;
-  private nextBeat = 0;
   private clickGain!: GainNode;
 
-  // gravação
+  // microfone
   private mic: MediaStream | null = null;
+  private micSource: MediaStreamAudioSourceNode | null = null;
+  private micMeter: AnalyserNode | null = null;
+  private monitorGain: GainNode | null = null;
+  private monitorTrack: string | null = null;
   private workletReady = false;
   private capture: Capture | null = null;
   private silent!: GainNode;
@@ -69,8 +88,10 @@ class Engine {
     if (this.ctx) return this.ctx;
     const ctx = new AudioContext({ latencyHint: "interactive" });
     this.ctx = ctx;
-    const m = createMaster(ctx);
+    const m = createMaster(ctx, 0.9, true);
     this.bus = m.bus;
+    this.master = m.master;
+    this.masterMeter = m.meter;
     this.reverbIn = m.reverbIn;
     this.clickGain = ctx.createGain();
     this.clickGain.gain.value = 0.35;
@@ -79,6 +100,11 @@ class Engine {
     this.silent.gain.value = 0;
     this.silent.connect(ctx.destination);
     return ctx;
+  }
+
+  setMasterVolume(v: number) {
+    const ctx = this.ensure();
+    this.master.gain.setTargetAtTime(v, ctx.currentTime, 0.015);
   }
 
   /** Cria/remove cadeias e aplica parâmetros conforme as faixas. */
@@ -96,51 +122,116 @@ class Engine {
     for (const t of tracks) {
       let ch = this.chains.get(t.id);
       if (!ch) {
-        ch = createTrackChain(ctx, this.bus, this.reverbIn);
+        ch = createTrackChain(ctx, this.bus, this.reverbIn, true);
         this.chains.set(t.id, ch);
       }
-      applyTrack(ctx, ch, t, audible.get(t.id) ?? true, true);
+      applyTrack(ctx, ch, t, audible.get(t.id) ?? true, true, this.bpm);
     }
+    // retorno do microfone na faixa armada com monitor ligado
+    const mon = tracks.find((t) => t.armed && t.monitor);
+    this.setMonitor(mon?.id ?? null);
   }
 
+  // ---------- níveis ----------
+  trackLevel(id: string) {
+    return peakOf(this.chains.get(id)?.meter);
+  }
+  masterLevel() {
+    return peakOf(this.masterMeter);
+  }
+  micLevel() {
+    return this.micMeter ? peakOf(this.micMeter) : 0;
+  }
+  get micReady() {
+    return !!this.micSource;
+  }
+
+  // ---------- transporte ----------
   getPosition() {
     if (!this.playing || !this.ctx) return this.stoppedAt;
-    return this.from + (this.ctx.currentTime - this.t0);
+    const now = this.ctx.currentTime;
+    let seg = this.segments[0];
+    for (const s of this.segments) if (s.t0 <= now) seg = s;
+    if (!seg) return this.stoppedAt;
+    return seg.from + (now - seg.t0);
   }
 
   seek(pos: number) {
     this.stoppedAt = Math.max(0, pos);
   }
 
-  async play(clips: Clip[], tracks: Track[], from: number) {
+  async play(clips: Clip[], tracks: Track[], from: number, loop: { start: number; end: number } | null = null) {
     const ctx = this.ensure();
     if (ctx.state !== "running") await ctx.resume();
     this.stopSources();
     this.syncTracks(tracks);
-    this.from = from;
-    this.t0 = ctx.currentTime + 0.06;
-    for (const c of clips) {
+    this.clips = clips;
+    this.loop = loop && loop.end - loop.start > 0.05 && from < loop.end ? loop : null;
+    this.segments = [];
+    this.playing = true;
+    this.addSegment(ctx.currentTime + 0.06, from);
+    if (this.timer) clearInterval(this.timer);
+    this.timer = setInterval(() => this.tick(), 25);
+    this.tick();
+  }
+
+  private addSegment(t0: number, from: number) {
+    const ctx = this.ctx!;
+    const end = this.loop ? this.loop.end : Infinity;
+    const beat = 60 / this.bpm;
+    this.segments.push({ t0, from, end, nextBeat: Math.ceil((from - 1e-6) / beat) });
+    if (this.segments.length > 3) this.segments.shift();
+    for (const c of this.clips) {
       const buf = getBuffer(c.bufferId);
       const ch = this.chains.get(c.trackId);
       if (!buf || !ch) continue;
-      const src = scheduleClip(ctx, buf, ch.input, c, from, this.t0);
-      if (src) this.sources.push(src);
+      const src = scheduleClip(ctx, buf, ch.input, c, from, t0, end);
+      if (src) {
+        this.sources.add(src);
+        src.addEventListener("ended", () => this.sources.delete(src));
+      }
     }
-    this.playing = true;
-    this.startMetronome();
+  }
+
+  private tick() {
+    const ctx = this.ctx;
+    if (!ctx || !this.playing) return;
+    const now = ctx.currentTime;
+    // agenda a próxima volta do loop com antecedência
+    const last = this.segments[this.segments.length - 1];
+    if (this.loop && last && last.end !== Infinity) {
+      const lastEndCtx = last.t0 + (last.end - last.from);
+      if (lastEndCtx - now < 0.3) this.addSegment(lastEndCtx, this.loop.start);
+    }
+    // metrônomo
+    const beat = 60 / this.bpm;
+    for (const s of this.segments) {
+      while (true) {
+        const pos = s.nextBeat * beat;
+        if (pos >= s.end - 1e-6) break;
+        const when = s.t0 + (pos - s.from);
+        if (when > now + 0.15) break;
+        if (this.metronomeOn && when >= now - 0.01) this.click(when, ((s.nextBeat % 4) + 4) % 4 === 0);
+        s.nextBeat++;
+      }
+    }
   }
 
   /** Reagenda mantendo a posição (ex.: clip movido durante a reprodução). */
-  async restart(clips: Clip[], tracks: Track[]) {
+  async restart(clips: Clip[], tracks: Track[], loop: { start: number; end: number } | null) {
     if (!this.playing) return;
-    await this.play(clips, tracks, this.getPosition());
+    let pos = this.getPosition();
+    if (loop && (pos < loop.start || pos >= loop.end)) pos = Math.max(0, pos);
+    await this.play(clips, tracks, pos, loop);
   }
 
   stop() {
     const pos = this.getPosition();
     this.stopSources();
-    this.stopMetronome();
+    if (this.timer) clearInterval(this.timer);
+    this.timer = null;
     this.playing = false;
+    this.segments = [];
     this.stoppedAt = Math.max(0, pos);
     return this.stoppedAt;
   }
@@ -154,32 +245,7 @@ class Engine {
         /* já parado */
       }
     }
-    this.sources = [];
-  }
-
-  // ---------- metrônomo ----------
-  private startMetronome() {
-    this.stopMetronome();
-    const beat = 60 / this.bpm;
-    this.nextBeat = Math.ceil((this.from - 1e-6) / beat);
-    const tick = () => {
-      const ctx = this.ctx;
-      if (!ctx || !this.playing) return;
-      const beatDur = 60 / this.bpm;
-      while (true) {
-        const when = this.t0 + (this.nextBeat * beatDur - this.from);
-        if (when > ctx.currentTime + 0.15) break;
-        if (this.metronomeOn && when >= ctx.currentTime - 0.01) this.click(when, this.nextBeat % 4 === 0);
-        this.nextBeat++;
-      }
-    };
-    tick();
-    this.metroTimer = setInterval(tick, 25);
-  }
-
-  private stopMetronome() {
-    if (this.metroTimer) clearInterval(this.metroTimer);
-    this.metroTimer = null;
+    this.sources.clear();
   }
 
   private click(when: number, down: boolean) {
@@ -195,7 +261,7 @@ class Engine {
     osc.stop(when + 0.06);
   }
 
-  // ---------- gravação ----------
+  // ---------- microfone / gravação ----------
   async prepareMic() {
     const ctx = this.ensure();
     if (ctx.state !== "running") await ctx.resume();
@@ -203,6 +269,10 @@ class Engine {
       this.mic = await navigator.mediaDevices.getUserMedia({
         audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false },
       });
+      this.micSource = ctx.createMediaStreamSource(this.mic);
+      this.micMeter = ctx.createAnalyser();
+      this.micMeter.fftSize = 1024;
+      this.micSource.connect(this.micMeter);
     }
     if (!this.workletReady) {
       const url = URL.createObjectURL(new Blob([RECORDER_WORKLET], { type: "application/javascript" }));
@@ -212,15 +282,28 @@ class Engine {
     }
   }
 
+  private setMonitor(trackId: string | null) {
+    if (trackId === this.monitorTrack && (trackId === null || this.monitorGain)) return;
+    if (this.monitorGain) {
+      this.monitorGain.disconnect();
+      this.micSource?.disconnect(this.monitorGain);
+      this.monitorGain = null;
+    }
+    this.monitorTrack = trackId;
+    if (!trackId || !this.micSource || !this.ctx) return;
+    const ch = this.chains.get(trackId);
+    if (!ch) return;
+    this.monitorGain = this.ctx.createGain();
+    this.micSource.connect(this.monitorGain).connect(ch.input);
+  }
+
   /** Começa a capturar. Chame logo depois de play(). `recordFrom` = onde o take começa na timeline. */
   startCapture(recordFrom: number) {
     const ctx = this.ctx!;
-    const source = ctx.createMediaStreamSource(this.mic!);
     const node = new AudioWorkletNode(ctx, "rec-proc", { numberOfInputs: 1, numberOfOutputs: 1, channelCount: 1 });
     let resolveDone!: () => void;
     const cap: Capture = {
       node,
-      source,
       chunks: [],
       firstT: null,
       recordFrom,
@@ -231,7 +314,7 @@ class Engine {
       if (cap.firstT === null) cap.firstT = e.data.t;
       cap.chunks.push(e.data.data);
     };
-    source.connect(node);
+    this.micSource!.connect(node);
     node.connect(this.silent);
     this.capture = cap;
   }
@@ -240,11 +323,12 @@ class Engine {
   async stopCapture(extraLatencyMs: number): Promise<{ buffer: AudioBuffer; start: number } | null> {
     const cap = this.capture;
     const ctx = this.ctx;
-    if (!cap || !ctx) return null;
+    const seg = this.segments[0];
+    if (!cap || !ctx || !seg) return null;
     this.capture = null;
     cap.node.port.postMessage("stop");
     await Promise.race([cap.done, new Promise((r) => setTimeout(r, 500))]);
-    cap.source.disconnect();
+    this.micSource?.disconnect(cap.node);
     cap.node.disconnect();
     if (cap.firstT === null) return null;
 
@@ -260,8 +344,7 @@ class Engine {
     const inLatency = (this.mic?.getAudioTracks()[0]?.getSettings() as { latency?: number })?.latency ?? 0;
     const latency = (ctx.outputLatency || 0) + (ctx.baseLatency || 0) + inLatency + extraLatencyMs / 1000;
     const sr = ctx.sampleRate;
-    // posição na timeline do sample 0
-    const pos0 = this.from + (cap.firstT - this.t0) - latency;
+    const pos0 = seg.from + (cap.firstT - seg.t0) - latency; // posição na timeline do sample 0
     let skip = Math.max(0, Math.round((cap.recordFrom - pos0) * sr)); // descarta a contagem
     skip = Math.min(skip, data.length);
     const len = data.length - skip;
@@ -278,18 +361,18 @@ class Engine {
 
 export const engine = new Engine();
 
-/** Renderiza a mixagem completa offline (sem metrônomo). */
-export async function renderMix(tracks: Track[], clips: Clip[], sampleRate = 44100) {
+/** Renderiza a mixagem (ou um trecho) offline, sem metrônomo. */
+export async function renderMix(tracks: Track[], clips: Clip[], bpm: number, masterVolume: number, sampleRate = 44100) {
   const end = clips.reduce((m, c) => Math.max(m, c.start + c.duration), 0);
   if (end <= 0) return null;
   const length = Math.ceil((end + 2.5) * sampleRate);
   const ctx = new OfflineAudioContext(2, length, sampleRate);
-  const m = createMaster(ctx);
+  const m = createMaster(ctx, masterVolume);
   const audible = audibleMap(tracks);
   const chains = new Map<string, TrackChain>();
   for (const t of tracks) {
     const ch = createTrackChain(ctx, m.bus, m.reverbIn);
-    applyTrack(ctx, ch, t, audible.get(t.id) ?? true, false);
+    applyTrack(ctx, ch, t, audible.get(t.id) ?? true, false, bpm);
     chains.set(t.id, ch);
   }
   for (const c of clips) {

@@ -1,17 +1,23 @@
 "use client";
-import { addBuffer } from "./audio/buffers";
+import { addBuffer, getBuffer } from "./audio/buffers";
 import { engine, renderMix } from "./audio/engine";
 import { downloadBlob, encodeWav } from "./audio/wav";
 import { useStudio } from "./store";
 
 const st = () => useStudio.getState();
+const activeLoop = () => {
+  const s = st();
+  return s.loopOn && s.loop ? s.loop : null;
+};
 
 export async function play() {
   const s = st();
   if (s.playing) return;
   engine.bpm = s.bpm;
   engine.metronomeOn = s.metronome;
-  await engine.play(s.clips, s.tracks, s.position);
+  const loop = activeLoop();
+  const from = loop && (s.position < loop.start || s.position >= loop.end) ? loop.start : s.position;
+  await engine.play(s.clips, s.tracks, from, loop);
   s.set({ playing: true });
 }
 
@@ -23,20 +29,17 @@ export async function stop() {
     const track = s.tracks.find((t) => t.armed);
     if (take && track) {
       const bufferId = addBuffer(take.buffer);
+      const cut = take.start < 0 ? -take.start : 0;
+      const start = Math.max(0, take.start);
+      const duration = take.buffer.duration - cut;
       const n = st().clips.filter((c) => c.trackId === track.id).length + 1;
-      tookId = st().addClip({
-        trackId: track.id,
-        bufferId,
-        name: `Take ${n}`,
-        start: Math.max(0, take.start),
-        offset: take.start < 0 ? -take.start : 0,
-        duration: take.buffer.duration - (take.start < 0 ? -take.start : 0),
-      });
+      st().checkpoint();
+      st().carve(track.id, start, start + duration); // take novo substitui o trecho antigo
+      tookId = st().addClip({ trackId: track.id, bufferId, name: `Take ${n}`, start, offset: cut, duration, fadeIn: 0.005, fadeOut: 0.01 });
     }
   }
   const pos = engine.stop();
-  // depois de gravar, volta o cursor para onde o take começou
-  const next = s.recording ? s.position : pos;
+  const next = s.recording ? s.position : pos; // depois de gravar, volta para onde o take começou
   engine.seek(next);
   st().set({ playing: false, recording: false, position: next });
   if (tookId) st().select(st().tracks.find((t) => t.armed)?.id ?? null, tookId);
@@ -45,6 +48,18 @@ export async function stop() {
 export async function togglePlay() {
   if (st().playing) await stop();
   else await play();
+}
+
+export async function armTrack(id: string, armed: boolean) {
+  st().updateTrack(id, { armed });
+  if (!armed) return;
+  try {
+    await engine.prepareMic();
+    engine.syncTracks(st().tracks);
+  } catch {
+    st().updateTrack(id, { armed: false });
+    st().notify("Não consegui acessar o microfone. Verifique a permissão do navegador.");
+  }
 }
 
 export async function record() {
@@ -65,8 +80,8 @@ export async function record() {
   const cur = st();
   engine.bpm = cur.bpm;
   engine.metronomeOn = cur.metronome;
-  const countIn = cur.metronome ? (4 * 60) / cur.bpm : 0; // 1 compasso de contagem
-  await engine.play(cur.clips, cur.tracks, cur.position - countIn);
+  const countIn = cur.countIn ? (4 * 60) / cur.bpm : 0; // 1 compasso de contagem
+  await engine.play(cur.clips, cur.tracks, cur.position - countIn, null);
   engine.startCapture(cur.position);
   st().set({ playing: true, recording: true });
 }
@@ -76,17 +91,37 @@ export function seek(pos: number) {
   const p = Math.max(0, pos);
   engine.seek(p);
   s.set({ position: p });
-  if (s.playing && !s.recording) void engine.play(s.clips, s.tracks, p);
+  if (s.playing && !s.recording) void engine.play(s.clips, s.tracks, p, activeLoop());
 }
 
 export async function exportMix() {
   const s = st();
   if (!s.clips.length) return s.notify("Nada para exportar ainda.");
   s.notify("Renderizando mixagem…");
-  const out = await renderMix(s.tracks, s.clips);
+  const out = await renderMix(s.tracks, s.clips, s.bpm, s.masterVolume);
   if (!out) return;
   downloadBlob(encodeWav(out), `editor-ia-mix-${Date.now()}.wav`);
   st().notify("Mixagem exportada (WAV).");
+}
+
+/** Ajusta o ganho do clip para o pico chegar a -1 dBFS. */
+export function normalizeClip(id: string) {
+  const c = st().clips.find((x) => x.id === id);
+  const buf = c && getBuffer(c.bufferId);
+  if (!c || !buf) return;
+  const a = Math.floor(c.offset * buf.sampleRate);
+  const b = Math.min(buf.length, Math.ceil((c.offset + c.duration) * buf.sampleRate));
+  let peak = 0;
+  for (let ch = 0; ch < buf.numberOfChannels; ch++) {
+    const d = buf.getChannelData(ch);
+    for (let i = a; i < b; i++) {
+      const v = Math.abs(d[i]);
+      if (v > peak) peak = v;
+    }
+  }
+  if (peak < 1e-4) return;
+  st().checkpoint();
+  st().updateClip(id, { gain: Math.min(16, 0.891 / peak) });
 }
 
 /** Carrega um áudio (URL) numa nova faixa. */
